@@ -60,6 +60,10 @@ export class AppComponent implements OnInit {
     this.startupMenu = environment.STARTUP_SIDEMENU;
     this.proMenu = environment.PRO_SIDEMENU;
     this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
+    // this.beginnerMenu = [];
+    // this.startupMenu = [];
+    // this.proMenu = [];
+    // this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
   }
 
   initializeApp() {
