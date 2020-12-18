@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SpeakersService } from '../speakers.service';
-import { EmailService } from 'src/app/services/common/email.service';
-import { InAppBrowserService } from 'src/app/services/common/in-app-browser.service';
-import { CallService } from 'src/app/services/common/call.service';
+import { EmailService } from '@app/services/common/email.service';
+import { InAppBrowserService } from '@app/services/common/in-app-browser.service';
+import { CallService } from '@app/services/common/call.service';
 
 @Component({
   selector: 'app-speaker-detail',

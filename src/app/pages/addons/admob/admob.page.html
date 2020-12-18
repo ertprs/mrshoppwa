@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="start"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Admob Pro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list-header lines="full">
+    <ion-label>Banner Ads</ion-label>
+  </ion-list-header>
+  <ion-card>
+    <ion-card-content>
+      Banner Ad is usually shown by default on bottom of the page. You can select the position as you like.
+      You can even display multiple banner ads per page.
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="success" expand="block" (click)="banner()">Show Banner Ad</ion-button>
+  <ion-button color="success" expand="block" (click)="hideBanner()">Hide Banner Ad</ion-button>
+
+  <ion-list-header lines="full">
+    <ion-label> Interstitial Ads</ion-label>
+  </ion-list-header>
+  <ion-card>
+    <ion-card-content>
+      Interstitial ads are full-screen ads that cover the interface of their host app. You should display them at
+      natural transition points in the flow of an app.
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="success" expand="block" (click)="interstitial()">Show Interstitial Ad</ion-button>
+  <ion-button color="success" expand="block" (click)="interstitialVideo()">Show Interstitial Video</ion-button>
+  <ion-list-header lines="full">
+    <ion-label>Reward Ads <ion-icon   name="logo-android" color="primary" class="android-icon"></ion-icon></ion-label>
+  </ion-list-header>
+  <ion-card>
+    <ion-card-content>
+      Rewarded ads are ads that users have the option of interacting with in exchange for in-app rewards.
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="success" expand="block" (click)="reward()">Show Reward Ad</ion-button>
+
+</ion-content>

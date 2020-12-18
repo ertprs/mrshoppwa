@@ -1,0 +1,29 @@
+/**
+* Ionic Full App  (https://store.enappd.com/product/ionic-full-app)
+*
+* Copyright © 2020-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+*/
+
+ion-content {
+  --background: var(ion-color-light);
+}
+
+ion-list {
+  --background: transparent;
+  background: transparent;
+  .alertSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .CustomEncodeSection {
+    ion-item {
+      --background: #f4f4f4;
+    }
+  }
+}

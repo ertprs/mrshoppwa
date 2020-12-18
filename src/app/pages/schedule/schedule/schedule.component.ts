@@ -5,8 +5,8 @@ import { ModalController, IonItemSliding, ToastController } from '@ionic/angular
 import * as _ from 'lodash';
 import { ScheduleService } from '../schedule.service';
 import { ScheduleFilterComponent } from '../schedule-filter/schedule-filter.component';
-import { Day, Session, SubSession } from 'src/app/interfaces/sessions';
-import { appTitle } from 'src/config';
+import { Day, Session, SubSession } from '@app/interfaces/sessions';
+import { appTitle } from 'config/config';
 
 @Component({
   selector: 'app-schedule',

@@ -3,10 +3,10 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { NavController } from '@ionic/angular';
-import { UserOptions } from 'src/app/interfaces/user-options';
-import { UserDataService } from 'src/app/services/common/user-data.service';
-import { EventsService } from 'src/app/services/common/events.service';
-import { appTitle } from 'src/config';
+import { UserOptions } from '@app/interfaces/user-options';
+import { UserDataService } from '@app/services/common/user-data.service';
+import { EventsService } from '@app/services/common/events.service';
+import { appTitle } from 'config/config';
 
 @Component({
   selector: 'app-login',

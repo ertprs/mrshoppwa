@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { DataService } from 'src/app/services/database/data.service';
-import { EmailService } from 'src/app/services/common/email.service';
-import { MapsService } from 'src/app/services/common/maps.service';
-import { appTitle } from 'src/config';
+import { DataService } from '@app/services/database/data.service';
+import { EmailService } from '@app/services/common/email.service';
+'@app/services/firestore/firebase-authentication.service';
+import { MapsService } from '@app/services/common/maps.service';
+import { appTitle } from 'config/config';
+
 
 @Component({
   selector: 'app-about',

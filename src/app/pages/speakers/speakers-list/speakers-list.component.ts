@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { DataService } from 'src/app/services/database/data.service';
+import { DataService } from '@app/services/database/data.service';
 import { SpeakersService } from '../speakers.service';
-import { appTitle } from 'src/config';
+import { appTitle } from 'config/config';
 
 @Component({
   selector: 'app-speakers-list',

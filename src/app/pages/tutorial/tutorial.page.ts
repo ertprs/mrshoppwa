@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { IonSlides, MenuController, NavController } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
-import { appTitle } from 'src/config';
+import { appTitle } from 'config/config';
 
 @Component({
   selector: 'app-tutorial',

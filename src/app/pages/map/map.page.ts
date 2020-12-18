@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Platform } from '@ionic/angular';
 import { MapService } from './map.service';
-import { appTitle } from 'src/config';
+import { appTitle } from 'config/config';
 
 declare var google: any;
 @Component({

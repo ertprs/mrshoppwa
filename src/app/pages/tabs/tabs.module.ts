@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { TabsPage } from './tabs.page';
-import { DataResolverService } from 'src/app/services/common/data-resolver.service';
+import { DataResolverService } from '@app/services/common/data-resolver.service';
 
 const routes: Routes = [
   {

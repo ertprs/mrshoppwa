@@ -2,9 +2,9 @@ import { Component, AfterViewInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { NavController } from '@ionic/angular';
 import { first } from 'rxjs/operators';
-import { UserDataService } from 'src/app/services/common/user-data.service';
-import { EventsService } from 'src/app/services/common/events.service';
-import { appTitle } from 'src/config';
+import { UserDataService } from '@app/services/common/user-data.service';
+import { EventsService } from '@app/services/common/events.service';
+import { appTitle } from 'config/config';
 
 @Component({
   selector: 'app-account',

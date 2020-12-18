@@ -1,0 +1,62 @@
+/**
+* Ionic Full App  (https://store.enappd.com/product/ionic-full-app)
+*
+* Copyright © 2020-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+*/
+
+ion-item {
+  --padding-start: 0;
+}
+.filters {
+  max-height: calc(100vh - 44px);
+  overflow: scroll;
+}
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+  margin-bottom: 4px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.activeIndexBackground {
+  background: #fff;
+}
+
+.InactiveIndexBackground {
+  background: #d2d2d2;
+}
+@media (prefers-color-scheme: dark) {
+  .activeIndexBackground {
+    background: var(--ion-color-step-100);
+  }
+
+  .InactiveIndexBackground {
+    background: var(--ion-color-step-300);
+  }
+}
+ion-row {
+  width: 100%;
+}
+
+ion-img {
+  width: 60%;
+  margin: 10px;
+}
+
+.subtitle {
+  color: #aca1a1;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 15px;
+}
+ion-list {
+  margin: 0;
+}

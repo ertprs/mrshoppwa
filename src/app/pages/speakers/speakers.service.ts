@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
-import { DataService } from 'src/app/services/database/data.service';
-import { DATA_SERVICE, DataServiceType } from 'src/config';
+import { DataService } from '@app/services/database/data.service';
+import { DATA_SERVICE, DataServiceType } from 'config/config';
 
 @Injectable({
   providedIn: 'root',

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash';
-import { LocalStorageService } from 'src/app/services/common/local-storage.service';
-import { DataService } from 'src/app/services/database/data.service';
+import { LocalStorageService } from '@app/services/common/local-storage.service';
+import { DataService } from '@app/services/database/data.service';
 
 @Injectable({
   providedIn: 'root',

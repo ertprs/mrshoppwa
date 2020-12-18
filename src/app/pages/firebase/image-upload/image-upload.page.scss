@@ -1,0 +1,97 @@
+/**
+* Ionic Full App  (https://store.enappd.com/product/ionic-full-app)
+*
+* Copyright © 2020-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+*/
+
+ion-header {
+    --background: linear-gradient(to top right, #ffa000 0%, #ffca28 100%);
+}
+
+ion-toolbar {
+    --background: linear-gradient(to top right, #ffa000 0%, #ffca28 100%);
+}
+
+ion-content {
+    text-align: center;
+}
+
+ion-title {
+    text-align: center;
+    color: white;
+}
+
+.btn-menu {
+    color: white;
+}
+
+.form-container {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.row-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.image-section {
+    height: 100px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+    margin: 16px 8px;
+}
+
+img {
+    object-fit: cover;
+    height: 90px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.badge {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    border-radius: 50%;
+    --background: #f04141;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: 1px solid #fff;
+}
+
+.close-icon {
+    font-size: 40px;
+    color: white;
+}
+
+.spinner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.noContent {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
