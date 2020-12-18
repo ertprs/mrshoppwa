@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Speakers</ion-title>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSpeakers()" placeholder="Search"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item button detail="false" *ngFor="let speaker of speakers" (click)="goToSpeakerDetail(speaker)">
+            <ion-avatar slot="start">
+                <img [src]="speaker.avatar">
+            </ion-avatar>
+            <ion-label>
+                <h2>{{speaker.fullname}}</h2>
+                <p>{{speaker.affiliation}}</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

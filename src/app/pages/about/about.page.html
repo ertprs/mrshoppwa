@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>About</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="about">
+        <div class="ion-text-center">
+            <img [src]="about.info.image" [alt]="about.info.title">
+        </div>
+        <div class="about-info">
+            <h1 class="ion-text-center ion-padding-horizontal">{{about.info.title}}</h1>
+
+            <ion-list lines="none">
+                <ion-item>
+                    <ion-text color="medium" slot="start">Start date</ion-text>
+                    <div slot="end" class="ion-text-right">{{about.info.startDate | date: 'fullDate'}}</div>
+                </ion-item>
+
+                <ion-item>
+                    <ion-text color="medium" slot="start">End date</ion-text>
+                    <div slot="end" class="ion-text-right">{{about.info.endDate | date: 'fullDate'}}</div>
+                </ion-item>
+
+                <ion-item>
+                    <ion-text color="medium" slot="start">Location</ion-text>
+                    <div slot="end" class="ion-text-right">{{about.info.country}}, {{about.info.city}}</div>
+                </ion-item>
+            </ion-list>
+
+            <p class="ion-padding-horizontal">{{about.info.description}}</p>
+
+            <ion-list>
+                <ion-list-header><ion-label>Contact</ion-label></ion-list-header>
+
+                <ion-item button detail="false" (click)="sendEmail(about.info.email)">
+                    <ion-label>Email</ion-label>
+                    <ion-icon name="mail" slot="end"></ion-icon>
+                </ion-item>
+                <ion-item button detail="false" (click)="findUs()">
+                    <ion-label>Find us</ion-label>
+                    <ion-icon name="map" slot="end"></ion-icon>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>

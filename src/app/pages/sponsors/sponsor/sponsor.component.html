@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>{{sponsor?.name}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-text-center" *ngIf="sponsor">
+        <img [src]="sponsor.image" [alt]="sponsor.name"><br>
+    </div>
+
+    <div class="ion-padding-horizontal">
+        <h1>{{sponsor?.name}}</h1>
+        <p>{{sponsor?.description}}</p>
+    </div>
+
+    <ion-list>
+        <ion-list-header><ion-label>Contact</ion-label></ion-list-header>
+
+        <ion-item button detail="false" (click)="call(sponsor?.phoneNumber)">
+            <ion-icon name="call" slot="end"></ion-icon>
+            Phone
+        </ion-item>
+        <ion-item button detail="false" (click)="sendEmail(sponsor?.email)">
+            <ion-icon name="mail" slot="end"></ion-icon>
+            Email
+        </ion-item>
+        <ion-item button detail="false" (click)="openUrl(sponsor?.facebook)">
+            <ion-icon name="logo-facebook" slot="end"></ion-icon>
+            Facebook
+        </ion-item>
+        <ion-item button detail="false" (click)="openUrl(sponsor?.twitter)">
+            <ion-icon name="logo-twitter" slot="end"></ion-icon>
+            Twitter
+        </ion-item>
+        <ion-item button detail="false" (click)="openUrl(sponsor?.webpage)">
+            <ion-icon name="globe-outline" slot="end"></ion-icon>
+            Webpage
+        </ion-item>
+    </ion-list>
+</ion-content>

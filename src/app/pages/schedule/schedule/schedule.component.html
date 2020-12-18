@@ -1,0 +1,69 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Schedule</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button class="clear-filter" (click)="clearFilter()" [hidden]="!filterByDayId && !filterBySessionId">
+                <ion-icon name="close" slot="icon-only"></ion-icon>
+            </ion-button>
+            <ion-button (click)="presentFilter()">
+                <ion-icon ios="options-sharp" md="options" slot="icon-only"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
+            <ion-segment-button value="all">
+                All
+            </ion-segment-button>
+            <ion-segment-button value="favorites">
+                Favorites
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list [hidden]="days.length === 0" *ngFor="let day of days">
+        <ion-list-header><ion-label>{{day.date | date:'fullDate'}}</ion-label></ion-list-header>
+
+        <div *ngFor="let session of day.sessions">
+            <ion-item-divider sticky>
+                <ion-label>{{session.time}}</ion-label>
+            </ion-item-divider>
+
+            <ion-item-sliding #slidingItem *ngFor="let subSession of session.subSessions">
+                <ion-item button (click)="goToSessionDetail(subSession)">
+                    <div class="subsession-item">
+                        <ion-label>{{subSession.subsession.title}}</ion-label>
+                        <ion-note>
+                            {{subSession.subsession.timeStart}} &mdash; {{subSession.subsession.timeEnd}}: {{subSession.subsession.location}}
+                        </ion-note>
+                    </div>
+                </ion-item>
+
+                <ion-item-options side="end">
+                    <ion-item-option color="favorite" (click)="addFavorite(slidingItem, subSession.subsession)" *ngIf="segment === 'all'">
+                        Favorite
+                    </ion-item-option>
+                    <ion-item-option color="danger" (click)="removeFavorite(slidingItem, subSession.subsession)" *ngIf="segment === 'favorites'">
+                        Remove
+                    </ion-item-option>
+                </ion-item-options>
+            </ion-item-sliding>
+        </div>
+    </ion-list>
+
+    <ion-list-header [hidden]="days.length > 0">
+        <ion-label>No Sessions Found</ion-label>
+    </ion-list-header>
+
+</ion-content>

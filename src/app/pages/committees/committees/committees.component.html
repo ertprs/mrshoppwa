@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+        <ion-title>Committees</ion-title>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateList()" placeholder="Search"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list [hidden]="committees.length === 0">
+        <ion-item button *ngFor="let committee of committees" class="ion-text-wrap" (click)="goToEventDetail(committee)">
+            <ion-label>{{committee.title}}</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <ion-list-header [hidden]="committees.length > 0">
+        <ion-label>No committees Found</ion-label>
+    </ion-list-header>
+
+</ion-content>

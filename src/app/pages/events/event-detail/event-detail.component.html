@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>Event</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button (click)="toggleFavorites(event?.$key)">
+                <ion-icon name="star-outline" slot="icon-only" *ngIf="!isInFavorites(event?.$key)"></ion-icon>
+                <ion-icon name="star" slot="icon-only" *ngIf="isInFavorites(event?.$key)"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <div>
+        <h3>{{event?.title}}</h3>
+        <p>
+            {{event?.startDate | date: 'fullDate'}} - {{event?.endDate | date: 'fullDate'}}
+        </p>
+
+        <p>{{event?.description}}</p>
+        <div id="map">
+            <div style="height: 300px; width: 100%" #mapCanvas id="map_canvas"></div>
+        </div>
+    </div>
+</ion-content>

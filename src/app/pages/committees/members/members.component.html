@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>{{committee?.title}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list *ngIf="committee">
+        <ion-item *ngFor="let member of members" (click)="goToMemberDetail(member)">
+            <ion-avatar slot="start">
+                <img [src]="member.avatar">
+            </ion-avatar>
+            <div class="ion-margin-top ion-margin-bottom">
+                <ion-label>{{member.firstName}} {{member.lastName}}</ion-label>
+                <ion-label>{{member.affiliation}}</ion-label>
+                <ion-note>{{member.email}}</ion-note>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

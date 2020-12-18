@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>Session</ion-title>
+
+        <ion-buttons slot="end" *ngIf="session && session.subsession">
+            <ion-button (click)="toggleFavorites(session.subsession.$key)">
+                <ion-icon name="star-outline" slot="icon-only" *ngIf="!isInFavorites(session.subsession.$key)"></ion-icon>
+                <ion-icon name="star" slot="icon-only" *ngIf="isInFavorites(session.subsession.$key)"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="session && session.subsession">
+        <div class="ion-padding">
+            <h1>{{session.subsession.title}}</h1>
+            <p>
+                {{session.date}}, {{session.subsession.timeStart}} - {{session.subsession.timeEnd}}
+            </p>
+            <p>{{session.subsession.location}}</p>
+            <p>{{session.subsession.description}}</p>
+        </div>
+
+        <ion-list *ngIf="session.subsession.speakers && session.subsession.speakers.length">
+            <ion-list-header><ion-label>Speakers</ion-label></ion-list-header>
+
+            <ion-item *ngFor="let speaker of session.subsession.speakers">
+                {{speaker}}
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

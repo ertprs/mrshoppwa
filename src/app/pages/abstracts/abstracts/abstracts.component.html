@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Abstracts</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button class="clear-filter" (click)="clearFilter()" [hidden]="!isFilterDirty">
+                <ion-icon name="close" slot="icon-only"></ion-icon>
+            </ion-button>
+            <ion-button (click)="presentFilter()">
+                <ion-icon ios="options-sharp" md="options" slot="icon-only"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-segment [(ngModel)]="segment" (ionChange)="updateList()">
+            <ion-segment-button value="all">
+                All
+            </ion-segment-button>
+            <ion-segment-button value="favorites">
+                Favorites
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateList()" placeholder="Search"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list [hidden]="abstracts.length === 0">
+        <ion-item-sliding *ngFor="let abstract of abstracts; let i = index" class="ion-text-wrap" #i>
+            <ion-item button (click)="goToAbstractDetail(abstract)">
+                <div class="abstract-item">
+                    <ion-label class="ion-text-wrap">{{abstract.title}}</ion-label>
+                    <ion-note>{{abstract.startDate | date: 'fullDate'}}</ion-note>
+                    <p class="ion-padding-top ion-no-margin">
+                        <ion-icon name="pricetag"></ion-icon>
+                        {{ abstract.type | titlecase }}
+                    </p>
+                </div>
+            </ion-item>
+
+            <ion-item-options>
+                <ion-item-option color="favorite" (click)="addFavorite(i, abstract.$key)" *ngIf="!isInFavorites(abstract.$key)">
+                    Favorite
+                </ion-item-option>
+                <ion-item-option color="danger" (click)="removeFavorite(i, abstract.$key)" *ngIf="isInFavorites(abstract.$key)">
+                    Remove
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+    <ion-list-header [hidden]="abstracts.length > 0">
+        <ion-label>No abstracts Found</ion-label>
+    </ion-list-header>
+
+</ion-content>

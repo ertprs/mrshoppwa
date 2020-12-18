@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>{{member?.firstName}} {{member?.lastName}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-text-center" *ngIf="member">
+        <img class="avatar" [src]="member.avatar" [alt]="member.fullname"><br>
+    </div>
+
+    <div class="ion-padding">
+        <h1>{{member?.firstName}} {{member?.lastName}}</h1>
+        <p>{{member?.affiliation}}</p>
+        <p>{{member?.email}}</p>
+    </div>
+    <ion-list *ngIf="!!member?.bio">
+        <ion-list-header>
+            <ion-label>Biography</ion-label>
+        </ion-list-header>
+        <ion-item class="ion-text-wrap">{{member.bio}}</ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-list-header><ion-label>Contact</ion-label></ion-list-header>
+
+        <ion-item button detail="false" (click)="call(member?.phoneNumber)">
+            <ion-icon name="call" slot="end"></ion-icon>
+            Phone
+        </ion-item>
+        <ion-item button detail="false" (click)="sendEmail(member?.email)">
+            <ion-icon name="mail" slot="end"></ion-icon>
+            Email
+        </ion-item>
+        <ion-item button detail="false" (click)="openLinkedin(member?.linkedIn)">
+            <ion-icon name="logo-linkedin" slot="end"></ion-icon>
+            Linked in
+        </ion-item>
+        <ion-item button detail="false" (click)="openUrl(member?.webpage)">
+            <ion-icon name="globe-outline" slot="end"></ion-icon>
+            Webpage
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+        <ion-title>Login</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="logo">
+        <img src="assets/img/appicon.svg" alt="Ionic logo">
+    </div>
+
+    <form #loginForm="ngForm" novalidate>
+        <ion-list class="ion-padding">
+            <ion-item>
+                <ion-label position="stacked" color="primary">Email</ion-label>
+                <ion-input
+                    [(ngModel)]="login.email"
+                    name="email"
+                    type="email"
+                    #email="ngModel"
+                    spellcheck="false"
+                    autocapitalize="off"
+                    placeholder="test@user.com"
+                    required>
+                </ion-input>
+            </ion-item>
+            <ion-text [hidden]="email.valid || submitted == false" color="danger" class="ion-padding-start">
+                Email is required
+            </ion-text>
+
+            <ion-item>
+                <ion-label position="stacked" color="primary">Password</ion-label>
+                <ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required placeholder="password">
+                </ion-input>
+            </ion-item>
+            <ion-text [hidden]="password.valid || submitted == false" color="danger" class="ion-padding-start">
+                Password is required
+            </ion-text>
+        </ion-list>
+        <p class="ion-padding-start ion-padding-end ion-margin-start">
+            <ion-text>
+                <small>
+                    Use <code>test@user.com</code> with password <code>password</code> or create a new account.
+                </small>
+            </ion-text>
+        </p>
+        <p class="ion-padding ion-margin-start">
+            <ion-text color="danger">
+                {{loginError}}
+            </ion-text>
+        </p>
+
+        <ion-row responsive-sm class="ion-padding">
+            <ion-col>
+                <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">Login</ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button (click)="onSignup()" color="light" expand="block">Signup</ion-button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

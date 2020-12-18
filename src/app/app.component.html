@@ -1,0 +1,64 @@
+<ion-app>
+    <ion-split-pane contentId="content">
+        <ion-menu menuId="loggedOutMenu" side="start" type="overlay" contentId="content">
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+                    <ion-menu-toggle auto-hide="false">
+                        <ion-item button *ngFor="let p of appPages" routerDirection="root" [routerLink]="p.path">
+                            <ion-icon slot="start" [name]="p.icon" routerLinkActive="active-link"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+
+                        <ion-list-header>
+                            <ion-label>Account</ion-label>
+                        </ion-list-header>
+                        <ion-item button *ngFor="let p of loggedOutPages" routerDirection="root" [routerLink]="p.path">
+                            <ion-icon slot="start" [name]="p.icon" routerLinkActive="active-link"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+                    </ion-menu-toggle>
+                </ion-list>
+
+                <div class="ion-padding">
+                    <p>Copyright 2020 Appseed.io<br>
+                        <a (click)="openPrivacyPolicy('http://appseed.io/')">Privacy Policy</a>
+                    </p>
+                    <small>Build:5.0.0</small>
+                </div>
+            </ion-content>
+        </ion-menu>
+
+        <ion-menu menuId="loggedInMenu" side="start" type="overlay" contentId="content">
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+                    <ion-menu-toggle auto-hide="false">
+                        <ion-item button *ngFor="let p of appPages" routerDirection="root" [routerLink]="p.path">
+                            <ion-icon slot="start" [name]="p.icon" routerLinkActive="active-link"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+
+                        <ion-list-header>
+                            <ion-label>Account</ion-label>
+                        </ion-list-header>
+
+                        <ion-item button *ngFor="let p of loggedInPages" (click)="openPage(p)">
+                            <ion-icon slot="start" [name]="p.icon" [color]="isActive(p)"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+                    </ion-menu-toggle>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+        <ion-router-outlet id="content"></ion-router-outlet>
+    </ion-split-pane>
+</ion-app>

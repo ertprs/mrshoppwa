@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+        <ion-title>Account</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-padding ion-text-center" *ngIf="email">
+        <img src="https://www.gravatar.com/avatar?d=mm&s=140" alt="avatar">
+        <h2>{{email}}</h2>
+
+        <ion-button expand="block" (click)="logout()">Logout</ion-button>
+    </div>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Events</ion-title>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-segment [(ngModel)]="segment" (ionChange)="updateList()">
+            <ion-segment-button value="all">
+                All
+            </ion-segment-button>
+            <ion-segment-button value="favorites">
+                Favorites
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+
+    <ion-toolbar color="primary">
+        <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateList()" placeholder="Search"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list [hidden]="events.length === 0">
+        <ion-item-sliding *ngFor="let event of events; let i = index" class="ion-text-wrap" #i>
+            <ion-item button (click)="goToEventDetail(event)">
+                <div class="event-item">
+                    <ion-label>{{event.title}}</ion-label>
+                    <ion-note>{{event.startDate | date: 'fullDate'}} - {{event.endDate | date: 'fullDate'}}</ion-note>
+                </div>
+            </ion-item>
+
+            <ion-item-options>
+                <ion-item-option color="favorite" (click)="addFavorite(i, event.$key)" *ngIf="!isInFavorites(event.$key)">
+                    Favorite
+                </ion-item-option>
+                <ion-item-option color="danger" (click)="removeFavorite(i, event.$key)" *ngIf="isInFavorites(event.$key)">
+                    Remove
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+    <ion-list-header [hidden]="events.length > 0">
+        <ion-label>No events Found</ion-label>
+    </ion-list-header>
+
+</ion-content>
