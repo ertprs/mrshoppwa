@@ -33,7 +33,7 @@ interface PageInterface {
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
-  public sidemenu = 1;
+  public sidemenu = null;
   public showChildren = '';
   public sidemenuLayout1: Array<any>;
   public beginnerMenu: Array<any>;

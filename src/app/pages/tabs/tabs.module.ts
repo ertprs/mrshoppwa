@@ -34,6 +34,10 @@ const routes: Routes = [
         resolve: { isCache: DataResolverService },
       },
       {
+        path: 'woocommerce-products',
+        loadChildren: () => import('../woocommerce/woocommerce-products/woocommerce-products.module').then((m) => m.WoocommerceProductsPageModule),
+      },
+      {
         path: '',
         redirectTo: '/tabs/schedule',
         pathMatch: 'full',

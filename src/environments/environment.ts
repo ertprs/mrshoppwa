@@ -172,7 +172,7 @@ export const environment = {
     {
       title: 'Woocommerce', url: null, icon: 'logo-wordpress',
       children: [
-        { title: 'Products', url: '/woocommerce-products', icon: 'file-tray-full' },
+        { title: 'Products', url: '/tabs/woocommerce-products', icon: 'file-tray-full' },
         { title: 'Product detail', url: '/product-details', icon: 'gift' },
         { title: 'My Orders', url: '/orders', icon: 'pricetags' },
         { title: 'Cart', url: '/cart', icon: 'cart' },
