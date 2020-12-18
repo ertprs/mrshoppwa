@@ -33,9 +33,17 @@ const routes: Routes = [
         loadChildren: () => import('../about/about.module').then((m) => m.AboutPageModule),
         resolve: { isCache: DataResolverService },
       },
+      // {
+      //   path: 'woocommerce-products',
+      //   loadChildren: () => import('../woocommerce/woocommerce-products/woocommerce-products.module').then((m) => m.WoocommerceProductsPageModule),
+      // },
       {
         path: 'woocommerce-products',
-        loadChildren: () => import('../woocommerce/woocommerce-products/woocommerce-products.module').then((m) => m.WoocommerceProductsPageModule),
+        loadChildren: () => import('../layouts/netflix/netflix.module').then(m => m.NetflixPageModule)
+      },
+      {
+        path: 'investments',
+        loadChildren: () => import('../investment/investment.module').then(m => m.Investmentodule)
       },
       {
         path: '',

@@ -35,10 +35,10 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public sidemenu = null;
   public showChildren = '';
-  public sidemenuLayout1: Array<any>;
-  public beginnerMenu: Array<any>;
-  public startupMenu: Array<any>;
-  public proMenu: Array<any>;
+  public sidemenuLayout1: Array<any> = [];
+  public beginnerMenu: Array<any> = [];
+  public startupMenu: Array<any> = [];
+  public proMenu: Array<any> = [];
 
   constructor(
     private platform: Platform,
@@ -56,13 +56,9 @@ export class AppComponent implements OnInit {
     private eventsService: EventsService,
   ) {
     this.initializeApp();
-    this.beginnerMenu = environment.BEGINNER_SIDEMENU;
-    this.startupMenu = environment.STARTUP_SIDEMENU;
-    this.proMenu = environment.PRO_SIDEMENU;
-    this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
-    // this.beginnerMenu = [];
-    // this.startupMenu = [];
-    // this.proMenu = [];
+    // this.beginnerMenu = environment.BEGINNER_SIDEMENU;
+    // this.startupMenu = environment.STARTUP_SIDEMENU;
+    // this.proMenu = environment.PRO_SIDEMENU;
     // this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
   }
 
@@ -123,13 +119,14 @@ export class AppComponent implements OnInit {
 
   appPages: PageInterface[] = [
     { title: 'Schedule', name: 'TabsPage', path: 'tabs/schedule', index: 0, icon: 'calendar' },
+    { title: 'Investments', name: 'TabsPage', path: 'tabs/investments', index: 0, icon: 'calendar' },
     { title: 'Speakers', name: 'TabsPage', path: 'tabs/speakers', index: 1, icon: 'person-circle' },
     { title: 'Map', name: 'TabsPage', path: 'tabs/map', index: 2, icon: 'map' },
     { title: 'About', name: 'TabsPage', path: 'tabs/about', index: 3, icon: 'information-circle' },
   ];
 
   loggedInPages: PageInterface[] = [
-    { title: 'Account', name: 'AccountPage', path: 'account', icon: 'person' },
+    { title: 'Account', name: 'AccountPage', path: 'profile1', icon: 'person' },
     { title: 'Logout', name: 'TabsPage', path: 'logout', icon: 'log-out', logsOut: true },
   ];
 
@@ -146,7 +143,7 @@ export class AppComponent implements OnInit {
       this.navCtrl.navigateRoot('/tabs/schedule');
       this.eventsService.userLoggedOut(false);
     } else {
-      this.navCtrl.navigateRoot('/account');
+      this.navCtrl.navigateRoot(`${page.path}`);
     }
   }
 

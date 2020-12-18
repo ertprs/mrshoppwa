@@ -1,0 +1,45 @@
+<ion-header>
+        <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-button (click)="dismiss()">Cancel</ion-button>
+            </ion-buttons>
+
+            <ion-title>Filter Sessions</ion-title>
+
+            <ion-buttons slot="end">
+                <ion-button (click)="applyFilters()" strong>Done</ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list>
+            <ion-radio-group value="{{ selectedDay }}" (ionChange)="selectedDayChange($event)">
+                <ion-list-header><ion-label>Days</ion-label></ion-list-header>
+                <ion-item detail="false">
+                    <ion-label>All</ion-label>
+                    <ion-radio value="all"></ion-radio>
+                </ion-item>
+
+                <ion-item detail="false" *ngFor="let day of days">
+                    <ion-label>{{ day.date | date: 'fullDate' }}</ion-label>
+                    <ion-radio value="{{ day.$key }}"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-list>
+
+        <ion-list>
+            <ion-radio-group value="{{ selectedSession }}" (ionChange)="sessionsChange($event)">
+                <ion-list-header><ion-label>Sessions</ion-label></ion-list-header>
+                <ion-item detail="false">
+                    <ion-label>All</ion-label>
+                    <ion-radio value="all"></ion-radio>
+                </ion-item>
+
+                <ion-item detail="false" *ngFor="let session of sessions">
+                    <ion-label>{{ session.title }}</ion-label>
+                    <ion-radio value="{{ session.$key }}"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-list>
+    </ion-content>
