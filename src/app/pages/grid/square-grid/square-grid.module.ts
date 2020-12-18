@@ -22,8 +22,8 @@ import { SquareGridPage } from './square-grid.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SquareGridPageRoutingModule
+    SquareGridPageRoutingModule,
   ],
-  declarations: [SquareGridPage]
+  declarations: [SquareGridPage],
 })
 export class SquareGridPageModule {}

@@ -15,8 +15,8 @@ import { InfinitePage } from './infinite.page';
 const routes: Routes = [
   {
     path: '',
-    component: InfinitePage
-  }
+    component: InfinitePage,
+  },
 ];
 
 @NgModule({

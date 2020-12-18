@@ -19,7 +19,7 @@ describe('FluidPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ FluidPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FluidPage);

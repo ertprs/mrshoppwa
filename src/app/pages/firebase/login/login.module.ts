@@ -23,8 +23,8 @@ import { SharableModule } from '@app/components/sharable/sharable.module';
     FormsModule,
     IonicModule,
     SharableModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
   ],
-  declarations: [LoginPage]
+  declarations: [LoginPage],
 })
 export class LoginPageModule { }

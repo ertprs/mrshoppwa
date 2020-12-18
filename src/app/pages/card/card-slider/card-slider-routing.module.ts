@@ -15,8 +15,8 @@ import { CardSliderPage } from './card-slider.page';
 const routes: Routes = [
   {
     path: '',
-    component: CardSliderPage
-  }
+    component: CardSliderPage,
+  },
 ];
 
 @NgModule({

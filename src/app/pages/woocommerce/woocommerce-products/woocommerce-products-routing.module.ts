@@ -14,8 +14,8 @@ import { WoocommerceProductsPage } from './woocommerce-products.page';
 const routes: Routes = [
   {
     path: '',
-    component: WoocommerceProductsPage
-  }
+    component: WoocommerceProductsPage,
+  },
 ];
 
 @NgModule({

@@ -18,7 +18,7 @@ describe('YoutubeHomePlaylistPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ YoutubeHomePlaylistPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(YoutubeHomePlaylistPage);

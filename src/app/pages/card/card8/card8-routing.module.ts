@@ -15,8 +15,8 @@ import { Card8Page } from './card8.page';
 const routes: Routes = [
   {
     path: '',
-    component: Card8Page
-  }
+    component: Card8Page,
+  },
 ];
 
 @NgModule({

@@ -72,7 +72,7 @@ export const Stack = (config) => {
       'throwinend',
       'dragstart',
       'dragmove',
-      'dragend'
+      'dragend',
     ];
 
     // Proxy Card events to the Stack.
@@ -84,7 +84,7 @@ export const Stack = (config) => {
 
     index.push({
       card,
-      element
+      element,
     });
 
     return card;

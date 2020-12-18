@@ -7,7 +7,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
 import { CardService } from '../../services/card/card.service';
@@ -27,7 +26,7 @@ export class Slider3Component implements OnInit {
 
   ngOnInit() {
     this.slides.options = {
-      effect: 'fade'
+      effect: 'fade',
     };
   }
 

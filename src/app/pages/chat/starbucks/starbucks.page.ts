@@ -17,7 +17,7 @@ import { IonContent } from '@ionic/angular';
 })
 export class StarbucksPage implements OnInit {
 
-  @ViewChild('IonContent', { static: true }) content: IonContent
+  @ViewChild('IonContent', { static: true }) content: IonContent;
 
   public Itemdata: Array<any>;
   public msgList: Array<any>;
@@ -29,7 +29,6 @@ export class StarbucksPage implements OnInit {
   public footerJson: Array<any>;
   public show: boolean;
 
-
   constructor() {
     this.msgList = environment.STARTBUCKS_CHAT_DATA;
     this.footerJson = environment.ROSE_FOOTER_JSON;
@@ -39,7 +38,7 @@ export class StarbucksPage implements OnInit {
     this.Itemdata = [
       {
         text: 'Am i being helpful?',
-      }
+      },
     ];
     this.show = false;
     this.User = 'Me';
@@ -54,7 +53,7 @@ export class StarbucksPage implements OnInit {
         userName: this.toUser,
         time: '12:01',
         image: 'assets/chat/chat/chat3.jpg',
-        id: this.msgList.length + 1
+        id: this.msgList.length + 1,
       });
       this.userInput = '';
       this.show = false;
@@ -68,7 +67,7 @@ export class StarbucksPage implements OnInit {
         userName: this.toUser,
         time: '12:01',
         video: 'assets/chat/chat/video.mp4',
-        id: this.msgList.length + 1
+        id: this.msgList.length + 1,
       });
       this.userInput = '';
       this.show = false;
@@ -82,7 +81,7 @@ export class StarbucksPage implements OnInit {
         userName: this.toUser,
         time: '12:01',
         map: { lat: 52.678418, lng: 7.809007 },
-        id: this.msgList.length + 1
+        id: this.msgList.length + 1,
       });
       this.userInput = '';
       this.show = false;
@@ -106,7 +105,7 @@ export class StarbucksPage implements OnInit {
         userAvatar: 'assets/chat/chat/chat3.jpg',
         time: '12:01',
         message: this.userInput,
-        id: this.msgList.length + 1
+        id: this.msgList.length + 1,
       });
       this.userInput = '';
       this.scrollDown();
@@ -124,7 +123,7 @@ export class StarbucksPage implements OnInit {
         userName: this.User,
         userAvatar: 'assets/chat/chat/chat5.jpg',
         time: '12:01',
-        message: 'Sorry, didn\'t get what you said. Can you repeat that please'
+        message: 'Sorry, didn\'t get what you said. Can you repeat that please',
       });
       this.loader = false;
       this.scrollDown();
@@ -151,6 +150,5 @@ export class StarbucksPage implements OnInit {
     $event.preventDefault();
     console.log($event);
   }
-
 
 }

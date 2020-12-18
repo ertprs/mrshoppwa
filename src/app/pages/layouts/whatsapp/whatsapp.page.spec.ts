@@ -19,7 +19,7 @@ describe('WhatsappPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ WhatsappPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(WhatsappPage);

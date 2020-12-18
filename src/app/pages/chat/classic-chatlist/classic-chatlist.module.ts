@@ -21,8 +21,8 @@ import { ClassicChatlistPage } from './classic-chatlist.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ClassicChatlistPageRoutingModule
+    ClassicChatlistPageRoutingModule,
   ],
-  declarations: [ClassicChatlistPage]
+  declarations: [ClassicChatlistPage],
 })
 export class ClassicChatlistPageModule {}

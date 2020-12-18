@@ -22,8 +22,8 @@ import { ArtboardPage } from './artboard.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ArtboardPageRoutingModule
+    ArtboardPageRoutingModule,
   ],
-  declarations: [ArtboardPage]
+  declarations: [ArtboardPage],
 })
 export class ArtboardPageModule {}

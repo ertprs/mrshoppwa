@@ -15,8 +15,8 @@ import { LocalNotificationPage } from './local-notification.page';
 const routes: Routes = [
   {
     path: '',
-    component: LocalNotificationPage
-  }
+    component: LocalNotificationPage,
+  },
 ];
 
 @NgModule({

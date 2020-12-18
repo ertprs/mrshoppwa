@@ -25,8 +25,8 @@ import { AgmDirectionModule } from 'agm-direction';
     IonicModule,
     AgmCoreModule,
     AgmDirectionModule,
-    GooglePlacesPageRoutingModule
+    GooglePlacesPageRoutingModule,
   ],
-  declarations: [GooglePlacesPage]
+  declarations: [GooglePlacesPage],
 })
 export class GooglePlacesPageModule {}

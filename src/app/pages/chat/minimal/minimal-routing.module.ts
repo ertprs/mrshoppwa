@@ -15,8 +15,8 @@ import { MinimalPage } from './minimal.page';
 const routes: Routes = [
   {
     path: '',
-    component: MinimalPage
-  }
+    component: MinimalPage,
+  },
 ];
 
 @NgModule({

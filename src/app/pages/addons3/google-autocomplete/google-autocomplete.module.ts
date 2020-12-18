@@ -26,8 +26,8 @@ import { AgmDirectionModule } from 'agm-direction';
     IonicModule,
     AgmCoreModule,
     AgmDirectionModule,
-    GoogleAutocompletePageRoutingModule
+    GoogleAutocompletePageRoutingModule,
   ],
-  declarations: [GoogleAutocompletePage]
+  declarations: [GoogleAutocompletePage],
 })
 export class GoogleAutocompletePageModule {}

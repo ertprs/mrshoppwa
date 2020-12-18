@@ -22,8 +22,8 @@ import { PaypalWebPage } from './paypal-web.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PaypalWebPageRoutingModule
+    PaypalWebPageRoutingModule,
   ],
-  declarations: [PaypalWebPage]
+  declarations: [PaypalWebPage],
 })
 export class PaypalWebPageModule {}

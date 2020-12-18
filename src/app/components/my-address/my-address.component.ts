@@ -8,7 +8,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
 import { Component, OnInit } from '@angular/core';
 import { environment } from '@env/environment';
 

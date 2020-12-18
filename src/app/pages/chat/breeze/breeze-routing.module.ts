@@ -15,8 +15,8 @@ import { BreezePage } from './breeze.page';
 const routes: Routes = [
   {
     path: '',
-    component: BreezePage
-  }
+    component: BreezePage,
+  },
 ];
 
 @NgModule({

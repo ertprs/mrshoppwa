@@ -22,8 +22,8 @@ import { EventCardPage } from './event-card.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    EventCardPageRoutingModule
+    EventCardPageRoutingModule,
   ],
-  declarations: [EventCardPage]
+  declarations: [EventCardPage],
 })
 export class EventCardPageModule {}

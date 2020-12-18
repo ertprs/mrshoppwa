@@ -20,7 +20,6 @@ export class NetflixPage implements OnInit {
   public netflixMoviesData: any;
   public segmentTab = 'series';
 
-
   constructor() {
     this.netflixMoviesData = environment.NETFLIX_MOVIE_DATA;
     this.netflixSeriesData = environment.NETFLIX_SERIES_DATA;

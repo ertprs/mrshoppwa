@@ -28,7 +28,7 @@ export class BusinessPage implements OnInit {
     time: any;
     message: any;
     upertext: any;
-  }>
+  }>;
   public count = 0;
   public chatSenderData: Array<any>;
 
@@ -83,7 +83,7 @@ export class BusinessPage implements OnInit {
       userAvatar: 'assets/chat/user.jpeg',
       time: '12:01 pm',
       message: this.inputText,
-      upertext: this.inputText
+      upertext: this.inputText,
     });
     this.msgList.push({
       userId: this.toUser,
@@ -91,7 +91,7 @@ export class BusinessPage implements OnInit {
       userAvatar: 'assets/chat/user.jpeg',
       time: '12:01 pm',
       message: otherUser,
-      upertext: otherUser
+      upertext: otherUser,
     });
     this.inputText = '';
     console.log('scrollBottom');

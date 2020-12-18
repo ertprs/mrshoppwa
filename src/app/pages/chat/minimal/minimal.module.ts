@@ -21,8 +21,8 @@ import { MinimalPage } from './minimal.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    MinimalPageRoutingModule
+    MinimalPageRoutingModule,
   ],
-  declarations: [MinimalPage]
+  declarations: [MinimalPage],
 })
 export class MinimalPageModule {}

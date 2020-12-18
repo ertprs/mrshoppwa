@@ -22,8 +22,8 @@ import { ExpandableListPage } from './expandable-list.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ExpandableListPageRoutingModule
+    ExpandableListPageRoutingModule,
   ],
-  declarations: [ExpandableListPage]
+  declarations: [ExpandableListPage],
 })
 export class ExpandableListPageModule {}

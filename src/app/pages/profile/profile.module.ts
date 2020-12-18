@@ -14,15 +14,14 @@ import { IonicModule } from '@ionic/angular';
 import { ProfilePageRoutingModule } from './profile-routing.module';
 import { ProfilePage } from './profile.page';
 
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     SharableModule,
-    ProfilePageRoutingModule
+    ProfilePageRoutingModule,
   ],
-  declarations: [ProfilePage]
+  declarations: [ProfilePage],
 })
 export class ProfilePageModule { }

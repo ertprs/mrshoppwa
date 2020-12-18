@@ -21,8 +21,8 @@ import { PastryPage } from './pastry.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PastryPageRoutingModule
+    PastryPageRoutingModule,
   ],
-  declarations: [PastryPage]
+  declarations: [PastryPage],
 })
 export class PastryPageModule {}

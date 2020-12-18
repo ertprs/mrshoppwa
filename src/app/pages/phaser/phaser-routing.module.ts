@@ -14,8 +14,8 @@ import { PhaserPage } from './phaser.page';
 const routes: Routes = [
   {
     path: '',
-    component: PhaserPage
-  }
+    component: PhaserPage,
+  },
 ];
 
 @NgModule({

@@ -22,8 +22,8 @@ import { CustomfontsPage } from './customfonts.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CustomfontsPageRoutingModule
+    CustomfontsPageRoutingModule,
   ],
-  declarations: [CustomfontsPage]
+  declarations: [CustomfontsPage],
 })
 export class CustomfontsPageModule {}

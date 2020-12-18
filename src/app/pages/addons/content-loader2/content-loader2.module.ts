@@ -22,8 +22,8 @@ import { ContentLoader2Page } from './content-loader2.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ContentLoader2PageRoutingModule
+    ContentLoader2PageRoutingModule,
   ],
-  declarations: [ContentLoader2Page]
+  declarations: [ContentLoader2Page],
 })
 export class ContentLoader2PageModule {}

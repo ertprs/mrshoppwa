@@ -18,7 +18,7 @@ describe('TindericonsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ TindericonsComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TindericonsComponent);

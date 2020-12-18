@@ -15,8 +15,8 @@ import { GridX2Page } from './grid-x2.page';
 const routes: Routes = [
   {
     path: '',
-    component: GridX2Page
-  }
+    component: GridX2Page,
+  },
 ];
 
 @NgModule({

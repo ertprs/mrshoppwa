@@ -19,7 +19,7 @@ describe('NetflixPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ NetflixPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(NetflixPage);

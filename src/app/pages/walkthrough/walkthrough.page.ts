@@ -27,7 +27,7 @@ export class WalkthroughPage implements OnInit {
     public splashScreen: SplashScreen,
     public platform: Platform,
     public route: Router,
-    public menuCtrl: MenuController
+    public menuCtrl: MenuController,
   ) {
 
     this.menuCtrl.enable(false);
@@ -53,6 +53,5 @@ export class WalkthroughPage implements OnInit {
       this.splashScreen.hide();
     });
   }
-
 
 }

@@ -21,7 +21,7 @@ export class StripepaymentPage {
   public paymentAmount: string;
   public currency: string;
   public currencyIcon: string;
-  public stripekey: string
+  public stripekey: string;
   public cardDetails: any;
   public cardNumber: any;
   public cvcnumber: number;
@@ -32,7 +32,7 @@ export class StripepaymentPage {
   constructor(
     public util: UtilService,
     public stripe: Stripe,
-    public http: HttpClient
+    public http: HttpClient,
   ) {
     this.paymentAmount = '3.33';
     this.currency = 'USD';
@@ -70,33 +70,31 @@ export class StripepaymentPage {
     }
   }
 
-
   payWithStripe() {
     this.stripe.setPublishableKey(this.stripekey);
     this.cardDetails = {
       number: this.cardNumber.replace(/\W/gi, ''),
       expMonth: this.month,
       expYear: this.year,
-      cvc: this.cvcnumber
+      cvc: this.cvcnumber,
     };
     console.log('card', this.cardDetails);
     this.stripe.createCardToken(this.cardDetails)
-      .then(token => {
+      .then((token) => {
         console.log(token);
         this.util.presentToast('Stripe token for this payment generated', true, 'bottom', 1500);
 
         this.makePayment(token.id);
       })
-      .catch(error => this.util.presentToast(error, true, 'bottom', 1500));
+      .catch((error) => this.util.presentToast(error, true, 'bottom', 1500));
   }
-
 
   makePayment(token) {
     this.http
       .post('https://us-central1-shoppr-c97a7.cloudfunctions.net/payWithStripe', {
-        token: token.id
+        token: token.id,
       })
-      .subscribe(data => {
+      .subscribe((data) => {
         console.log(data);
         alert();
       });

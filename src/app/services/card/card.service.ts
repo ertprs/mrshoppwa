@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CardService {
 
@@ -26,16 +26,16 @@ export class CardService {
           date: '24 Sep 2019',
           time: '19:30',
           duration: '1h 40min',
-        }
+        },
       ],
       row2: [
         {
           salon: '03',
           row: 'D',
-          seat: '11,12'
-        }
-      ]
-    }
+          seat: '11,12',
+        },
+      ],
+    },
   ];
 
   topSaversproduct = [
@@ -55,8 +55,8 @@ export class CardService {
         { id: 10, off: '12% off', name: 'Tomatoes', image: 'assets/cards/tomatoes.png', qty: '200g+200g+200g', regularPrice: 449, salePrice: '₹392', price: 392, desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', units: 0, status: 'Processing', deliveryCharge: '₹6' },
         { id: 11, off: '27% off', name: 'Carrots', image: 'assets/cards/carrot.jpg', qty: '200g+200g+200g', regularPrice: 435, salePrice: '₹315', price: 315, desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', units: 0, status: 'Delivered', deliveryCharge: '₹6' },
 
-      ]
-    }
+      ],
+    },
   ];
   public cardData: any = [
     {
@@ -100,7 +100,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -118,8 +118,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '1BHK 2baths Residentils',
@@ -159,7 +159,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -177,8 +177,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '1BHK 2baths Residentils',
@@ -219,7 +219,7 @@ export class CardService {
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
 
-            }
+            },
           ],
           image:
             [
@@ -237,8 +237,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '1BHK 2baths Residentils',
@@ -278,7 +278,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -296,8 +296,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '1BHK 2baths Residentils',
@@ -337,7 +337,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -355,8 +355,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '1BHK 2baths Residentils',
@@ -397,7 +397,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -415,10 +415,10 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
-        }
-      ]
+              },
+            ],
+        },
+      ],
     },
     {
       name: '2BHK',
@@ -462,7 +462,7 @@ export class CardService {
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
 
-            }
+            },
           ],
           image:
             [
@@ -480,8 +480,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '2BHK 2baths Residentils',
@@ -522,7 +522,7 @@ export class CardService {
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
 
-            }
+            },
           ],
           image:
             [
@@ -540,8 +540,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '2BHK 2baths Residentils',
@@ -582,7 +582,7 @@ export class CardService {
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
 
-            }
+            },
           ],
           image:
             [
@@ -600,8 +600,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '2BHK 2baths Residentils',
@@ -641,7 +641,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -659,8 +659,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '2BHK 2baths Residentils',
@@ -700,7 +700,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -718,8 +718,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '2BHK 2baths Residentils',
@@ -760,7 +760,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -778,10 +778,10 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
-        }
-      ]
+              },
+            ],
+        },
+      ],
     },
     {
       name: '3BHK',
@@ -825,7 +825,7 @@ export class CardService {
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
 
-            }
+            },
           ],
           image:
             [
@@ -843,8 +843,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '3BHK 2baths Residentils',
@@ -885,7 +885,7 @@ export class CardService {
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
 
-            }
+            },
           ],
           image:
             [
@@ -903,8 +903,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '3BHK 2baths Residentils',
@@ -945,7 +945,7 @@ export class CardService {
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
 
-            }
+            },
           ],
           image:
             [
@@ -963,8 +963,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '3BHK 2baths Residentils',
@@ -1004,7 +1004,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -1022,8 +1022,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '3BHK 2baths Residentils',
@@ -1063,7 +1063,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -1081,8 +1081,8 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
+              },
+            ],
         },
         {
           name: '3BHK 2baths Residentils',
@@ -1123,7 +1123,7 @@ export class CardService {
               specification: 'Arsur Avantika',
               icon: 'assets/icon/note.png',
               more: 'Pallikaranai,Chennai South',
-            }
+            },
           ],
           image:
             [
@@ -1141,11 +1141,11 @@ export class CardService {
               },
               {
                 slide: 'assets/cards/f5.jpg',
-              }
-            ]
-        }
-      ]
-    }
+              },
+            ],
+        },
+      ],
+    },
   ];
   allothers = [
     {
@@ -1156,8 +1156,8 @@ export class CardService {
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/cards/events2.jpg', largeimage: 'assets/cards/events1.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/cards/events3.jpg', largeimage: 'assets/cards/events3.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/cards/events4.jpg', largeimage: 'assets/cards/events5.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
-        { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/cards/events5.jpg', largeimage: 'assets/cards/events2.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] }
-      ]
+        { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/cards/events5.jpg', largeimage: 'assets/cards/events2.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
+      ],
     },
     {
       title: 'Plays',
@@ -1166,8 +1166,8 @@ export class CardService {
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/plays2.jpg', largeimage: 'assets/plays2.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/plays3.jpg', largeimage: 'assets/plays4.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/plays4.jpg', largeimage: 'assets/plays3.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
-        { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/plays5.jpg', largeimage: 'assets/plays1.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] }
-      ]
+        { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/plays5.jpg', largeimage: 'assets/plays1.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
+      ],
     },
     {
       title: 'Sports',
@@ -1176,8 +1176,8 @@ export class CardService {
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/sports2.jpg', largeimage: 'assets/events1.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/sports4.jpg', largeimage: 'assets/events2.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
         { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/sports5.jpg', largeimage: 'assets/events5.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
-        { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/sports8.jpg', largeimage: 'assets/events4.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] }
-      ]
-    }
+        { name: 'Sunburn Arena with Nucleya - Jaipur', image: 'assets/sports8.jpg', largeimage: 'assets/events4.jpg', type: 'Comedy', lang: 'Hindi', duration: '1hr 30mins', age: '15+', fulldate: 'Sat 22 Dec - Sun 27 Jan', month: 'DEC', date: '16', day: 'SUN', price: '250', venues: 'Jaipur | Mumbai | Chennai', crew: { type: 'Artist(s)', people: [{ name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }, { name: 'Kishore Dayani', image: '//in.bmscdn.com/Artist/1057438.jpg' }] }, content: ['Kishore Dayani comes from Bihar. He is a mix of various cultures, which kind of makes him a confused mix of ethnicities.  He is cynical about things which are happening in the society. He at large talks about what has been happening in his life and how day to day things effect him. How being a Bihari, he was a misfit in the fast-paced life of Delhi and how he coped with that.  Watch his as he adds a pinch of sarcasm and a dash of satire in everything that he says and does.  He has recently turned down marriage proposals from Priyanka Chopra and Katrina Kaif. Ungli Mat Kar is something which he says at the end of every conversation.', 'This stand-up special is going to be a great experience.'], list: [{ title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }, { title: 'Terms & Conditions', content: ['Age Limit: 15+', 'Internet handling fee per ticket may be levied. Please check your total amount before payment.', 'Tickets once booked cannot be exchanged or refunded.', 'We recommend that you arrive at least 20 minutes prior at the venue to pick up your physical tickets.'] }] },
+      ],
+    },
   ];
 }

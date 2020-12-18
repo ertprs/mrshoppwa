@@ -15,8 +15,8 @@ import { FullGridPage } from './full-grid.page';
 const routes: Routes = [
   {
     path: '',
-    component: FullGridPage
-  }
+    component: FullGridPage,
+  },
 ];
 
 @NgModule({

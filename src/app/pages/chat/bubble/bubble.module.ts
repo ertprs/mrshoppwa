@@ -22,8 +22,8 @@ import { BubblePage } from './bubble.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    BubblePageRoutingModule
+    BubblePageRoutingModule,
   ],
-  declarations: [BubblePage]
+  declarations: [BubblePage],
 })
 export class BubblePageModule {}

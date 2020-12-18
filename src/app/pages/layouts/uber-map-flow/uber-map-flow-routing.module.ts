@@ -14,8 +14,8 @@ import { UberMapFlowPage } from './uber-map-flow.page';
 const routes: Routes = [
   {
     path: '',
-    component: UberMapFlowPage
-  }
+    component: UberMapFlowPage,
+  },
 ];
 
 @NgModule({

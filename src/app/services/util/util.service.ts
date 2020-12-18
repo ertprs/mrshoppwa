@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/auth';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UtilService {
   public fooSubject = new Subject<any>();
@@ -15,15 +15,15 @@ export class UtilService {
       banner: 'ca-app-pub-3940256099942544/6300978111', // replace with your adMob ID
       interstitial: 'ca-app-pub-3940256099942544/1033173712', // replace with your adMob ID
       interstitialVideo: 'ca-app-pub-3940256099942544/8691691433', // replace with your adMob ID
-      reward: 'ca-app-pub-3940256099942544/5224354917' // replace with your adMob ID
+      reward: 'ca-app-pub-3940256099942544/5224354917', // replace with your adMob ID
     },
     ios: {
       banner: 'ca-app-pub-3940256099942544/2934735716',  // replace with your adMob ID
       interstitial: 'ca-app-pub-3940256099942544/4411468910', // replace with your adMob ID
       interstitialVideo: 'ca-app-pub-3940256099942544/5135589807', // replace with your adMob ID
-      reward: 'ca-app-pub-3940256099942544/1712485313' // replace with your adMob ID
-    }
-  }
+      reward: 'ca-app-pub-3940256099942544/1712485313', // replace with your adMob ID
+    },
+  };
   userid: BehaviorSubject<string> = new BehaviorSubject<string>('');
   constructor(
     public http: HttpClient,
@@ -32,13 +32,13 @@ export class UtilService {
     public router: Router,
     public toastController: ToastController,
     public nav: NavController,
-    public alertController: AlertController
+    public alertController: AlertController,
   ) {
     this.getUserId();
   }
 
   getUserId() {
-    this.fireAuth.auth.onAuthStateChanged(user => {
+    this.fireAuth.auth.onAuthStateChanged((user) => {
       if (user) {
         this.userid.next(user.uid);
       }
@@ -59,7 +59,6 @@ export class UtilService {
     return re.test(String(email).toLowerCase());
   }
 
-
   async presentToast(message, showButton, position, duration) {
     const toast = await this.toastController.create({
       message,
@@ -69,15 +68,14 @@ export class UtilService {
           role: 'cancel',
           handler: () => {
             console.log('Close clicked');
-          }
-        }
+          },
+        },
       ],
       position,
-      duration
+      duration,
     });
     toast.present();
   }
-
 
   removeConform(): Promise<any> {
     // eslint-disable-next-line no-async-promise-executor
@@ -93,15 +91,15 @@ export class UtilService {
             handler: (cancel) => {
 
               resolve('cancel');
-            }
+            },
           }, {
             text: 'Okay',
             handler: (ok) => {
 
               resolve('ok');
-            }
-          }
-        ]
+            },
+          },
+        ],
       });
 
       alert.present();
@@ -111,7 +109,7 @@ export class UtilService {
   async openLoader() {
     const loading = await this.loadingController.create({
       message: 'Please Wait ...',
-      duration: 2000
+      duration: 2000,
     });
     await loading.present();
   }
@@ -125,7 +123,7 @@ export class UtilService {
       const name = _imagePath.split('/');
       this.makeFileIntoBlob(_imagePath, name[name.length - 1]).then((image) => {
         resolve({ url: window.URL.createObjectURL(image), nativeUrl: _imagePath });
-      }).catch(_ => {
+      }).catch((_) => {
         // eslint-disable-next-line prefer-promise-reject-errors
         reject();
 

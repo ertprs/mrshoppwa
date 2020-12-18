@@ -35,10 +35,10 @@ export class RefreshPage implements OnInit {
         event.target.complete();
       }, 1000);
     } else {
-      this.util.getApiResponse().subscribe(data => {
+      this.util.getApiResponse().subscribe((data) => {
         console.log(data);
         const result = data['result'];
-        result.forEach(element => {
+        result.forEach((element) => {
           this.loadedData.unshift(element);
         });
         console.log('Async operation has ended');

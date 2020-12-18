@@ -37,14 +37,14 @@ export class ProductDetailsPage implements OnInit {
     public fun: FunctionService,
     public dataService: DataServicesService,
     public storage: Storage,
-    public route: Router
+    public route: Router,
   ) {
     console.log('Cannot find module.');
     this.segment = '';
     this.index = 0;
     this.activedRoute.params.subscribe((params) => {
       console.log('params', params);
-      this.woocommerceService.getProduct(params.id).then(proData => {
+      this.woocommerceService.getProduct(params.id).then((proData) => {
         this.product = proData;
         console.log('product', this.product);
       });
@@ -56,12 +56,12 @@ export class ProductDetailsPage implements OnInit {
   }
 
   ngOnInit() {
-    this.fun.cartItems.subscribe(val => {
+    this.fun.cartItems.subscribe((val) => {
       this.cartItems = val;
     });
   }
   async change() {
-    await this.slides.getActiveIndex().then(d => this.index = d);
+    await this.slides.getActiveIndex().then((d) => this.index = d);
     this.segment = this.productData[this.index].title;
     this.drag();
   }
@@ -75,17 +75,17 @@ export class ProductDetailsPage implements OnInit {
   }
 
   goToCart() {
-    this.storage.get(`product_${this.product.id}`).then(async productDetails => {
+    this.storage.get(`product_${this.product.id}`).then(async (productDetails) => {
       if (productDetails) {
         const toast = await this.toast.create({
           message: 'Item already in Cart',
-          duration: 2000
+          duration: 2000,
         });
         toast.present();
       } else {
         const toast = await this.toast.create({
           message: 'Added to Cart',
-          duration: 2000
+          duration: 2000,
         });
         toast.present();
         this.storage
@@ -120,6 +120,5 @@ export class ProductDetailsPage implements OnInit {
   cartPage() {
     this.route.navigate(['cart']);
   }
-
 
 }

@@ -24,8 +24,8 @@ import { SharableModule } from '@app/components/sharable/sharable.module';
     FormsModule,
     IonicModule,
     SharableModule,
-    InstaPageRoutingModule
+    InstaPageRoutingModule,
   ],
-  declarations: [InstaPage]
+  declarations: [InstaPage],
 })
 export class InstaPageModule { }

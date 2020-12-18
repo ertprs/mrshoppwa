@@ -23,8 +23,8 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     IonicModule,
     AgmCoreModule,
-    ClassicPageRoutingModule
+    ClassicPageRoutingModule,
   ],
-  declarations: [ClassicPage]
+  declarations: [ClassicPage],
 })
 export class ClassicPageModule {}

@@ -32,7 +32,7 @@ export class InfinitePage implements OnInit {
 
   loadData(event) {
     this.util.infiniteData().subscribe((data: Array<any>) => {
-      data.forEach(element => {
+      data.forEach((element) => {
         this.loadedData.unshift(element);
       });
       event.target.complete();

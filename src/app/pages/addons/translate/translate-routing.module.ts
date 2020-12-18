@@ -15,8 +15,8 @@ import { TranslatePage } from './translate.page';
 const routes: Routes = [
   {
     path: '',
-    component: TranslatePage
-  }
+    component: TranslatePage,
+  },
 ];
 
 @NgModule({

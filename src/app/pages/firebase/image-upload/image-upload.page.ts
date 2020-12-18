@@ -31,7 +31,7 @@ export class ImageUploadPage implements OnInit {
     public util: UtilService,
     private actionCtrl: ActionSheetController,
     private camera: Camera,
-    private storageServ: StorageService
+    private storageServ: StorageService,
   ) { }
 
   ionViewDidEnter() {
@@ -40,9 +40,9 @@ export class ImageUploadPage implements OnInit {
   }
 
   ngOnInit() {
-    this.util.userid.subscribe(data => {
+    this.util.userid.subscribe((data) => {
       console.log('data', data);
-      this.firestoreServ.getImages().subscribe(imgList => {
+      this.firestoreServ.getImages().subscribe((imgList) => {
         this.imageList = imgList;
         console.log('imgList', imgList);
       });
@@ -58,15 +58,15 @@ export class ImageUploadPage implements OnInit {
           cssClass: 'secondary',
           handler: () => {
             this.deleteData(index);
-          }
+          },
         }, {
           text: 'Cancel',
           handler: () => {
             console.log('Cancel');
 
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
 
     await alert.present();
@@ -80,21 +80,21 @@ export class ImageUploadPage implements OnInit {
           cssClass: 'buttonCss',
           handler: () => {
             this.openCamera();
-          }
+          },
         }, {
           text: 'Pick From Gallery',
           handler: () => {
             this.openGallery();
-          }
+          },
         }, {
           text: 'Cancel',
           role: 'cancel',
           cssClass: 'buttonCss_Cancel',
           handler: () => {
             console.log('cancel');
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     await action.present();
   }
@@ -104,23 +104,23 @@ export class ImageUploadPage implements OnInit {
       quality: 100,
       destinationType: this.camera.DestinationType.FILE_URI,
       encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE
+      mediaType: this.camera.MediaType.PICTURE,
     };
     this.camera.getPicture(options).then((url) => {
       const name = UUID.UUID();
       // let name = url.split('/');
-      this.util.makeFileIntoBlob(url, name).then(imageData => {
+      this.util.makeFileIntoBlob(url, name).then((imageData) => {
         this.util.openLoader();
-        this.storageServ.uploadContent(imageData, name).then(success => {
+        this.storageServ.uploadContent(imageData, name).then((success) => {
           this.util.closeLoading();
           this.util.presentToast('image uploded', true, 'bottom', 2100);
 
-        }).catch(err => {
+        }).catch((err) => {
           this.util.closeLoading();
           this.util.presentToast(`${err}`, true, 'bottom', 2100);
         });
       });
-    }).catch(err => { console.log(err); });
+    }).catch((err) => { console.log(err); });
   }
 
   public deleteData(id) {
@@ -139,18 +139,18 @@ export class ImageUploadPage implements OnInit {
     };
     this.camera.getPicture(options).then((url) => {
       const name = UUID.UUID();
-      this.util.makeFileIntoBlob(url, name).then(imageData => {
+      this.util.makeFileIntoBlob(url, name).then((imageData) => {
 
         this.util.openLoader();
-        this.storageServ.uploadContent(imageData, name).then(response => {
+        this.storageServ.uploadContent(imageData, name).then((response) => {
           this.util.closeLoading();
           this.util.presentToast('image uploded', true, 'bottom', 2100);
-        }).catch(err => {
+        }).catch((err) => {
           this.util.closeLoading();
           this.util.presentToast(`${err}`, true, 'bottom', 2100);
         });
       });
-    }).catch(err => { console.log(err); });
+    }).catch((err) => { console.log(err); });
   }
 
 }

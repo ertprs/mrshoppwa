@@ -18,7 +18,7 @@ describe('InstaTabsPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ InstaTabsPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(InstaTabsPage);

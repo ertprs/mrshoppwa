@@ -21,8 +21,8 @@ import { BlogsPage } from './blogs.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    BlogsPageRoutingModule
+    BlogsPageRoutingModule,
   ],
-  declarations: [BlogsPage]
+  declarations: [BlogsPage],
 })
 export class BlogsPageModule {}

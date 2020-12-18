@@ -29,22 +29,22 @@ export class DatetimeComponent implements OnInit {
       'ons',
       'tor',
       'fre',
-      'l\u00f8r'
+      'l\u00f8r',
     ];
 
     this.customPickerOptions = {
       buttons: [
         {
           text: 'Save',
-          handler: () => console.log('Clicked Save!')
+          handler: () => console.log('Clicked Save!'),
         }, {
           text: 'Log',
           handler: () => {
             console.log('Clicked Log. Do not Dismiss.');
             return false;
-          }
-        }
-      ]
+          },
+        },
+      ],
     };
   }
 

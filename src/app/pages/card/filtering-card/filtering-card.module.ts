@@ -22,8 +22,8 @@ import { FilteringCardPage } from './filtering-card.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FilteringCardPageRoutingModule
+    FilteringCardPageRoutingModule,
   ],
-  declarations: [FilteringCardPage]
+  declarations: [FilteringCardPage],
 })
 export class FilteringCardPageModule {}

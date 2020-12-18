@@ -22,8 +22,8 @@ import { MovieTicketPage } from './movie-ticket.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    MovieTicketPageRoutingModule
+    MovieTicketPageRoutingModule,
   ],
-  declarations: []
+  declarations: [],
 })
 export class MovieTicketPageModule { }

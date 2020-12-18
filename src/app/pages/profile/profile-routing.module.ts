@@ -15,8 +15,8 @@ import { ProfilePage } from './profile.page';
 const routes: Routes = [
   {
     path: '',
-    component: ProfilePage
-  }
+    component: ProfilePage,
+  },
 ];
 
 @NgModule({

@@ -21,7 +21,7 @@ export class GoogleLoginComponent implements OnInit {
   @Output() accessToken = new EventEmitter<{ idToken?: string; accessToken?: string; isBrowser?: boolean; }>();
   constructor(
     private platform: Platform,
-    private google: GooglePlus
+    private google: GooglePlus,
   ) { }
 
   ngOnInit() { }
@@ -32,7 +32,7 @@ export class GoogleLoginComponent implements OnInit {
       if (this.platform.is('android')) {
         params = {
           webClientId: environment.GOOGLE_WEBCLIENTID, //  webclientID 'string'
-          offline: true
+          offline: true,
         };
       } else {
         params = {};

@@ -32,7 +32,7 @@ export class ApplepayPage implements OnInit {
   constructor(
     public applePay: ApplePay,
     public pltform: Platform,
-    public alertController: AlertController
+    public alertController: AlertController,
   ) {
     if (this.pltform.is('ios')) {
       this.disabledButton = false;
@@ -70,9 +70,9 @@ export class ApplepayPage implements OnInit {
         shippingAddressRequirement: this.shippingAddressRequirement,
         shippingType: this.shippingType,
         merchantCapabilities: this.merchantCapabilities,
-        supportedNetworks: this.supportedNetworks
+        supportedNetworks: this.supportedNetworks,
       };
-      this.applePay.makePaymentRequest(order).then(message => {
+      this.applePay.makePaymentRequest(order).then((message) => {
         console.log(message);
         this.applePay.completeLastTransaction('success');
       }).catch((error) => {
@@ -105,11 +105,10 @@ export class ApplepayPage implements OnInit {
       header: 'Alert',
       subHeader: 'Ionic 5 Apple Pay',
       message: msg,
-      buttons: ['OK']
+      buttons: ['OK'],
     });
 
     await alert.present();
   }
-
 
 }

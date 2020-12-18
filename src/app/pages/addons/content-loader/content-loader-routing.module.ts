@@ -15,8 +15,8 @@ import { ContentLoaderPage } from './content-loader.page';
 const routes: Routes = [
   {
     path: '',
-    component: ContentLoaderPage
-  }
+    component: ContentLoaderPage,
+  },
 ];
 
 @NgModule({

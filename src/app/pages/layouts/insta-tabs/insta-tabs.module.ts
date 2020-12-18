@@ -21,8 +21,8 @@ import { InstaTabsPage } from './insta-tabs.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    InstaTabsPageRoutingModule
+    InstaTabsPageRoutingModule,
   ],
-  declarations: [InstaTabsPage]
+  declarations: [InstaTabsPage],
 })
 export class InstaTabsPageModule {}

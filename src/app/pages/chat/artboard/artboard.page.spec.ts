@@ -19,7 +19,7 @@ describe('ArtboardPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ArtboardPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ArtboardPage);

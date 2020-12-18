@@ -8,7 +8,7 @@ import Direction from './direction';
 
 import {
   elementChildren,
-  isTouchDevice
+  isTouchDevice,
 } from './utilities';
 
 declare var global: any;
@@ -167,7 +167,7 @@ const makeConfig = (config = {}) => {
     allowedDirections: [
       Direction.RIGHT,
       Direction.LEFT,
-      Direction.UP
+      Direction.UP,
     ],
     isThrowOut: isThrowOut,
     maxRotation: 20,
@@ -178,7 +178,7 @@ const makeConfig = (config = {}) => {
     throwOutDistance: throwOutDistance,
     transform: transform,
     sortCards: false,
-    prependCards: false
+    prependCards: false,
   };
 
   return _.assign({}, defaultConfig, config);
@@ -222,7 +222,7 @@ const Card = (stack, targetElement) => {
     lastThrow = {};
     lastTranslate = {
       coordinateX: 0,
-      coordinateY: 0
+      coordinateY: 0,
     };
 
     /* Mapping directions to event names */
@@ -245,10 +245,10 @@ const Card = (stack, targetElement) => {
         [
           Hammer.Pan,
           {
-            threshold: 2
-          }
-        ]
-      ]
+            threshold: 2,
+          },
+        ],
+      ],
     });
 
     if (config.sortCards) {
@@ -265,7 +265,7 @@ const Card = (stack, targetElement) => {
       }
 
       eventEmitter.trigger('dragstart', {
-        target: targetElement
+        target: targetElement,
       });
 
       currentX = 0;
@@ -297,7 +297,7 @@ const Card = (stack, targetElement) => {
         coordinateX,
         coordinateY,
         targetElement,
-        config.throwOutConfidence(coordinateX, coordinateY, targetElement)
+        config.throwOutConfidence(coordinateX, coordinateY, targetElement),
       );
 
       // Not really sure about computing direction here and filtering on directions here.
@@ -311,7 +311,7 @@ const Card = (stack, targetElement) => {
       }
 
       eventEmitter.trigger('dragend', {
-        target: targetElement
+        target: targetElement,
       });
     });
 
@@ -325,7 +325,7 @@ const Card = (stack, targetElement) => {
       targetElement.addEventListener('touchend', () => {
         if (isDraging && !isPanning) {
           eventEmitter.trigger('dragend', {
-            target: targetElement
+            target: targetElement,
           });
         }
       }, { passive: true });
@@ -363,7 +363,7 @@ const Card = (stack, targetElement) => {
 
         if (isDraging && !isPanning) {
           eventEmitter.trigger('dragend', {
-            target: targetElement
+            target: targetElement,
           });
         }
       }, { passive: true });
@@ -386,7 +386,7 @@ const Card = (stack, targetElement) => {
     springThrowIn.addListener({
       onSpringAtRest: () => {
         eventEmitter.trigger('throwinend', {
-          target: targetElement
+          target: targetElement,
         });
       },
       onSpringUpdate: (spring) => {
@@ -395,13 +395,13 @@ const Card = (stack, targetElement) => {
         const coordianteY = rebound.util.mapValueInRange(value, 0, 1, lastThrow.fromY, 0);
 
         onSpringUpdate(coordianteX, coordianteY);
-      }
+      },
     });
 
     springThrowOut.addListener({
       onSpringAtRest: () => {
         eventEmitter.trigger('throwoutend', {
-          target: targetElement
+          target: targetElement,
         });
       },
       onSpringUpdate: (spring) => {
@@ -422,7 +422,7 @@ const Card = (stack, targetElement) => {
         }
 
         onSpringUpdate(coordianteX, coordianteY);
-      }
+      },
     });
 
     /**
@@ -448,7 +448,7 @@ const Card = (stack, targetElement) => {
         offset: coordinateX,
         target: targetElement,
         throwDirection: computeDirection(coordinateX, coordianteY, config.allowedDirections),
-        throwOutConfidence: config.throwOutConfidence(coordinateX, coordianteY, targetElement)
+        throwOutConfidence: config.throwOutConfidence(coordinateX, coordianteY, targetElement),
       });
     };
 
@@ -488,7 +488,7 @@ const Card = (stack, targetElement) => {
 
         eventEmitter.trigger('throwin', {
           target: targetElement,
-          throwDirection: lastThrow.direction
+          throwDirection: lastThrow.direction,
         });
       } else if (where === THROW_OUT) {
         appendToParent(targetElement);
@@ -497,13 +497,13 @@ const Card = (stack, targetElement) => {
 
         eventEmitter.trigger('throwout', {
           target: targetElement,
-          throwDirection: lastThrow.direction
+          throwDirection: lastThrow.direction,
         });
 
         /* Emits more accurate events about specific directions */
         eventEmitter.trigger(throwDirectionToEventName[lastThrow.direction], {
           target: targetElement,
-          throwDirection: lastThrow.direction
+          throwDirection: lastThrow.direction,
         });
       } else {
         throw new Error('Invalid throw event.');

@@ -18,7 +18,7 @@ describe('CartPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ CartPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CartPage);

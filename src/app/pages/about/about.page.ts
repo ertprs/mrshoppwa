@@ -6,7 +6,6 @@ import { EmailService } from '@app/services/common/email.service';
 import { MapsService } from '@app/services/common/maps.service';
 import { appTitle } from 'config/config';
 
-
 @Component({
   selector: 'app-about',
   templateUrl: './about.page.html',

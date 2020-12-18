@@ -19,7 +19,7 @@ describe('FilteringCardPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ FilteringCardPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FilteringCardPage);

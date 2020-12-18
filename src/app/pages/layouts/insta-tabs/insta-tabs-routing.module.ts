@@ -20,35 +20,35 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../insta/insta.module').then(m => m.InstaPageModule)
-          }
-        ]
+            loadChildren: () => import('../insta/insta.module').then((m) => m.InstaPageModule),
+          },
+        ],
       },
       {
         path: 'notification',
         children: [
           {
             path: '',
-            loadChildren: () => import('../insta/insta.module').then(m => m.InstaPageModule)
-          }
-        ]
+            loadChildren: () => import('../insta/insta.module').then((m) => m.InstaPageModule),
+          },
+        ],
       },
       {
         path: 'profile',
         children: [
           {
             path: '',
-            loadChildren: () => import('../instaprofile/instaprofile.module').then(m => m.InstaprofilePageModule)
-          }
-        ]
-      }
-    ]
+            loadChildren: () => import('../instaprofile/instaprofile.module').then((m) => m.InstaprofilePageModule),
+          },
+        ],
+      },
+    ],
   },
   {
     path: '',
     redirectTo: '/home',
-    pathMatch: 'full'
-  }
+    pathMatch: 'full',
+  },
 ];
 // const routes: Routes = [
 //   {

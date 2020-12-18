@@ -5,7 +5,7 @@ import { Card } from '../interfaces/swing';
 
 @Directive({
   // tslint:disable-next-line:directive-selector
-  selector: '[swingCard]'
+  selector: '[swingCard]',
 })
 export class SwingCardDirective implements OnInit {
   public card: Card;

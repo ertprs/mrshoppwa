@@ -21,8 +21,8 @@ import { ApplepayPage } from './applepay.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ApplepayPageRoutingModule
+    ApplepayPageRoutingModule,
   ],
-  declarations: [ApplepayPage]
+  declarations: [ApplepayPage],
 })
 export class ApplepayPageModule {}

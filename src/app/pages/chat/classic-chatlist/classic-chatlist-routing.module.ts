@@ -14,8 +14,8 @@ import { ClassicChatlistPage } from './classic-chatlist.page';
 const routes: Routes = [
   {
     path: '',
-    component: ClassicChatlistPage
-  }
+    component: ClassicChatlistPage,
+  },
 ];
 
 @NgModule({

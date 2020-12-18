@@ -18,7 +18,7 @@ describe('RosePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ RosePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(RosePage);

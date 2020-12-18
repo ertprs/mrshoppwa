@@ -21,8 +21,8 @@ import { ElegancePage } from './elegance.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ElegancePageRoutingModule
+    ElegancePageRoutingModule,
   ],
-  declarations: [ElegancePage]
+  declarations: [ElegancePage],
 })
 export class ElegancePageModule {}

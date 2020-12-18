@@ -15,8 +15,8 @@ import { ImageUploadPage } from './image-upload.page';
 const routes: Routes = [
   {
     path: '',
-    component: ImageUploadPage
-  }
+    component: ImageUploadPage,
+  },
 ];
 
 @NgModule({

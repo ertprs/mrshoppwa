@@ -22,8 +22,8 @@ import { ImageUploadPage } from './image-upload.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ImageUploadPageRoutingModule
+    ImageUploadPageRoutingModule,
   ],
-  declarations: [ImageUploadPage]
+  declarations: [ImageUploadPage],
 })
 export class ImageUploadPageModule {}

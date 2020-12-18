@@ -15,8 +15,8 @@ import { MapDirectionPage } from './map-direction.page';
 const routes: Routes = [
   {
     path: '',
-    component: MapDirectionPage
-  }
+    component: MapDirectionPage,
+  },
 ];
 
 @NgModule({

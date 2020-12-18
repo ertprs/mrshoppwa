@@ -28,10 +28,9 @@ export class SweetAlertPage {
       title: 'Good job!',
       text: 'You clicked the button!',
       icon: 'success',
-      heightAuto: false
+      heightAuto: false,
     });
   }
-
 
   basicMessage() {
     Swal.fire('Welcome To Enappd');
@@ -43,7 +42,7 @@ export class SweetAlertPage {
       icon: 'error',
       title: 'Oops...',
       text: 'Something went wrong!',
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -52,7 +51,7 @@ export class SweetAlertPage {
       title: 'Oops...',
       text: 'Something went wrong!',
       icon: 'error',
-      heightAuto: false
+      heightAuto: false,
     });
   }
   modalWithTitleError() {
@@ -61,7 +60,7 @@ export class SweetAlertPage {
       title: 'Oops...',
       text: 'Something went wrong!',
       footer: '<a href>Why do I have this issue?</a>',
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -70,7 +69,7 @@ export class SweetAlertPage {
       imageUrl: 'http://placekitten.com/300/300',
       imageHeight: 300,
       imageAlt: 'A tall image',
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -91,10 +90,9 @@ export class SweetAlertPage {
       cancelButtonText:
         '<i class="fa fa-thumbs-down"></i> Nope!',
       cancelButtonAriaLabel: 'Thumbs down',
-      heightAuto: false
+      heightAuto: false,
     });
   }
-
 
   customTopEnd() {
     Swal.fire({
@@ -103,7 +101,7 @@ export class SweetAlertPage {
       title: 'Your work has been saved',
       showConfirmButton: false,
       timer: 1500,
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -114,7 +112,7 @@ export class SweetAlertPage {
       title: 'Your work has been saved',
       showConfirmButton: true,
       timer: 1500,
-      heightAuto: false
+      heightAuto: false,
     });
   }
   customBottom() {
@@ -124,7 +122,7 @@ export class SweetAlertPage {
       title: 'Your work has been saved',
       showConfirmButton: false,
       timer: 1500,
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -132,12 +130,12 @@ export class SweetAlertPage {
     Swal.fire({
       title: 'Custom animation with Animate.css',
       showClass: {
-        popup: 'animated fadeInDown faster'
+        popup: 'animated fadeInDown faster',
       },
       hideClass: {
-        popup: 'animated fadeOutUp faster'
+        popup: 'animated fadeOutUp faster',
       },
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -146,12 +144,12 @@ export class SweetAlertPage {
       title: 'Custom animation with Animate.css using swing Effect',
       animation: false,
       showClass: {
-        popup: 'animated fadeInDown faster'
+        popup: 'animated fadeInDown faster',
       },
       hideClass: {
-        popup: 'animated fadeOutUp faster'
+        popup: 'animated fadeOutUp faster',
       },
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -160,12 +158,12 @@ export class SweetAlertPage {
       title: 'Custom animation with Animate.css using jello Effect',
       animation: false,
       showClass: {
-        popup: 'animated jello faster'
+        popup: 'animated jello faster',
       },
       hideClass: {
-        popup: 'animated jello faster'
+        popup: 'animated jello faster',
       },
-      heightAuto: false
+      heightAuto: false,
     });
   }
   animationFlip() {
@@ -173,12 +171,12 @@ export class SweetAlertPage {
       title: 'Custom animation with Animate.css using flip Effect',
       animation: false,
       showClass: {
-        popup: 'animated flip faster'
+        popup: 'animated flip faster',
       },
       hideClass: {
-        popup: 'animated flip faster'
+        popup: 'animated flip faster',
       },
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -191,13 +189,13 @@ export class SweetAlertPage {
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       heightAuto: false,
-      confirmButtonText: 'Yes, delete it!'
+      confirmButtonText: 'Yes, delete it!',
     }).then((result) => {
       if (result.value) {
         Swal.fire(
           'Deleted!',
           'Your file has been deleted.',
-          'success'
+          'success',
         );
       }
     });
@@ -207,7 +205,7 @@ export class SweetAlertPage {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         confirmButton: 'btn btn-success',
-        cancelButton: 'btn btn-danger'
+        cancelButton: 'btn btn-danger',
       },
       buttonsStyling: true,
     });
@@ -220,13 +218,13 @@ export class SweetAlertPage {
       confirmButtonText: 'Yes, delete it!',
       cancelButtonText: 'No, cancel!',
       heightAuto: false,
-      reverseButtons: true
+      reverseButtons: true,
     }).then((result) => {
       if (result.value) {
         swalWithBootstrapButtons.fire(
           'Deleted!',
           'Your file has been deleted.',
-          'success'
+          'success',
         );
       } else if (
         // Read more about handling dismissals
@@ -235,7 +233,7 @@ export class SweetAlertPage {
         swalWithBootstrapButtons.fire(
           'Cancelled',
           'Your imaginary file is safe :)',
-          'error'
+          'error',
         );
       }
     });
@@ -250,7 +248,7 @@ export class SweetAlertPage {
       imageHeight: 200,
       imageAlt: 'Custom image',
       animation: false,
-      heightAuto: false
+      heightAuto: false,
     });
   }
 
@@ -259,7 +257,7 @@ export class SweetAlertPage {
       title: 'Submit your Github username',
       input: 'text',
       inputAttributes: {
-        autocapitalize: 'off'
+        autocapitalize: 'off',
       },
       showCancelButton: true,
       confirmButtonText: 'Look up',
@@ -267,23 +265,23 @@ export class SweetAlertPage {
       showLoaderOnConfirm: true,
       preConfirm: (login) => {
         return fetch(`//api.github.com/users/${login}`)
-          .then(response => {
+          .then((response) => {
             if (!response.ok) {
               throw new Error(response.statusText);
             }
             return response.json();
           })
-          .catch(error => {
+          .catch((error) => {
             Swal.showValidationMessage(`Request failed: ${error}`);
           });
       },
-      allowOutsideClick: () => !Swal.isLoading()
+      allowOutsideClick: () => !Swal.isLoading(),
     }).then((result) => {
       if (result.value) {
         Swal.fire({
           title: `${result.value.login}'s avatar`,
           imageUrl: result.value.avatar_url,
-          heightAuto: false
+          heightAuto: false,
         });
       }
     });
@@ -304,19 +302,18 @@ export class SweetAlertPage {
         heightAuto: false,
         preConfirm: () => {
           return fetch(ipAPI)
-            .then(response => response.json())
-            .then(data => Swal.insertQueueStep(data.ip))
+            .then((response) => response.json())
+            .then((data) => Swal.insertQueueStep(data.ip))
             .catch(() => {
               Swal.insertQueueStep({
                 icon: 'error',
-                title: 'Unable to get your public IP'
+                title: 'Unable to get your public IP',
               });
             });
-        }
-      }
+        },
+      },
     ]);
   }
-
 
   timerFunction() {
     let timerInterval;
@@ -380,9 +377,8 @@ export class SweetAlertPage {
       },
       onClose: () => {
         clearInterval(timerInterval);
-      }
+      },
     });
   }
-
 
 }

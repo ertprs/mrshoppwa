@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 import { AgmCoreModule } from '@agm/core';
-import { AgmDirectionModule } from 'agm-direction'
+import { AgmDirectionModule } from 'agm-direction';
 import { UberMapFlowPageRoutingModule } from './uber-map-flow-routing.module';
 
 import { UberMapFlowPage } from './uber-map-flow.page';
@@ -24,8 +24,8 @@ import { UberMapFlowPage } from './uber-map-flow.page';
     IonicModule,
     AgmCoreModule,
     AgmDirectionModule,
-    UberMapFlowPageRoutingModule
+    UberMapFlowPageRoutingModule,
   ],
-  declarations: [UberMapFlowPage]
+  declarations: [UberMapFlowPage],
 })
 export class UberMapFlowPageModule { }

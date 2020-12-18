@@ -26,7 +26,7 @@ export class SignupPage implements OnInit {
   constructor(
     public util: UtilService,
     private menuCtrl: MenuController,
-    private authServ: AuthenticationService
+    private authServ: AuthenticationService,
   ) {
     this.firstName = '';
     this.lastName = '';
@@ -44,10 +44,10 @@ export class SignupPage implements OnInit {
 
   signup() {
     if (this.firstName !== '' && this.lastName !== '' && this.email !== '' && this.password !== '' && this.util.validateEmail(this.email)) {
-      this.authServ.createAccount(this.email, this.password).then(userData => {
+      this.authServ.createAccount(this.email, this.password).then((userData) => {
         this.util.presentToast('Thanks for Signup', true, 'bottom', 2100);
         this.util.navigate('', false);
-      }).catch(err => {
+      }).catch((err) => {
         if (err) {
           this.util.presentToast(`${err}`, true, 'bottom', 2100);
         }

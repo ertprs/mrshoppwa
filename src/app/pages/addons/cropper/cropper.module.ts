@@ -7,7 +7,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -23,8 +22,8 @@ import { CropperPage } from './cropper.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CropperPageRoutingModule
+    CropperPageRoutingModule,
   ],
-  declarations: [CropperPage]
+  declarations: [CropperPage],
 })
 export class CropperPageModule {}

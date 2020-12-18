@@ -19,7 +19,7 @@ describe('MovieTicketPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ MovieTicketPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(MovieTicketPage);

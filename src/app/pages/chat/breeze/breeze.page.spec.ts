@@ -19,7 +19,7 @@ describe('BreezePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ BreezePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BreezePage);

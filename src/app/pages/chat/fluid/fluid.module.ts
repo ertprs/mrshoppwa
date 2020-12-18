@@ -21,8 +21,8 @@ import { FluidPage } from './fluid.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FluidPageRoutingModule
+    FluidPageRoutingModule,
   ],
-  declarations: [FluidPage]
+  declarations: [FluidPage],
 })
 export class FluidPageModule {}

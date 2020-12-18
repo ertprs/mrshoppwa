@@ -21,8 +21,8 @@ import { YoutubePlaylistPage } from './youtube-playlist.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    YoutubePlaylistPageRoutingModule
+    YoutubePlaylistPageRoutingModule,
   ],
-  declarations: [YoutubePlaylistPage]
+  declarations: [YoutubePlaylistPage],
 })
 export class YoutubePlaylistPageModule {}

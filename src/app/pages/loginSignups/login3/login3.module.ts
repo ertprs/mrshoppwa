@@ -21,8 +21,8 @@ import { Login3Page } from './login3.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Login3PageRoutingModule
+    Login3PageRoutingModule,
   ],
-  declarations: [Login3Page]
+  declarations: [Login3Page],
 })
 export class Login3PageModule {}

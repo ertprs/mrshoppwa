@@ -15,8 +15,8 @@ import { ReorderPage } from './reorder.page';
 const routes: Routes = [
   {
     path: '',
-    component: ReorderPage
-  }
+    component: ReorderPage,
+  },
 ];
 
 @NgModule({

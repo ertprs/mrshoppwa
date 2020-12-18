@@ -21,7 +21,7 @@ import { Storage } from '@ionic/storage';
 export class CartPage implements OnInit {
   public customAlertOptions: any = {
     header: 'Select Quantity',
-    translucent: true
+    translucent: true,
   };
   public qty: Array<any> = [];
   public baseProducts: Array<any> = [];
@@ -30,7 +30,6 @@ export class CartPage implements OnInit {
   public cartData: Array<any> = [];
   public sum: number;
   public userId: any;
-
 
   constructor(
     public fun: FunctionService,
@@ -65,7 +64,7 @@ export class CartPage implements OnInit {
   calculatePrice() {
     this.sum = 0;
     let temp = 0;
-    this.baseProducts.forEach(product => {
+    this.baseProducts.forEach((product) => {
       temp = product.price * product.quantity;
       this.sum += temp;
     });
@@ -80,17 +79,16 @@ export class CartPage implements OnInit {
     this.route.navigate(['woocommerce-products']);
   }
   async remove(j: number) {
-      this.fun.removeConform().then(res => {
+      this.fun.removeConform().then((res) => {
         const Item: number = j + 1;
         if (res === 'ok') {
           this.dataService.cart.splice(j, 1);
-          this.cartData.splice(j, 1)
+          this.cartData.splice(j, 1);
           if (this.dataService.cart.length === 0) {
             this.show = !this.show;
           }
         }
       });
   }
-
 
 }

@@ -21,12 +21,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run tslint"
-    }
-  },
   "private": true,
   "dependencies": {
     "@angular/pwa": "0.803.25",

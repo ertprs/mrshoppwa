@@ -22,8 +22,8 @@ import { SocialSharePage } from './social-share.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SocialSharePageRoutingModule
+    SocialSharePageRoutingModule,
   ],
-  declarations: [SocialSharePage]
+  declarations: [SocialSharePage],
 })
 export class SocialSharePageModule {}

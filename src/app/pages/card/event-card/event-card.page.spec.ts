@@ -19,7 +19,7 @@ describe('EventCardPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ EventCardPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(EventCardPage);

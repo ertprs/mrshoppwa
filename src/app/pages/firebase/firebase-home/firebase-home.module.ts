@@ -14,16 +14,13 @@ import { IonicModule } from '@ionic/angular';
 import { FirebaseHomePageRoutingModule } from './firebase-home-routing.module';
 import { FirebaseHomePage } from './firebase-home.page';
 
-
-
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FirebaseHomePageRoutingModule
+    FirebaseHomePageRoutingModule,
   ],
-  declarations: [FirebaseHomePage, FilterPipe]
+  declarations: [FirebaseHomePage, FilterPipe],
 })
 export class FirebaseHomePageModule { }

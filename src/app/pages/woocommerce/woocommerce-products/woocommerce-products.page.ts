@@ -22,7 +22,7 @@ export class WoocommerceProductsPage implements OnInit {
   constructor(
     public woocommerceService: WooCommerceService,
     public http: HttpClient,
-    public route: Router
+    public route: Router,
   ) {
     this.getProducts = [];
     console.log('Woocomerce');

@@ -14,8 +14,8 @@ import { SquareGridPage } from './square-grid.page';
 const routes: Routes = [
   {
     path: '',
-    component: SquareGridPage
-  }
+    component: SquareGridPage,
+  },
 ];
 
 @NgModule({

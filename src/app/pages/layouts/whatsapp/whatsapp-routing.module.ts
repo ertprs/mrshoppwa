@@ -15,8 +15,8 @@ import { WhatsappPage } from './whatsapp.page';
 const routes: Routes = [
   {
     path: '',
-    component: WhatsappPage
-  }
+    component: WhatsappPage,
+  },
 ];
 
 @NgModule({

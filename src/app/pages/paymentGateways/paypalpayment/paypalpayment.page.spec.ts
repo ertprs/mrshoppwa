@@ -18,7 +18,7 @@ describe('PaypalpaymentPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ PaypalpaymentPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PaypalpaymentPage);

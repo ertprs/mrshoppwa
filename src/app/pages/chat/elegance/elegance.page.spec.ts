@@ -18,7 +18,7 @@ describe('ElegancePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ElegancePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ElegancePage);

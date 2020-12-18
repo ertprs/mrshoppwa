@@ -22,8 +22,8 @@ import { InAppBrowserPage } from './in-app-browser.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    InAppBrowserPageRoutingModule
+    InAppBrowserPageRoutingModule,
   ],
-  declarations: [InAppBrowserPage]
+  declarations: [InAppBrowserPage],
 })
 export class InAppBrowserPageModule {}

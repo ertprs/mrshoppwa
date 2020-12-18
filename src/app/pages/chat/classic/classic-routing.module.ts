@@ -14,8 +14,8 @@ import { ClassicPage } from './classic.page';
 const routes: Routes = [
   {
     path: '',
-    component: ClassicPage
-  }
+    component: ClassicPage,
+  },
 ];
 
 @NgModule({

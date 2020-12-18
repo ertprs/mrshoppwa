@@ -28,7 +28,7 @@ export class GoogleAutocompletePage implements OnInit {
 
   constructor(
     private mapsAPILoader: MapsAPILoader,
-    private ngZone: NgZone
+    private ngZone: NgZone,
   ) { }
 
   ngOnInit() {
@@ -52,7 +52,7 @@ export class GoogleAutocompletePage implements OnInit {
       const nativeHomeInputBox = document.getElementById('txtHome').getElementsByTagName('input')[0];
       // console.log('nativeHomeInputBox', nativeHomeInputBox);
       const autocomplete = new google.maps.places.Autocomplete(nativeHomeInputBox, {
-        types: ['address']
+        types: ['address'],
       });
       autocomplete.addListener('place_changed', () => {
         this.ngZone.run(() => {

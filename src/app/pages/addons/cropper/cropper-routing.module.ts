@@ -15,8 +15,8 @@ import { CropperPage } from './cropper.page';
 const routes: Routes = [
   {
     path: '',
-    component: CropperPage
-  }
+    component: CropperPage,
+  },
 ];
 
 @NgModule({

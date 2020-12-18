@@ -22,7 +22,7 @@ export class Login3Page implements OnInit {
 
   constructor(
     public router: Router,
-    public menuCtrl: MenuController
+    public menuCtrl: MenuController,
   ) { }
 
   ngOnInit() {

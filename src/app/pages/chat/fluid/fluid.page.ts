@@ -26,7 +26,7 @@ export class FluidPage implements OnInit {
     private platform: Platform,
     private alertController: AlertController,
     private device: Device,
-    private menuCtrl: MenuController
+    private menuCtrl: MenuController,
   ) {
     this.conversation = environment.FLUID_CHAT_DATA;
   }
@@ -46,7 +46,6 @@ export class FluidPage implements OnInit {
     setTimeout(() => {
       this.presentAlert();
     }, 100);
-
 
   }
 
@@ -68,7 +67,7 @@ export class FluidPage implements OnInit {
         header: 'Hey there',
         subHeader: 'Information',
         message: 'We have adjusted the layout as per the phone model - ' + this.phoneModel,
-        buttons: ['OK']
+        buttons: ['OK'],
       });
 
       await alert.present();
@@ -93,10 +92,9 @@ export class FluidPage implements OnInit {
     const parent = document.getElementById('chat-parent');
     const scrollOptions = {
       left: 0,
-      top: content.offsetHeight
+      top: content.offsetHeight,
     };
     parent.scrollTo(scrollOptions);
   }
-
 
 }

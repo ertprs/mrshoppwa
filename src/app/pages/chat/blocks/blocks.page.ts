@@ -17,7 +17,7 @@ import { environment } from '@env/environment';
   styleUrls: ['./blocks.page.scss'],
 })
 export class BlocksPage implements OnInit {
-  @ViewChild('IonContent', { static: true }) content: IonContent
+  @ViewChild('IonContent', { static: true }) content: IonContent;
   public paramData: any;
   public msgList: Array<any>;
   public userName: any;
@@ -133,7 +133,6 @@ export class BlocksPage implements OnInit {
       this.scrollDown();
     }
   }
-
 
   senderSends(image) {
     this.loader = true;

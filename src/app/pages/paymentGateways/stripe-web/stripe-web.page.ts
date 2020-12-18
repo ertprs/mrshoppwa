@@ -26,7 +26,7 @@ export class StripeWebPage implements OnInit {
 
   constructor(
     public util: UtilService,
-    public http: HttpClient
+    public http: HttpClient,
   ) {
     this.paymentAmount = '3.33';
     this.currency = 'USD';
@@ -47,20 +47,20 @@ export class StripeWebPage implements OnInit {
         fontSmoothing: 'antialiased',
         fontSize: '16px',
         '::placeholder': {
-          color: '#aab7c4'
-        }
+          color: '#aab7c4',
+        },
       },
       invalid: {
         color: '#fa755a',
-        iconColor: '#fa755a'
-      }
+        iconColor: '#fa755a',
+      },
     };
 
     this.card = elements.create('card', { style: styles });
     console.log(this.card);
     this.card.mount('#card-element');
 
-    this.card.addEventListener('change', event => {
+    this.card.addEventListener('change', (event) => {
       const displayError = document.getElementById('card-errors');
       if (event.error) {
         displayError.textContent = event.error.message;
@@ -70,9 +70,9 @@ export class StripeWebPage implements OnInit {
     });
 
     const form = document.getElementById('payment-form');
-    form.addEventListener('submit', event => {
+    form.addEventListener('submit', (event) => {
       event.preventDefault();
-      this.stripe.createSource(this.card).then(result => {
+      this.stripe.createSource(this.card).then((result) => {
         if (result.error) {
           const errorElement = document.getElementById('card-errors');
           errorElement.textContent = result.error.message;
@@ -88,9 +88,9 @@ export class StripeWebPage implements OnInit {
   makePayment(token) {
     this.http
       .post('https://us-central1-fullpayment-48a0d.cloudfunctions.net/payWithStripe', {
-        token: token.id
+        token: token.id,
       })
-      .subscribe(response => {
+      .subscribe((response) => {
         console.log('stripe Data', response);
       });
   }

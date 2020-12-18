@@ -18,7 +18,7 @@ describe('PhaserPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ PhaserPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PhaserPage);

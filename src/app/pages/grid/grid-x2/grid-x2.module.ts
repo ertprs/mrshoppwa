@@ -22,8 +22,8 @@ import { GridX2Page } from './grid-x2.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    GridX2PageRoutingModule
+    GridX2PageRoutingModule,
   ],
-  declarations: [GridX2Page]
+  declarations: [GridX2Page],
 })
 export class GridX2PageModule {}

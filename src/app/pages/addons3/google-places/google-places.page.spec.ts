@@ -18,7 +18,7 @@ describe('GooglePlacesPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ GooglePlacesPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(GooglePlacesPage);

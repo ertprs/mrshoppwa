@@ -15,8 +15,8 @@ import { GooglePlacesPage } from './google-places.page';
 const routes: Routes = [
   {
     path: '',
-    component: GooglePlacesPage
-  }
+    component: GooglePlacesPage,
+  },
 ];
 
 @NgModule({

@@ -27,8 +27,8 @@ export class InnerhomeComponent implements OnInit {
 
   getRelatedProducts() {
     const pids = this.recieved_data;
-    pids.forEach(pid => {
-      this.woocommerceService.getProduct(pid).then(productData => {
+    pids.forEach((pid) => {
+      this.woocommerceService.getProduct(pid).then((productData) => {
         this.productData.push(productData);
       });
     });

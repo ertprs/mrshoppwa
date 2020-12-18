@@ -19,7 +19,7 @@ describe('GridX2Page', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ GridX2Page ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(GridX2Page);

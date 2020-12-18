@@ -14,8 +14,8 @@ import { Login3Page } from './login3.page';
 const routes: Routes = [
   {
     path: '',
-    component: Login3Page
-  }
+    component: Login3Page,
+  },
 ];
 
 @NgModule({

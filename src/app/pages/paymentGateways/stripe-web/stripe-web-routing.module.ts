@@ -14,8 +14,8 @@ import { StripeWebPage } from './stripe-web.page';
 const routes: Routes = [
   {
     path: '',
-    component: StripeWebPage
-  }
+    component: StripeWebPage,
+  },
 ];
 
 @NgModule({

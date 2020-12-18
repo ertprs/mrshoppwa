@@ -18,7 +18,7 @@ describe('GoogleAutocompletePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ GoogleAutocompletePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(GoogleAutocompletePage);

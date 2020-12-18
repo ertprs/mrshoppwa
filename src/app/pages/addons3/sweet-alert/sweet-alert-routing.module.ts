@@ -15,8 +15,8 @@ import { SweetAlertPage } from './sweet-alert.page';
 const routes: Routes = [
   {
     path: '',
-    component: SweetAlertPage
-  }
+    component: SweetAlertPage,
+  },
 ];
 
 @NgModule({

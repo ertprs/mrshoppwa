@@ -7,7 +7,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
 import { Component, OnInit } from '@angular/core';
 import { CardService } from '@app/services/card/card.service';
 

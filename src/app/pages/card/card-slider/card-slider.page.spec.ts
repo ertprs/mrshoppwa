@@ -19,7 +19,7 @@ describe('CardSliderPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ CardSliderPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CardSliderPage);

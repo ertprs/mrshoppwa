@@ -21,8 +21,8 @@ import { ViewVideoPage } from './view-video.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ViewVideoPageRoutingModule
+    ViewVideoPageRoutingModule,
   ],
-  declarations: []
+  declarations: [],
 })
 export class ViewVideoPageModule { }

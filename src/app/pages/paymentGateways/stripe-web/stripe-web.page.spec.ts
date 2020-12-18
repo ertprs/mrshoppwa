@@ -18,7 +18,7 @@ describe('StripeWebPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ StripeWebPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(StripeWebPage);

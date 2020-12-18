@@ -15,15 +15,14 @@ import { IonicModule } from '@ionic/angular';
 import { SlidersPageRoutingModule } from './sliders-routing.module';
 import { SlidersPage } from './sliders.page';
 
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     SharableModule,
-    SlidersPageRoutingModule
+    SlidersPageRoutingModule,
   ],
-  declarations: [SlidersPage]
+  declarations: [SlidersPage],
 })
 export class SlidersPageModule { }

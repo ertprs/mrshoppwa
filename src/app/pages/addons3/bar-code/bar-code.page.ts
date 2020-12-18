@@ -14,7 +14,6 @@ import { Platform } from '@ionic/angular';
 import { Base64 } from '@ionic-native/base64/ngx';
 import { DomSanitizer } from '@angular/platform-browser';
 
-
 @Component({
   selector: 'app-bar-code',
   templateUrl: './bar-code.page.html',
@@ -28,15 +27,15 @@ export class BarCodePage implements OnInit {
 
   constructor(
     private barcodeScanner: BarcodeScanner,
-    private platform : Platform,
-    private webview : WebView,
+    private platform: Platform,
+    private webview: WebView,
     public base64: Base64,
     public domSanitizer: DomSanitizer,
     ) {
     // these options can be used with scan() function
     this.barcodeScannerOptions = {
       showTorchButton: true,
-      showFlipCameraButton: true
+      showFlipCameraButton: true,
     };
 
   }
@@ -45,10 +44,10 @@ export class BarCodePage implements OnInit {
   }
 
   scanCode() {
-    this.barcodeScanner.scan().then(barcodeData => {
+    this.barcodeScanner.scan().then((barcodeData) => {
       alert('Barcode data ' + JSON.stringify(barcodeData));
       this.scannedData = barcodeData;
-    }).catch(err => {
+    }).catch((err) => {
       console.log('Error', err);
     });
   }
@@ -65,7 +64,7 @@ export class BarCodePage implements OnInit {
               imageSrc[1]);
         });
       }
-      
+
     }, (err: string) => {
       console.log('Error occured : ' + err);
     });

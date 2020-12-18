@@ -15,8 +15,8 @@ import { SlidersPage } from './sliders.page';
 const routes: Routes = [
   {
     path: '',
-    component: SlidersPage
-  }
+    component: SlidersPage,
+  },
 ];
 
 @NgModule({

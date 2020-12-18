@@ -19,7 +19,7 @@ describe('FullGridPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ FullGridPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(FullGridPage);

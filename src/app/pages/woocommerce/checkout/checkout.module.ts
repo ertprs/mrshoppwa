@@ -21,8 +21,8 @@ import { CheckoutPage } from './checkout.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CheckoutPageRoutingModule
+    CheckoutPageRoutingModule,
   ],
-  declarations: [CheckoutPage]
+  declarations: [CheckoutPage],
 })
 export class CheckoutPageModule {}

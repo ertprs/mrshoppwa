@@ -21,8 +21,8 @@ import { RoseListPage } from './rose-list.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RoseListPageRoutingModule
+    RoseListPageRoutingModule,
   ],
-  declarations: [RoseListPage]
+  declarations: [RoseListPage],
 })
 export class RoseListPageModule {}

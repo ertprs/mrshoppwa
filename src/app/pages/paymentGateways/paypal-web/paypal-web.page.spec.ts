@@ -19,7 +19,7 @@ describe('PaypalWebPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ PaypalWebPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PaypalWebPage);

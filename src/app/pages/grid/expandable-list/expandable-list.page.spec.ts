@@ -19,7 +19,7 @@ describe('ExpandableListPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ExpandableListPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ExpandableListPage);

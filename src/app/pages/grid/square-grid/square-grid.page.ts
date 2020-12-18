@@ -18,7 +18,6 @@ import { GridServiceService } from '@app/services/grid/grid-service.service';
 export class SquareGridPage implements OnInit {
   public gridImages: Array<any>;
 
-
   constructor(public gridServ: GridServiceService) {
     this.gridImages = this.gridServ.SQUARE_GRID;
   }

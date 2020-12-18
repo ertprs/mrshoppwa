@@ -24,8 +24,8 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     IonicModule,
     AgmCoreModule,
-    BlocksPageRoutingModule
+    BlocksPageRoutingModule,
   ],
-  declarations: [BlocksPage]
+  declarations: [BlocksPage],
 })
 export class BlocksPageModule {}

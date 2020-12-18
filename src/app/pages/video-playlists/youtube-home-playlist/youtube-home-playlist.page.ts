@@ -22,7 +22,7 @@ export class YoutubeHomePlaylistPage implements OnInit {
 
   constructor(
     public modalCtrl: ModalController,
-    public menuCtrl: MenuController
+    public menuCtrl: MenuController,
   ) {
     this.gridImages = environment.YOUTUBE_HOME_PLAYLIST;
   }
@@ -34,7 +34,7 @@ export class YoutubeHomePlaylistPage implements OnInit {
     const modal = await this.modalCtrl.create({
       component: ViewVideoPage,
       componentProps: { url: videoUrl },
-      cssClass: 'viewVideoModal'
+      cssClass: 'viewVideoModal',
     });
     return modal.present();
   }

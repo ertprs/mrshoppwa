@@ -21,7 +21,7 @@ export class ViewVideoPage implements OnInit {
   constructor(
     public modalCtrl: ModalController,
     public navParms: NavParams,
-    public sanitizer: DomSanitizer
+    public sanitizer: DomSanitizer,
   ) {
     console.log(' this.navParms', this.navParms.data.url);
     this.videourl = this.navParms.data.url;

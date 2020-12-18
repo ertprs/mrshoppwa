@@ -16,7 +16,7 @@ import { environment } from '@env/environment';
   styleUrls: ['./classic.page.scss'],
 })
 export class ClassicPage implements OnInit {
-  @ViewChild('IonContent', { static: true }) content: IonContent
+  @ViewChild('IonContent', { static: true }) content: IonContent;
   public msgList: Array<any>;
   public userInput: string;
   public User: string;
@@ -47,7 +47,7 @@ export class ClassicPage implements OnInit {
         userName: this.toUser,
         time: '12:01',
         image: 'assets/chat/chat/chat3.jpg',
-        id: msgLength + 1
+        id: msgLength + 1,
       });
       this.userInput = '';
       this.show = false;
@@ -61,7 +61,7 @@ export class ClassicPage implements OnInit {
         userName: this.toUser,
         time: '12:01',
         video: 'assets/chat/chat/video.mp4',
-        id: msgLength + 1
+        id: msgLength + 1,
       });
       this.userInput = '';
       this.show = false;
@@ -75,7 +75,7 @@ export class ClassicPage implements OnInit {
         userName: this.toUser,
         time: '12:01',
         map: { lat: 52.678418, lng: 7.809007 },
-        id: msgLength + 1
+        id: msgLength + 1,
       });
       this.userInput = '';
       this.show = false;
@@ -100,7 +100,7 @@ export class ClassicPage implements OnInit {
         userAvatar: 'assets/chat/chat/chat3.jpg',
         time: '12:01',
         message: this.userInput,
-        id: msgLength + 1
+        id: msgLength + 1,
       });
       this.userInput = '';
       this.scrollDown();
@@ -117,7 +117,7 @@ export class ClassicPage implements OnInit {
         userId: this.User,
         userName: this.User,
         userAvatar: 'assets/chat/chat/chat5.jpg',
-        message: 'Sorry, didn\'t get what you said. Can you repeat that please'
+        message: 'Sorry, didn\'t get what you said. Can you repeat that please',
       });
       this.loader = false;
       this.scrollDown();

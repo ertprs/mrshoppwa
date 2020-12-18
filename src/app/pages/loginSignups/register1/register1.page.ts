@@ -22,7 +22,7 @@ export class Register1Page implements OnInit {
 
   constructor(
     public router: Router,
-    public menuCtrl: MenuController
+    public menuCtrl: MenuController,
   ) { }
 
   ngOnInit() {

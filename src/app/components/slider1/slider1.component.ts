@@ -7,7 +7,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
 import { GridServiceService } from '../../services/grid/grid-service.service';
@@ -27,18 +26,18 @@ export class Slider1Component implements OnInit {
     initialSlide: 0,
     slidesPerView: 1,
     autoplay: true,
-    zoom: false
+    zoom: false,
   };
   public slideOpts: object = {
     effect: 'cube',
-    zoom: false
+    zoom: false,
   };
   public slideOpts1: object = {
-    effect: 'cube'
-  }
+    effect: 'cube',
+  };
   public slideOpts2: object = {
-    effect: 'fade'
-  }
+    effect: 'fade',
+  };
   constructor(private gridServ: GridServiceService) {
     this.medicalList = this.gridServ.medicalList;
   }

@@ -14,8 +14,8 @@ import { BlogpagePage } from './blogpage.page';
 const routes: Routes = [
   {
     path: '',
-    component: BlogpagePage
-  }
+    component: BlogpagePage,
+  },
 ];
 
 @NgModule({

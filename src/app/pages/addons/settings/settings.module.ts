@@ -24,8 +24,8 @@ import { SharableModule } from '@app/components/sharable/sharable.module';
     FormsModule,
     IonicModule,
     SharableModule,
-    SettingsPageRoutingModule
+    SettingsPageRoutingModule,
   ],
-  declarations: [SettingsPage]
+  declarations: [SettingsPage],
 })
 export class SettingsPageModule { }

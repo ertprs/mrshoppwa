@@ -14,8 +14,8 @@ import { WalkthroughPage } from './walkthrough.page';
 const routes: Routes = [
   {
     path: '',
-    component: WalkthroughPage
-  }
+    component: WalkthroughPage,
+  },
 ];
 
 @NgModule({

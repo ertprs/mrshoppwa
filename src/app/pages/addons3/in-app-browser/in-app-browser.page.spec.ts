@@ -19,7 +19,7 @@ describe('InAppBrowserPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ InAppBrowserPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(InAppBrowserPage);

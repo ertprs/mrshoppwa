@@ -25,7 +25,7 @@ export class UserModel {
     return {
       id: null,
       email: null,
-      username: null
+      username: null,
     };
   }
 

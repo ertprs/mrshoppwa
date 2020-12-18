@@ -19,7 +19,7 @@ describe('ActionsheetComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ActionsheetComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ActionsheetComponent);

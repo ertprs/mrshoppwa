@@ -21,8 +21,8 @@ import { BreezePage } from './breeze.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    BreezePageRoutingModule
+    BreezePageRoutingModule,
   ],
-  declarations: [BreezePage]
+  declarations: [BreezePage],
 })
 export class BreezePageModule {}

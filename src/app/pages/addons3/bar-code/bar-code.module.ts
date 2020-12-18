@@ -22,8 +22,8 @@ import { BarCodePage } from './bar-code.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    BarCodePageRoutingModule
+    BarCodePageRoutingModule,
   ],
-  declarations: [BarCodePage]
+  declarations: [BarCodePage],
 })
 export class BarCodePageModule {}

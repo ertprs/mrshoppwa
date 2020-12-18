@@ -32,12 +32,12 @@ export class FirebaseHomePage implements OnInit {
   constructor(
     private faqDataServ: FAQDataService,
     private util: UtilService,
-    private menuCtrl: MenuController
+    private menuCtrl: MenuController,
   ) {
     this.newFaq = this.newQuestion();
-    this.util.userid.subscribe(data => {
+    this.util.userid.subscribe((data) => {
       this.uid = data;
-      this.faqDataServ.get().subscribe(questionList => {
+      this.faqDataServ.get().subscribe((questionList) => {
         this.questionList = questionList;
       });
     });
@@ -62,7 +62,7 @@ export class FirebaseHomePage implements OnInit {
       this.faqDataServ.create(this.newFaq).then(() => {
         this.newFaq = this.newQuestion();
         this.util.presentToast('question Added', true, 'bottom', 2100);
-      }).catch(err => {
+      }).catch((err) => {
         console.log(err);
       });
     } else {
@@ -77,13 +77,13 @@ export class FirebaseHomePage implements OnInit {
       question: '',
       answer: '',
       uid: this.uid,
-      tag: ''
+      tag: '',
     };
   }
 
   editQuestion(questionId: string) {
     this.faqDataServ.getOne(questionId)
-      .subscribe(questionData => {
+      .subscribe((questionData) => {
         this.newFaq = questionData;
         this.isUpdate = true;
       });
@@ -96,7 +96,7 @@ export class FirebaseHomePage implements OnInit {
           this.newFaq = this.newQuestion();
           this.isUpdate = false;
           this.util.presentToast('UPDATED', true, 'bottom', 2100);
-        }).catch(err => { console.log(err); });
+        }).catch((err) => { console.log(err); });
     }
   }
 
@@ -114,13 +114,13 @@ export class FirebaseHomePage implements OnInit {
   }
 
   headTagValue(filterName: string) {
-    const filter = this.questionList.filter(item => item.tag === filterName);
+    const filter = this.questionList.filter((item) => item.tag === filterName);
     console.log(filter);
 
   }
 
   deleteQuestion(id) {
-    this.util.removeConform().then(status => {
+    this.util.removeConform().then((status) => {
       if (status === 'ok') {
         this.faqDataServ.delete(id)
           .then((response) => this.util.presentToast('Item is deleted', null, null, 3000))

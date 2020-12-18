@@ -38,5 +38,4 @@ export class RoseListPage implements OnInit {
     this.route.navigate(['rose', chat]);
   }
 
-
 }

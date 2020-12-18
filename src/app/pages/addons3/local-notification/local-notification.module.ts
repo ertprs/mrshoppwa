@@ -22,8 +22,8 @@ import { LocalNotificationPage } from './local-notification.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    LocalNotificationPageRoutingModule
+    LocalNotificationPageRoutingModule,
   ],
-  declarations: [LocalNotificationPage]
+  declarations: [LocalNotificationPage],
 })
 export class LocalNotificationPageModule {}

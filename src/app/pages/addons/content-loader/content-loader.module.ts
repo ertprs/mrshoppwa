@@ -7,7 +7,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -16,17 +15,14 @@ import { ContentLoaderModule } from '@netbasal/ngx-content-loader';
 import { ContentLoaderPageRoutingModule } from './content-loader-routing.module';
 import { ContentLoaderPage } from './content-loader.page';
 
-
-
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     ContentLoaderModule,
-    ContentLoaderPageRoutingModule
+    ContentLoaderPageRoutingModule,
   ],
-  declarations: [ContentLoaderPage]
+  declarations: [ContentLoaderPage],
 })
 export class ContentLoaderPageModule {}

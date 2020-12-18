@@ -21,7 +21,7 @@ export class ProductComponent implements OnInit {
   @Input() slider: IonSlides;
   @Output() notify: EventEmitter<number> = new EventEmitter<number>();
   public slideOpts: object = {
-    effect: 'flip'
+    effect: 'flip',
   };
   public open = [false, false, false, false];
   public liked = false;
@@ -39,7 +39,7 @@ export class ProductComponent implements OnInit {
 
   getReviews() {
     const pid = this.product.id;
-    this.woocommerceService.getProductReviews(pid).then(reviews => {
+    this.woocommerceService.getProductReviews(pid).then((reviews) => {
       this.reviews = reviews;
     });
   }
@@ -95,7 +95,7 @@ export class ProductComponent implements OnInit {
       header: 'Sorry',
       subHeader: 'App not found',
       message: msg,
-      buttons: ['OK']
+      buttons: ['OK'],
     });
 
     await alert.present();
@@ -122,6 +122,5 @@ export class ProductComponent implements OnInit {
     for (let j = 0; j < i; j++) { l.push(1); }
     return l;
   }
-
 
 }

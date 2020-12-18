@@ -15,8 +15,8 @@ import { Bubble2Page } from './bubble2.page';
 const routes: Routes = [
   {
     path: '',
-    component: Bubble2Page
-  }
+    component: Bubble2Page,
+  },
 ];
 
 @NgModule({

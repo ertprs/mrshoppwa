@@ -22,7 +22,7 @@ export class LargecardPage implements OnInit {
 
   constructor(
     public sanitizer: DomSanitizer,
-    private menuCtrl: MenuController
+    private menuCtrl: MenuController,
   ) {
     this.gridImages = environment.YOUTUBE_LARGE_CARD;
   }

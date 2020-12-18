@@ -19,7 +19,7 @@ describe('SquareGridPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ SquareGridPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(SquareGridPage);

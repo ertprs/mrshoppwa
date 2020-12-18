@@ -3,12 +3,12 @@ import { AngularFireStorage } from '@angular/fire/storage';
 import { FirestoreService } from './firestore.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class StorageService {
   constructor(
     public storage: AngularFireStorage,
-    public baseFs: FirestoreService
+    public baseFs: FirestoreService,
   ) {
   }
 
@@ -17,24 +17,24 @@ export class StorageService {
       try {
         if (file) {
           return this.storage.upload(`uploads/${fileName}`, file).then(
-            success => {
-              return this.storage.ref(`uploads/${fileName}`).getDownloadURL().subscribe(url => {
+            (success) => {
+              return this.storage.ref(`uploads/${fileName}`).getDownloadURL().subscribe((url) => {
                 return this.baseFs.uploadFile('uploads', url, fileName)
                   .then(() => {
                     resolve({ url, fileName });
                   })
-                  .catch(err => {
+                  .catch((err) => {
 
                     reject(err);
                   });
               });
             },
-            failure => {
+            (failure) => {
 
               reject(failure);
-            }
+            },
           )
-            .catch(err => {
+            .catch((err) => {
 
               reject(err);
             });
@@ -49,4 +49,3 @@ export class StorageService {
     });
   }
 }
-

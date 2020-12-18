@@ -16,8 +16,8 @@ import { InAppBrowserPage } from './in-app-browser.page';
 const routes: Routes = [
   {
     path: '',
-    component: InAppBrowserPage
-  }
+    component: InAppBrowserPage,
+  },
 ];
 
 @NgModule({

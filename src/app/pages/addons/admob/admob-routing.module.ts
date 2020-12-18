@@ -6,8 +6,8 @@ import { AdmobPage } from './admob.page';
 const routes: Routes = [
   {
     path: '',
-    component: AdmobPage
-  }
+    component: AdmobPage,
+  },
 ];
 
 @NgModule({

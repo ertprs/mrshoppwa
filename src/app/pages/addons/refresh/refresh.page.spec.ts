@@ -19,7 +19,7 @@ describe('RefreshPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ RefreshPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(RefreshPage);

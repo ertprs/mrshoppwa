@@ -15,8 +15,8 @@ import { GoogleAutocompletePage } from './google-autocomplete.page';
 const routes: Routes = [
   {
     path: '',
-    component: GoogleAutocompletePage
-  }
+    component: GoogleAutocompletePage,
+  },
 ];
 
 @NgModule({

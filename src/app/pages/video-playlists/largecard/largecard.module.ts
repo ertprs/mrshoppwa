@@ -21,8 +21,8 @@ import { LargecardPage } from './largecard.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    LargecardPageRoutingModule
+    LargecardPageRoutingModule,
   ],
-  declarations: [LargecardPage]
+  declarations: [LargecardPage],
 })
 export class LargecardPageModule {}

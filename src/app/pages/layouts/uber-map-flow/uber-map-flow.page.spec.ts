@@ -19,7 +19,7 @@ describe('UberMapFlowPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ UberMapFlowPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(UberMapFlowPage);

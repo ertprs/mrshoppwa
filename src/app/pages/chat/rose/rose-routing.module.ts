@@ -14,8 +14,8 @@ import { RosePage } from './rose.page';
 const routes: Routes = [
   {
     path: '',
-    component: RosePage
-  }
+    component: RosePage,
+  },
 ];
 
 @NgModule({

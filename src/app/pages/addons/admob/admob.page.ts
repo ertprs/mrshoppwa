@@ -14,7 +14,7 @@ export class AdmobPage implements OnInit {
     public alertController: AlertController,
     private util: UtilService,
     private admob: AdMobPro,
-    private platform: Platform
+    private platform: Platform,
   ) { }
 
   ngOnInit() {
@@ -25,7 +25,7 @@ export class AdmobPage implements OnInit {
       header: 'Ad dismissed',
       subHeader: data.adType,
       message: 'You dismissed the ' + data.adType + ' ad from ' + data.adNetwork,
-      buttons: ['OK']
+      buttons: ['OK'],
     });
 
     await alert.present();
@@ -48,7 +48,7 @@ export class AdmobPage implements OnInit {
     }
     this.admob.createBanner({
       adId,
-      isTesting: true // remove in production
+      isTesting: true, // remove in production
     })
       .then(() => {
         this.admob.showBanner(this.admob.AD_POSITION.BOTTOM_CENTER);
@@ -72,7 +72,7 @@ export class AdmobPage implements OnInit {
     this.admob.prepareInterstitial({
       adId,
       autoShow: true,
-      isTesting: true // remove in production
+      isTesting: true, // remove in production
     })
       .then(() => {
         this.admob.showInterstitial();
@@ -92,7 +92,7 @@ export class AdmobPage implements OnInit {
     this.admob.prepareRewardVideoAd({
       adId,
       autoShow: true,
-      isTesting: true // remove in production
+      isTesting: true, // remove in production
     })
       .then(() => {
         this.admob.showRewardVideoAd();
@@ -112,7 +112,7 @@ export class AdmobPage implements OnInit {
     this.admob.prepareInterstitial({
       adId,
       autoShow: true,
-      isTesting: true // remove in production
+      isTesting: true, // remove in production
     })
       .then(() => {
         this.admob.showInterstitial();
@@ -121,7 +121,5 @@ export class AdmobPage implements OnInit {
         console.log(err);
       });
   }
-
-
 
 }

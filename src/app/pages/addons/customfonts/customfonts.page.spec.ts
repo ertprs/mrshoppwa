@@ -19,7 +19,7 @@ describe('CustomfontsPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ CustomfontsPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CustomfontsPage);

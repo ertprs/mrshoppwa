@@ -18,12 +18,12 @@ export * from './swing/utilities';
   imports: [CommonModule],
   declarations: [
     SwingCardDirective,
-    SwingStackDirective
+    SwingStackDirective,
   ],
   exports: [
     SwingCardDirective,
-    SwingStackDirective
-  ]
+    SwingStackDirective,
+  ],
 })
 export class IonicSwingModule {
 }

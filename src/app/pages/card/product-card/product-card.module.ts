@@ -22,8 +22,8 @@ import { ProductCardPage } from './product-card.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ProductCardPageRoutingModule
+    ProductCardPageRoutingModule,
   ],
-  declarations: [ProductCardPage]
+  declarations: [ProductCardPage],
 })
 export class ProductCardPageModule {}

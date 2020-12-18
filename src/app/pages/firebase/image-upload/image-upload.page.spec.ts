@@ -19,7 +19,7 @@ describe('ImageUploadPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ImageUploadPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ImageUploadPage);

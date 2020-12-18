@@ -18,7 +18,7 @@ describe('ShopGridPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ShopGridPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ShopGridPage);

@@ -21,8 +21,8 @@ import { StripeWebPage } from './stripe-web.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    StripeWebPageRoutingModule
+    StripeWebPageRoutingModule,
   ],
-  declarations: [StripeWebPage]
+  declarations: [StripeWebPage],
 })
 export class StripeWebPageModule {}

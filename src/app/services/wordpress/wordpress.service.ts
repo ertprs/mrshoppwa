@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class WordpressService {
 
@@ -24,7 +24,7 @@ export class WordpressService {
   * @returns Observable with the blogs results
   */
   getBlogs(): Observable<any> {
-    return this.http.get(`${this.url}/wp/v2/posts`).pipe(map(results => results));
+    return this.http.get(`${this.url}/wp/v2/posts`).pipe(map((results) => results));
   }
 
   /**

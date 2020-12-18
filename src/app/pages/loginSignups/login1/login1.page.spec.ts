@@ -18,7 +18,7 @@ describe('Login1Page', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ Login1Page ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Login1Page);

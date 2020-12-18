@@ -21,8 +21,8 @@ import { WalkthroughPage } from './walkthrough.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    WalkthroughPageRoutingModule
+    WalkthroughPageRoutingModule,
   ],
-  declarations: [WalkthroughPage]
+  declarations: [WalkthroughPage],
 })
 export class WalkthroughPageModule {}

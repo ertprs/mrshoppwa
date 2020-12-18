@@ -14,8 +14,8 @@ import { ApplepayPage } from './applepay.page';
 const routes: Routes = [
   {
     path: '',
-    component: ApplepayPage
-  }
+    component: ApplepayPage,
+  },
 ];
 
 @NgModule({

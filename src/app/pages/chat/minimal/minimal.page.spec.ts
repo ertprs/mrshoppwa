@@ -18,7 +18,7 @@ describe('MinimalPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ MinimalPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(MinimalPage);

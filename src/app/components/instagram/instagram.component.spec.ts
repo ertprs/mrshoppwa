@@ -19,7 +19,7 @@ describe('InstagramComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ InstagramComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(InstagramComponent);

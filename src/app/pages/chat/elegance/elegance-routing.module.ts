@@ -14,8 +14,8 @@ import { ElegancePage } from './elegance.page';
 const routes: Routes = [
   {
     path: '',
-    component: ElegancePage
-  }
+    component: ElegancePage,
+  },
 ];
 
 @NgModule({

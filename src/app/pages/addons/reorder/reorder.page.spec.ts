@@ -19,7 +19,7 @@ describe('ReorderPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ReorderPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ReorderPage);

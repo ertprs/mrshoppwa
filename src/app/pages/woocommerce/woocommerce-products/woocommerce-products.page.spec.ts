@@ -18,7 +18,7 @@ describe('WoocommerceProductsPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ WoocommerceProductsPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(WoocommerceProductsPage);

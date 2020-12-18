@@ -15,8 +15,8 @@ import { EventCardPage } from './event-card.page';
 const routes: Routes = [
   {
     path: '',
-    component: EventCardPage
-  }
+    component: EventCardPage,
+  },
 ];
 
 @NgModule({

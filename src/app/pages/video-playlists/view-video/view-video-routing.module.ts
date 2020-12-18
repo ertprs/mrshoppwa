@@ -14,8 +14,8 @@ import { ViewVideoPage } from './view-video.page';
 const routes: Routes = [
   {
     path: '',
-    component: ViewVideoPage
-  }
+    component: ViewVideoPage,
+  },
 ];
 
 @NgModule({

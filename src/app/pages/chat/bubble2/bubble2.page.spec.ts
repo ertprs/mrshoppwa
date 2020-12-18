@@ -19,7 +19,7 @@ describe('Bubble2Page', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ Bubble2Page ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Bubble2Page);

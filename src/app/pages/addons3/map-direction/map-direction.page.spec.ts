@@ -19,7 +19,7 @@ describe('MapDirectionPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ MapDirectionPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(MapDirectionPage);

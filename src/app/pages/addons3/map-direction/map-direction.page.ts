@@ -24,7 +24,6 @@ export class MapDirectionPage implements OnInit {
     private modalCtrl: ModalController,
   ) { }
 
-
   ngOnInit() {
     console.log('params', this.navParams.data);
     this.origin = this.navParams.data.origin;

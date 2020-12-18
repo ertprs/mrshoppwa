@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Orders, Product, HomeTab, NotificationsCard, Notification } from '@app/interfaces/product';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataServicesService {
   public currentUserDetails: any;
@@ -10,18 +10,18 @@ export class DataServicesService {
   public item_tab: Array<HomeTab> = [
     { title: 'Overview' },
     { title: 'Related' },
-    { title: 'Product Reviews' }
+    { title: 'Product Reviews' },
   ];
   public cart: Array<any>;
   card: NotificationsCard = {
     image: 'assets/images/products/1.jpg',
     title: 'Kya aapne kabhi online hotel book kia hai???\nHotel? Sastago',
-    time: 9
+    time: 9,
   };
 
   constructor() {
     this.currentUser = {
-      id: 2
+      id: 2,
     };
   }
 
@@ -33,7 +33,7 @@ export class DataServicesService {
       this.card,
       this.card,
       this.card,
-      this.card
+      this.card,
     ],
     deals: [
       this.card,
@@ -42,7 +42,7 @@ export class DataServicesService {
       this.card,
       this.card,
       this.card,
-      this.card
+      this.card,
     ],
     orders: [],
     others: [
@@ -52,8 +52,8 @@ export class DataServicesService {
       this.card,
       this.card,
       this.card,
-      this.card
-    ]
+      this.card,
+    ],
   };
 
   trending = [
@@ -66,7 +66,7 @@ export class DataServicesService {
     'sports shoes for men',
     'earphone bluetooth',
     'jackets for men',
-    'memory card'
+    'memory card',
   ];
 
   tabs: Array<HomeTab> = [
@@ -83,9 +83,8 @@ export class DataServicesService {
     { title: 'Gadgets' },
     { title: 'Hobbies' },
     { title: 'Phone Upgrades' },
-    { title: 'Home Decor' }
+    { title: 'Home Decor' },
   ];
-
 
   products_1: Array<Product> = [
     {
@@ -98,7 +97,7 @@ export class DataServicesService {
       image: [
         'assets/images/products/1.jpg',
         'assets/images/products/1_1.jpg',
-        'assets/images/products/1_2.jpg'
+        'assets/images/products/1_2.jpg',
       ],
       ratingCount: 11,
       storeRatingCount: 11,
@@ -121,8 +120,8 @@ export class DataServicesService {
           rating: 5,
           images: [
             'assets/images/products/1.jpg',
-            'assets/images/products/1_1.jpg'
-          ]
+            'assets/images/products/1_1.jpg',
+          ],
         },
         {
           image: 'assets/images/products/1_2.jpg',
@@ -130,8 +129,8 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. loream...',
           rating: 5,
-          images: ['assets/images/products/1.jpg']
-        }
+          images: ['assets/images/products/1.jpg'],
+        },
       ],
       storeReviews: [
         {
@@ -142,8 +141,8 @@ export class DataServicesService {
           rating: 5,
           images: [
             'assets/images/products/1.jpg',
-            'assets/images/products/1_1.jpg'
-          ]
+            'assets/images/products/1_1.jpg',
+          ],
         },
         {
           image: 'assets/images/products/1_2.jpg',
@@ -151,13 +150,13 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti...',
           rating: 5,
-          images: ['assets/images/products/1.jpg']
-        }
+          images: ['assets/images/products/1.jpg'],
+        },
       ],
       sizing: { small: 10, okay: 80, large: 5 },
       buyerGuarantee:
         'Return all products within 30 days of delivery if they are not up to your satisfaction',
-      sponsored: []
+      sponsored: [],
     },
     {
       name: 'Scarpetta Dress',
@@ -169,7 +168,7 @@ export class DataServicesService {
       image: [
         'assets/images/products/2.jpg',
         'assets/images/products/2_1.jpg',
-        'assets/images/products/2_2.jpg'
+        'assets/images/products/2_2.jpg',
       ],
       ratingCount: 11,
       storeRatingCount: 11,
@@ -190,8 +189,8 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti....',
           rating: 5,
-          images: ['assets/images/products/2.jpg']
-        }
+          images: ['assets/images/products/2.jpg'],
+        },
       ],
       storeReviews: [
         {
@@ -202,8 +201,8 @@ export class DataServicesService {
           rating: 5,
           images: [
             'assets/images/products/2.jpg',
-            'assets/images/products/2_1.jpg'
-          ]
+            'assets/images/products/2_1.jpg',
+          ],
         },
         {
           image: 'assets/images/products/2.jpg',
@@ -211,13 +210,13 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti....',
           rating: 5,
-          images: ['assets/images/products/2.jpg']
-        }
+          images: ['assets/images/products/2.jpg'],
+        },
       ],
       sizing: { small: 10, okay: 80, large: 5 },
       buyerGuarantee:
         'Return all products within 30 days of delivery if they are not up to your satisfaction',
-      sponsored: []
+      sponsored: [],
     },
     {
       name: 'Misty Dress',
@@ -229,7 +228,7 @@ export class DataServicesService {
       image: [
         'assets/images/products/3.jpg',
         'assets/images/products/3_1.jpg',
-        'assets/images/products/3_2.jpg'
+        'assets/images/products/3_2.jpg',
       ],
       ratingCount: 11,
       storeRatingCount: 11,
@@ -250,8 +249,8 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti....',
           rating: 5,
-          images: ['assets/images/products/3.jpg']
-        }
+          images: ['assets/images/products/3.jpg'],
+        },
       ],
       storeReviews: [
         {
@@ -262,8 +261,8 @@ export class DataServicesService {
           rating: 5,
           images: [
             'assets/images/products/3.jpg',
-            'assets/images/products/3_1.jpg'
-          ]
+            'assets/images/products/3_1.jpg',
+          ],
         },
         {
           image: 'assets/images/products/3.jpg',
@@ -271,13 +270,13 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti....',
           rating: 5,
-          images: ['assets/images/products/3.jpg']
-        }
+          images: ['assets/images/products/3.jpg'],
+        },
       ],
       sizing: { small: 10, okay: 80, large: 5 },
       buyerGuarantee:
         'Return all products within 30 days of delivery if they are not up to your satisfaction',
-      sponsored: []
+      sponsored: [],
     },
     {
       name: 'Blanch Dress',
@@ -289,7 +288,7 @@ export class DataServicesService {
       image: [
         'assets/images/products/4.jpg',
         'assets/images/products/4_1.jpg',
-        'assets/images/products/4_2.jpg'
+        'assets/images/products/4_2.jpg',
       ],
       ratingCount: 11,
       storeRatingCount: 11,
@@ -310,8 +309,8 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti....',
           rating: 5,
-          images: ['assets/images/products/4.jpg']
-        }
+          images: ['assets/images/products/4.jpg'],
+        },
       ],
       storeReviews: [
         {
@@ -322,8 +321,8 @@ export class DataServicesService {
           rating: 5,
           images: [
             'assets/images/products/4.jpg',
-            'assets/images/products/4_1.jpg'
-          ]
+            'assets/images/products/4_1.jpg',
+          ],
         },
         {
           image: 'assets/images/products/4.jpg',
@@ -331,13 +330,13 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti....',
           rating: 5,
-          images: ['assets/images/products/4.jpg']
-        }
+          images: ['assets/images/products/4.jpg'],
+        },
       ],
       sizing: { small: 10, okay: 80, large: 5 },
       buyerGuarantee:
         'Return all products within 30 days of delivery if they are not up to your satisfaction',
-      sponsored: []
+      sponsored: [],
     },
     {
       name: 'Scarlett Dress',
@@ -349,7 +348,7 @@ export class DataServicesService {
       image: [
         'assets/images/products/5.jpg',
         'assets/images/products/5_1.jpg',
-        'assets/images/products/5_2.jpg'
+        'assets/images/products/5_2.jpg',
       ],
       ratingCount: 11,
       storeRatingCount: 11,
@@ -370,8 +369,8 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti....',
           rating: 5,
-          images: ['assets/images/products/5.jpg']
-        }
+          images: ['assets/images/products/5.jpg'],
+        },
       ],
       storeReviews: [
         {
@@ -382,8 +381,8 @@ export class DataServicesService {
           rating: 5,
           images: [
             'assets/images/products/5.jpg',
-            'assets/images/products/5_1.jpg'
-          ]
+            'assets/images/products/5_1.jpg',
+          ],
         },
         {
           image: 'assets/images/products/5.jpg',
@@ -391,16 +390,15 @@ export class DataServicesService {
           comment:
             'This is an amazing dress and totally out of budget. loream.......',
           rating: 5,
-          images: ['assets/images/products/5.jpg']
-        }
+          images: ['assets/images/products/5.jpg'],
+        },
       ],
       sizing: { small: 10, okay: 80, large: 5 },
       buyerGuarantee:
         'Return all products within 30 days of delivery if they are not up to your satisfaction',
-      sponsored: []
-    }
+      sponsored: [],
+    },
   ];
-
 
   orders: Array<Orders> = [
     {
@@ -415,7 +413,7 @@ export class DataServicesService {
         zipcode: 12345,
         country: 'India',
         firstName: 'James',
-        state: 'Rajasthan'
+        state: 'Rajasthan',
       },
       shippingAddress: {
         addressLine1: 'ghar',
@@ -426,13 +424,13 @@ export class DataServicesService {
         zipcode: 12345,
         country: 'India',
         firstName: 'James',
-        state: 'Rajasthan'
+        state: 'Rajasthan',
       },
       deliveryDate: new Date(),
       id: 'B102013526',
       orderDate: new Date(),
       status: 'Delivered',
-      tax: 40
+      tax: 40,
     },
     {
       product: this.products_1[0],
@@ -446,7 +444,7 @@ export class DataServicesService {
         zipcode: 12345,
         country: 'India',
         firstName: 'James',
-        state: 'Rajasthan'
+        state: 'Rajasthan',
       },
       shippingAddress: {
         addressLine1: 'ghar',
@@ -457,14 +455,13 @@ export class DataServicesService {
         zipcode: 12345,
         country: 'India',
         firstName: 'James',
-        state: 'Rajasthan'
+        state: 'Rajasthan',
       },
       deliveryDate: new Date(),
       id: 'B102013526',
       orderDate: new Date(),
       status: 'Delivered',
-      tax: 40
-    }
+      tax: 40,
+    },
   ];
 }
-

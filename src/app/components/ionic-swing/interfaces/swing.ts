@@ -146,4 +146,3 @@ export interface StackConfig {
      */
   transform?: (element: HTMLElement, x: number, y: number, r: number) => void;
 }
-

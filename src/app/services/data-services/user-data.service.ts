@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { BaseDataService } from './base-data.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserDataService extends BaseDataService<UserDto> {
 

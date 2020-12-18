@@ -21,7 +21,7 @@ export class TwitterLoginComponent implements OnInit {
 
   constructor(
     private platform: Platform,
-    private twitter: TwitterConnect
+    private twitter: TwitterConnect,
   ) { }
 
   ngOnInit() { }

@@ -14,8 +14,8 @@ import { OrderinfoPage } from './orderinfo.page';
 const routes: Routes = [
   {
     path: '',
-    component: OrderinfoPage
-  }
+    component: OrderinfoPage,
+  },
 ];
 
 @NgModule({

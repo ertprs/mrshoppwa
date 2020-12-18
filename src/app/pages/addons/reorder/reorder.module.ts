@@ -22,8 +22,8 @@ import { ReorderPage } from './reorder.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ReorderPageRoutingModule
+    ReorderPageRoutingModule,
   ],
-  declarations: [ReorderPage]
+  declarations: [ReorderPage],
 })
 export class ReorderPageModule {}

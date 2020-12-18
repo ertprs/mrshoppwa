@@ -19,7 +19,7 @@ describe('InfinitePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ InfinitePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(InfinitePage);

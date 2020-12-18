@@ -19,7 +19,7 @@ describe('BubblePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ BubblePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BubblePage);

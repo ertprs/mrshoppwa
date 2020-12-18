@@ -18,7 +18,7 @@ describe('ClassicChatlistPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ClassicChatlistPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ClassicChatlistPage);

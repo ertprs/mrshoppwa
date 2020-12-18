@@ -23,7 +23,7 @@ export class BlogpagePage implements OnInit {
   constructor(
     public activatedRoute: ActivatedRoute,
     public wpService: WordpressService,
-    public util: UtilService
+    public util: UtilService,
   ) {
     this.imageUrl = null;
   }
@@ -33,7 +33,7 @@ export class BlogpagePage implements OnInit {
     // Get the ID that was passed with the URL
     const id = this.activatedRoute.snapshot.paramMap.get('id');
 
-    this.wpService.getBlogDetail(id).subscribe(result => {
+    this.wpService.getBlogDetail(id).subscribe((result) => {
       this.blogDetail = result;
       this.getImage(this.blogDetail);
       this.getTags();
@@ -43,7 +43,7 @@ export class BlogpagePage implements OnInit {
   }
 
   getImage(data) {
-    this.wpService.getImage(data.featured_media).subscribe(blogDetails => {
+    this.wpService.getImage(data.featured_media).subscribe((blogDetails) => {
       console.log('blogDetails', blogDetails);
       this.blogDetail.imageData = blogDetails;
       this.imageUrl = this.blogDetail.imageData.source_url;
@@ -52,7 +52,7 @@ export class BlogpagePage implements OnInit {
 
   getTags() {
     this.wpService.getTags().subscribe((data: Array<any>) => {
-      this.blogDetail.tagsData = data.filter(item => {
+      this.blogDetail.tagsData = data.filter((item) => {
         return this.blogDetail.tags.includes(item.id);
       });
       console.log(this.blogDetail);
@@ -60,7 +60,7 @@ export class BlogpagePage implements OnInit {
   }
 
   getAuthor() {
-    this.wpService.getUser(this.blogDetail.author).subscribe(data => {
+    this.wpService.getUser(this.blogDetail.author).subscribe((data) => {
       console.log(data);
       this.blogDetail.authorData = data;
       this.util.closeLoading();

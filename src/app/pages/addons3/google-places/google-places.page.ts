@@ -15,7 +15,6 @@ import { MapDirectionPage } from '../map-direction/map-direction.page';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { TaxiService } from '@app/services/taxi/taxi.service';
 
-
 declare const google: any;
 // eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace google.maps.places {
@@ -56,7 +55,7 @@ export class GooglePlacesPage implements OnInit {
     public geolocation: Geolocation,
     public modalCtrl: ModalController,
     private mapsAPILoader: MapsAPILoader,
-    private ngZone: NgZone
+    private ngZone: NgZone,
   ) { }
 
   ngOnInit() {
@@ -92,7 +91,6 @@ export class GooglePlacesPage implements OnInit {
       });
   }
 
-
   nearByPlaces() {
     const latLng = new google.maps.LatLng(this.lat, this.lng);
     const service = new google.maps.places.PlacesService(this.map);
@@ -100,7 +98,7 @@ export class GooglePlacesPage implements OnInit {
       location: latLng,
       radius: 500, // 500 Meter
       center: new google.maps.LatLng(this.lat, this.lng),
-      types: [this.isType]
+      types: [this.isType],
     }, (results, status) => {
       console.log(results);
       if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -112,14 +110,14 @@ export class GooglePlacesPage implements OnInit {
             name: results[i].name,
             iconUrl: {
               url: results[i].icon,
-              scaledSize: { height: 27, width: 27 }
+              scaledSize: { height: 27, width: 27 },
             },
             rating: results[i].rating,
             types: results[i].types,
             photos: results[i].photos && this.getPhotos(results[i].photos),
             vicinity: results[i].vicinity,
             total_ratings: results[i].user_ratings_total,
-            opening_hours: results[i].opening_hours
+            opening_hours: results[i].opening_hours,
           });
           this.displayMarkers = Object.assign([], this.markers);
         }
@@ -130,19 +128,18 @@ export class GooglePlacesPage implements OnInit {
 
   getPhotos(data) {
     const photos = [];
-    data.forEach(element => {
+    data.forEach((element) => {
       photos.push(element.getUrl());
     });
     console.log(photos);
     return photos;
   }
 
-
   async getDirection(dir) {
     const direction = { origin: { lat: this.lat, lng: this.lng }, destination: { lat: dir.lat, lng: dir.lng } };
     const modal = await this.modalCtrl.create({
       component: MapDirectionPage,
-      componentProps: direction
+      componentProps: direction,
     });
     // eslint-disable-next-line no-return-await
     return await modal.present();
@@ -153,7 +150,7 @@ export class GooglePlacesPage implements OnInit {
       const nativeHomeInputBox = document.getElementById('txtHome').getElementsByTagName('input')[0];
       console.log('nativeHomeInputBox', nativeHomeInputBox);
       const autocomplete = new google.maps.places.Autocomplete(nativeHomeInputBox, {
-        types: ['address']
+        types: ['address'],
       });
       autocomplete.addListener('place_changed', () => {
         this.ngZone.run(() => {
@@ -178,7 +175,7 @@ export class GooglePlacesPage implements OnInit {
   }
   headTagValue(filtername) {
     if (filtername !== 'all') {
-      const filtered = this.markers.filter(item => {
+      const filtered = this.markers.filter((item) => {
         return item.types.indexOf(filtername) !== -1;
       });
       this.displayMarkers = Object.assign([], filtered);

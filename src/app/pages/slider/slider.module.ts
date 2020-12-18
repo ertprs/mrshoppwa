@@ -13,8 +13,8 @@ import { SliderPage } from './slider.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SliderPageRoutingModule
+    SliderPageRoutingModule,
   ],
-  declarations: [SliderPage]
+  declarations: [SliderPage],
 })
 export class SliderPageModule {}

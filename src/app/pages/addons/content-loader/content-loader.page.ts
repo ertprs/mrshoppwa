@@ -32,5 +32,4 @@ export class ContentLoaderPage implements OnInit {
     this.segmentTab = event.detail.value;
   }
 
-
 }

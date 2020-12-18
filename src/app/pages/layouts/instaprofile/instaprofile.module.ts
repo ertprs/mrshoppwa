@@ -23,8 +23,8 @@ import { SharableModule } from '@app/components/sharable/sharable.module';
     FormsModule,
     IonicModule,
     SharableModule,
-    InstaprofilePageRoutingModule
+    InstaprofilePageRoutingModule,
   ],
-  declarations: [InstaprofilePage]
+  declarations: [InstaprofilePage],
 })
 export class InstaprofilePageModule { }

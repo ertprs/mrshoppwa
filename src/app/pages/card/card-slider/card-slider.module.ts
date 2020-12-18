@@ -14,16 +14,13 @@ import { IonicModule } from '@ionic/angular';
 import { CardSliderPageRoutingModule } from './card-slider-routing.module';
 import { CardSliderPage } from './card-slider.page';
 
-
-
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CardSliderPageRoutingModule
+    CardSliderPageRoutingModule,
   ],
-  declarations: [CardSliderPage]
+  declarations: [CardSliderPage],
 })
 export class CardSliderPageModule {}

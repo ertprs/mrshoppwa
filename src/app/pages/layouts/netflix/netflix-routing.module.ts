@@ -14,8 +14,8 @@ import { NetflixPage } from './netflix.page';
 const routes: Routes = [
   {
     path: '',
-    component: NetflixPage
-  }
+    component: NetflixPage,
+  },
 ];
 
 @NgModule({

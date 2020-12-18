@@ -15,8 +15,8 @@ import { ProductCardPage } from './product-card.page';
 const routes: Routes = [
   {
     path: '',
-    component: ProductCardPage
-  }
+    component: ProductCardPage,
+  },
 ];
 
 @NgModule({

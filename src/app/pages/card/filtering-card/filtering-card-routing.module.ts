@@ -15,8 +15,8 @@ import { FilteringCardPage } from './filtering-card.page';
 const routes: Routes = [
   {
     path: '',
-    component: FilteringCardPage
-  }
+    component: FilteringCardPage,
+  },
 ];
 
 @NgModule({

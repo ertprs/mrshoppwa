@@ -16,7 +16,7 @@ import { environment } from '@env/environment';
   styleUrls: ['./minimal.page.scss'],
 })
 export class MinimalPage implements OnInit {
-  @ViewChild('IonContent', { static: true }) content: IonContent
+  @ViewChild('IonContent', { static: true }) content: IonContent;
 
   public data: Array<any> = [];
   public msgList: Array<any>;
@@ -36,11 +36,10 @@ export class MinimalPage implements OnInit {
     this.data = [
       {
         text: 'Thursday 31 January 2019',
-      }
+      },
     ];
     this.userInput = '';
   }
-
 
   sendMsg() {
     if (this.userInput !== '') {
@@ -51,7 +50,7 @@ export class MinimalPage implements OnInit {
         time: '12:01',
         message: this.userInput,
         id: this.msgList.length + 1,
-        status: true
+        status: true,
       });
       this.userInput = '';
       this.scrollDown();
@@ -72,7 +71,7 @@ export class MinimalPage implements OnInit {
         userAvatar: 'assets/chat/chat/chat3.jpg',
         time: '12:01',
         message: 'Sorry, didn\'t get what you said. Can you repeat that please',
-        status: true
+        status: true,
 
       });
       this.loader = false;

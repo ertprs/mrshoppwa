@@ -19,7 +19,7 @@ import { Router } from '@angular/router';
 export class TindericonsComponent implements OnInit {
   public data: any;
   public slideOpts = {
-    effect: 'flip'
+    effect: 'flip',
   };
   @Input() value: any;
   show: boolean;
@@ -29,7 +29,7 @@ export class TindericonsComponent implements OnInit {
     public modalCtrl: ModalController,
     public navParams: NavParams,
     public route: Router,
-    public platform: Platform
+    public platform: Platform,
   ) {
     this.data = this.navParams.get('value');
     console.log(this.data);

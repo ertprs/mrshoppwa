@@ -15,8 +15,8 @@ import { ArtboardPage } from './artboard.page';
 const routes: Routes = [
   {
     path: '',
-    component: ArtboardPage
-  }
+    component: ArtboardPage,
+  },
 ];
 
 @NgModule({

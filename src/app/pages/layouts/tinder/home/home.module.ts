@@ -28,8 +28,8 @@ import { SwingModule } from 'angular2-swing';
     SwingModule,
     IonicSwingModule,
     SharableModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
 })
 export class HomePageModule { }

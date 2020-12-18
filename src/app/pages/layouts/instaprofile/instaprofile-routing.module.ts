@@ -14,8 +14,8 @@ import { InstaprofilePage } from './instaprofile.page';
 const routes: Routes = [
   {
     path: '',
-    component: InstaprofilePage
-  }
+    component: InstaprofilePage,
+  },
 ];
 
 @NgModule({

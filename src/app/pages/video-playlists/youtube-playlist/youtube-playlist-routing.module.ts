@@ -14,8 +14,8 @@ import { YoutubePlaylistPage } from './youtube-playlist.page';
 const routes: Routes = [
   {
     path: '',
-    component: YoutubePlaylistPage
-  }
+    component: YoutubePlaylistPage,
+  },
 ];
 
 @NgModule({

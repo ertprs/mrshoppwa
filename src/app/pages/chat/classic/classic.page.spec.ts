@@ -18,7 +18,7 @@ describe('ClassicPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ClassicPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ClassicPage);

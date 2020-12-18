@@ -82,5 +82,4 @@ export class TranslatePage implements OnInit {
     this.segmentTab = event.detail.value;
   }
 
-
 }

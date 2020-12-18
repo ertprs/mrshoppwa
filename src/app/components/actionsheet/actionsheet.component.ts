@@ -18,7 +18,7 @@ import { ActionSheetController } from '@ionic/angular';
 export class ActionsheetComponent implements OnInit {
   public response: string;
 
-  constructor(public actionSheetController: ActionSheetController) { 
+  constructor(public actionSheetController: ActionSheetController) {
     this.response = '';
   }
 
@@ -34,34 +34,34 @@ export class ActionsheetComponent implements OnInit {
           icon: 'trash',
           handler: () => {
             this.response = 'Delete clicked';
-          }
+          },
         }, {
           text: 'Share',
           icon: 'share',
           handler: () => {
             this.response = 'Share clicked';
-          }
+          },
         }, {
           text: 'Play (open modal)',
           icon: 'arrow-dropright-circle',
           handler: () => {
             this.response = 'Play clicked';
-          }
+          },
         }, {
           text: 'Favorite',
           icon: 'heart',
           handler: () => {
             this.response = 'Favorite clicked';
-          }
+          },
         }, {
           text: 'Cancel',
           icon: 'close',
           role: 'cancel',
           handler: () => {
             console.log('Cancel clicked');
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     await actionSheet.present();
   }

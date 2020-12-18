@@ -22,7 +22,7 @@ export class MovieTicketPage implements OnInit {
 
   constructor(
     public modalCtrl: ModalController,
-    public cardServ: CardService
+    public cardServ: CardService,
   ) {
     this.movieData = this.cardServ.movieData;
   }

@@ -19,7 +19,7 @@ describe('ContentLoader2Page', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ContentLoader2Page ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ContentLoader2Page);

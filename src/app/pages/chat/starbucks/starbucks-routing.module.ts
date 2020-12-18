@@ -14,8 +14,8 @@ import { StarbucksPage } from './starbucks.page';
 const routes: Routes = [
   {
     path: '',
-    component: StarbucksPage
-  }
+    component: StarbucksPage,
+  },
 ];
 
 @NgModule({

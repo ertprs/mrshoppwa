@@ -22,8 +22,8 @@ import { RefreshPage } from './refresh.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RefreshPageRoutingModule
+    RefreshPageRoutingModule,
   ],
-  declarations: [RefreshPage]
+  declarations: [RefreshPage],
 })
 export class RefreshPageModule {}

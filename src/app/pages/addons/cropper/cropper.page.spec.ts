@@ -19,7 +19,7 @@ describe('CropperPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ CropperPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CropperPage);

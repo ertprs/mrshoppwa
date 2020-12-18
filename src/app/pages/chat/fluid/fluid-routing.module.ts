@@ -14,8 +14,8 @@ import { FluidPage } from './fluid.page';
 const routes: Routes = [
   {
     path: '',
-    component: FluidPage
-  }
+    component: FluidPage,
+  },
 ];
 
 @NgModule({

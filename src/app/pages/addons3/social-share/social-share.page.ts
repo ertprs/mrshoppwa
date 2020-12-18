@@ -24,7 +24,7 @@ export class SocialSharePage implements OnInit {
 
   constructor(
     private socialSharing: SocialSharing,
-    private util: UtilService
+    private util: UtilService,
   ) {
     this.socialShare = environment.SOCIAL_SHARE;
   }
@@ -48,7 +48,6 @@ export class SocialSharePage implements OnInit {
     return this.shownGroup === group;
   }
 
-
   async share(shareData) {
     if (!shareData.text) {
       shareData.text = null;
@@ -63,7 +62,6 @@ export class SocialSharePage implements OnInit {
       .then((res) => console.log('res', res))
       .catch((e) => console.log('error', e));
   }
-
 
   async canShareViaEmail(shareData: any) {
     this.socialSharing.canShareViaEmail().then((res) => {

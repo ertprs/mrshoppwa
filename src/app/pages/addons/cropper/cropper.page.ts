@@ -33,7 +33,7 @@ export class CropperPage implements OnInit {
     public base64: Base64,
     public domSanitizer: DomSanitizer,
     public platform: Platform,
-    public webview: WebView
+    public webview: WebView,
   ) { }
 
   ionViewDidEnter() {
@@ -54,12 +54,12 @@ export class CropperPage implements OnInit {
           cssClass: 'buttonCss',
           handler: () => {
             this.openCamera();
-          }
+          },
         }, {
           text: 'Pick From Gallery',
           handler: () => {
             this.openGallery();
-          }
+          },
         }, {
           text: 'Cancel',
           role: 'cancel',
@@ -67,9 +67,9 @@ export class CropperPage implements OnInit {
           handler: () => {
             console.log('cancel');
 
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     await action.present();
   }
@@ -78,7 +78,7 @@ export class CropperPage implements OnInit {
       quality: 100,
       destinationType: this.camera.DestinationType.FILE_URI,
       encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE
+      mediaType: this.camera.MediaType.PICTURE,
     };
     this.camera.getPicture(options)
       .then((fileUri) => {
@@ -118,11 +118,11 @@ export class CropperPage implements OnInit {
   cropImage(url: string, source: string) {
     this.crop.crop(url, { quality: 100, targetWidth: -1, targetHeight: -1 })
       .then(
-        newImage => {
+        (newImage) => {
           console.log('new image path is: ' + newImage);
           source === 'camera' ? this.setCameraImage(newImage) : this.setGalleryImage(newImage);
         },
-        error => console.error('Error cropping image', error)
+        (error) => console.error('Error cropping image', error),
       );
   }
 

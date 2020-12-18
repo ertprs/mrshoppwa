@@ -14,8 +14,8 @@ import { Register1Page } from './register1.page';
 const routes: Routes = [
   {
     path: '',
-    component: Register1Page
-  }
+    component: Register1Page,
+  },
 ];
 
 @NgModule({

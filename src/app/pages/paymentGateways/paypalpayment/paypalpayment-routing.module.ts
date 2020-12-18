@@ -15,8 +15,8 @@ import { PaypalpaymentPage } from './paypalpayment.page';
 const routes: Routes = [
   {
     path: '',
-    component: PaypalpaymentPage
-  }
+    component: PaypalpaymentPage,
+  },
 ];
 
 @NgModule({

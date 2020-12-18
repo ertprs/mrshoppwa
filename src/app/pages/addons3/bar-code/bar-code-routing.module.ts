@@ -15,8 +15,8 @@ import { BarCodePage } from './bar-code.page';
 const routes: Routes = [
   {
     path: '',
-    component: BarCodePage
-  }
+    component: BarCodePage,
+  },
 ];
 
 @NgModule({

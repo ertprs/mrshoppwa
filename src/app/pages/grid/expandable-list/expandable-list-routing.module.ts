@@ -15,8 +15,8 @@ import { ExpandableListPage } from './expandable-list.page';
 const routes: Routes = [
   {
     path: '',
-    component: ExpandableListPage
-  }
+    component: ExpandableListPage,
+  },
 ];
 
 @NgModule({

@@ -25,7 +25,7 @@ export class ReviewComponent implements OnInit {
 
   getReviews() {
     const pid = this.product.id;
-    this.woocommerceService.getProductReviews(pid).then(reviews => {
+    this.woocommerceService.getProductReviews(pid).then((reviews) => {
       this.reviews = reviews;
     });
   }

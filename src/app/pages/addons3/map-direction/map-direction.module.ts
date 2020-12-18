@@ -22,8 +22,8 @@ import { MapDirectionPage } from './map-direction.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    MapDirectionPageRoutingModule
+    MapDirectionPageRoutingModule,
   ],
-  declarations: []
+  declarations: [],
 })
 export class MapDirectionPageModule { }

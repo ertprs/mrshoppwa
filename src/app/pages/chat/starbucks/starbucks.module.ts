@@ -23,8 +23,8 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     IonicModule,
     AgmCoreModule,
-    StarbucksPageRoutingModule
+    StarbucksPageRoutingModule,
   ],
-  declarations: [StarbucksPage]
+  declarations: [StarbucksPage],
 })
 export class StarbucksPageModule {}

@@ -19,7 +19,7 @@ describe('BlocksPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ BlocksPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BlocksPage);

@@ -15,8 +15,8 @@ import { RefreshPage } from './refresh.page';
 const routes: Routes = [
   {
     path: '',
-    component: RefreshPage
-  }
+    component: RefreshPage,
+  },
 ];
 
 @NgModule({

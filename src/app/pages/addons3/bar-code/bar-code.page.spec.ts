@@ -19,7 +19,7 @@ describe('BarCodePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ BarCodePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BarCodePage);

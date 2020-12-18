@@ -15,8 +15,8 @@ import { MovieTicketPage } from './movie-ticket.page';
 const routes: Routes = [
   {
     path: '',
-    component: MovieTicketPage
-  }
+    component: MovieTicketPage,
+  },
 ];
 
 @NgModule({

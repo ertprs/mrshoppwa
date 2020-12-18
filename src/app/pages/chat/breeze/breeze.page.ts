@@ -40,7 +40,7 @@ export class BreezePage implements OnInit {
     time?: any;
     message?: any;
     image?: any;
-  }>
+  }>;
   constructor() {
     this.msgList = environment.BREEZE_CHAT_DATA;
     this.shareList = environment.BREEZE_SHARE_LIST;
@@ -55,7 +55,6 @@ export class BreezePage implements OnInit {
     this.User = 'Me';
     this.toUser = 'driver';
   }
-
 
   scrollToBottom() {
     this.content.scrollToBottom(100);
@@ -88,7 +87,7 @@ export class BreezePage implements OnInit {
       userName: this.toUser,
       userAvatar: 'assets/user.jpeg',
       time: '12:01 pm',
-      message: 'Sorry, I don\'t know the answer to that. Please ask something else'
+      message: 'Sorry, I don\'t know the answer to that. Please ask something else',
     });
     this.loader = false;
     setTimeout(() => {
@@ -114,7 +113,7 @@ export class BreezePage implements OnInit {
 
     setTimeout(
       this.Load()
-      , 3000
+      , 3000,
     );
     console.log('i', i);
     console.log('this.gallery[i]', this.gallery[i]);

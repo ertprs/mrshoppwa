@@ -67,7 +67,6 @@ import { IonicSwingModule } from '@app/components/ionic-swing/ionic-swing.module
 import { SwingModule } from 'angular2-swing';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 
-
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
@@ -84,13 +83,13 @@ export function HttpLoaderFactory(http: HttpClient) {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
+        deps: [HttpClient],
       },
     }),
     AngularFireModule.initializeApp(environment.config),
     AgmCoreModule.forRoot({
       apiKey: environment.GOOGLE_MAPS_API_KEY,
-      libraries: ['places']
+      libraries: ['places'],
     }),
     AgmDirectionModule,
     AngularFirestoreModule,
@@ -100,7 +99,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SwingModule,
     IonicStorageModule.forRoot(),
     AppRoutingModule,
-
 
     BrowserModule,
     IonicModule.forRoot(),
@@ -139,6 +137,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     { provide: HttpBackend, useClass: NativeHttpFallback, deps: [Platform, NativeHttpBackend, HttpXhrBackend] },
     { provide: DataService, useFactory: getDataService, deps: [HttpClient, AngularFireDatabase] },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

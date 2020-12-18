@@ -15,8 +15,8 @@ import { ShopGridPage } from './shop-grid.page';
 const routes: Routes = [
   {
     path: '',
-    component: ShopGridPage
-  }
+    component: ShopGridPage,
+  },
 ];
 
 @NgModule({

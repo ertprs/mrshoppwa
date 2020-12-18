@@ -22,8 +22,8 @@ import { BusinessPage } from './business.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    BusinessPageRoutingModule
+    BusinessPageRoutingModule,
   ],
-  declarations: [BusinessPage]
+  declarations: [BusinessPage],
 })
 export class BusinessPageModule {}

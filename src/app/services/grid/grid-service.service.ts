@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { GridProduct } from '@app/interfaces/product';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GridServiceService {
 
@@ -28,8 +28,8 @@ export class GridServiceService {
     { image: 'assets/products/gallery3.jpg' },
     { image: 'assets/products/gallery8.jpg' },
     { image: 'assets/products/gallery5.jpg' },
-    { image: 'assets/products/gallery1.jpg' }
-  ]
+    { image: 'assets/products/gallery1.jpg' },
+  ];
 
   medicalList = [
     { title: 'Amrutanjan Strong Pain balm double power 8ml', image: 'assets/products/amrutanjan.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
@@ -51,44 +51,44 @@ export class GridServiceService {
         [
           { title: 'Amrutanjan Strong Pain balm double power 8ml', image: 'assets/products/amrutanjan.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurved isabgol 100gm', image: 'assets/products/AKIK-PISTI.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Health Care Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
         [
           { title: 'Eno Fruit Salt lemon flavor Powder 100gm', image: 'assets/products/eno-regular.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Ayurvedic Dabur Chyawanprash 1kg', image: 'assets/products/chyawanprash-700x700.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
         [
           { title: 'Baidyanath Ayurveda Neemguard Capsules', image: 'assets/products/neemguard.jpg', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Iodex Strong Pain balm double power 8ml', image: 'assets/products/fastIodexpng.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
         [
           { title: 'Amrutanjan Strong Pain balm double power 8ml', image: 'assets/products/amrutanjan.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurved isabgol 100mg', image: 'assets/products/AKIK-PISTI.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Health Care Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
         [
           { title: 'Eno Fruit Salt lemon flavor Powder 100gm', image: 'assets/products/eno-regular.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurved isabgol 100gm', image: 'assets/products/AKIK-PISTI.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
         [
           { title: 'Iodex Strong Pain balm double power 8ml', image: 'assets/products/fastIodexpng.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurveda Neemguard Capsules', image: 'assets/products/neemguard.jpg', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
-    }
-  ]
+        ],
+    },
+  ];
   medicalList_3 = [
     {
       content:
@@ -96,7 +96,7 @@ export class GridServiceService {
           { title: 'Amrutanjan Strong Pain balm double power 8ml', image: 'assets/products/amrutanjan.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurved isabgol 100gm', image: 'assets/products/AKIK-PISTI.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Health Care Product', subTitle: 'OTC Medicine' },
           { title: 'Ayurvedic Dabur Chyawanprash 1kg', image: 'assets/products/chyawanprash-700x700.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
@@ -104,7 +104,7 @@ export class GridServiceService {
           { title: 'Eno Fruit Salt lemon flavor Powder 100gm', image: 'assets/products/eno-regular.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurved isabgol 100gm', image: 'assets/products/AKIK-PISTI.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Health Care Product', subTitle: 'OTC Medicine' },
           { title: 'Ayurvedic Dabur Chyawanprash 1kg', image: 'assets/products/chyawanprash-700x700.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
@@ -112,7 +112,7 @@ export class GridServiceService {
           { title: 'Baidyanath Ayurveda Neemguard Capsules', image: 'assets/products/neemguard.jpg', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Iodex Strong Pain balm double power 8ml', image: 'assets/products/fastIodexpng.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Eno Fruit Salt lemon flavor Powder 100gm', image: 'assets/products/eno-regular.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
@@ -120,7 +120,7 @@ export class GridServiceService {
           { title: 'Amrutanjan Strong Pain balm double power 8ml', image: 'assets/products/amrutanjan.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurved isabgol 100mg', image: 'assets/products/AKIK-PISTI.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Health Care Product', subTitle: 'OTC Medicine' },
           { title: 'Iodex Strong Pain balm double power 8ml', image: 'assets/products/fastIodexpng.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
@@ -128,7 +128,7 @@ export class GridServiceService {
           { title: 'Iodex Strong Pain balm double power 8ml', image: 'assets/products/fastIodexpng.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Eno Fruit Salt lemon flavor Powder 100gm', image: 'assets/products/eno-regular.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurved isabgol 100gm', image: 'assets/products/AKIK-PISTI.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
+        ],
     },
     {
       content:
@@ -136,8 +136,8 @@ export class GridServiceService {
           { title: 'Iodex Strong Pain balm double power 8ml', image: 'assets/products/fastIodexpng.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Baidyanath Ayurveda Neemguard Capsules', image: 'assets/products/neemguard.jpg', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
           { title: 'Eno Fruit Salt lemon flavor Powder 100gm', image: 'assets/products/eno-regular.png', rate: 4.5, regularPrice: 100, salePrice: 80, checked: false, productType: 'Ayurvedic Product', subTitle: 'OTC Medicine' },
-        ]
-    }
+        ],
+    },
   ];
   accordianLists = [
     {
@@ -148,14 +148,14 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy2.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
         },
         {
           Name: 'PLANK',
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -164,7 +164,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -173,7 +173,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -182,7 +182,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -191,7 +191,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -200,7 +200,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -209,7 +209,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -218,10 +218,10 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
-      ]
+      ],
     },
     {
       Name: 'Modrate',
@@ -231,7 +231,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy2.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -239,7 +239,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -248,7 +248,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -257,7 +257,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -266,7 +266,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -275,7 +275,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -284,7 +284,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -293,7 +293,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -302,10 +302,10 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
-        }
-      ]
+        },
+      ],
     },
     {
       Name: 'Professional',
@@ -315,7 +315,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy2.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -323,7 +323,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -332,7 +332,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -341,7 +341,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -350,7 +350,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -359,7 +359,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -368,7 +368,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -377,7 +377,7 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
         },
         {
@@ -386,10 +386,10 @@ export class GridServiceService {
           Set: '3',
           image: 'assets/products/giphy1.gif',
           Equipment: 'dumbell',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!'
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dignissimos aspernatur ullam maiores odio, dolorem provident vel! Assumenda, tempore sunt quod vero corporis error deserunt velit, ullam quae saepe quas!',
 
-        }
-      ]
+        },
+      ],
     },
   ];
   FULL_WIDTH_GRID = [
@@ -402,7 +402,7 @@ export class GridServiceService {
     { title: 'S I V A N A N D A', image: 'assets/products/sivananda.jpg' },
     { title: 'Y I N', image: 'assets/products/yin.jpg' },
 
-  ]
+  ];
   medicines = [
     { title: 'OTC Medicine', image: 'assets/products/icon2.png' },
     { title: 'Drops', image: 'assets/products/drops320x320.png' },
@@ -416,14 +416,14 @@ export class GridServiceService {
     { title: 'Drops', image: 'assets/products/drops320x320.png' },
     { title: 'Baby & Mother', image: 'assets/products/babyMother.png' },
     { title: 'Health Atd', image: 'assets/products/First-aid.png' },
-  ]
+  ];
   buzz = [
     { image: 'assets/products/movie6.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
     { image: 'assets/products/EiffelTower.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
     { image: 'assets/products/robot.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
     { image: 'https:/encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmAaop4raKafqQKCdhvvmBS3ZJzmZmvL8Sra94OUV-iRaqdnUo', title: '7 Places to be in Hyderabad This New Year eve' },
     { image: 'assets/products/movie6.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
-    { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmAaop4raKafqQKCdhvvmBS3ZJzmZmvL8Sra94OUV-iRaqdnUo', title: '7 Places to be in Hyderabad This New Year eve' }
+    { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmAaop4raKafqQKCdhvvmBS3ZJzmZmvL8Sra94OUV-iRaqdnUo', title: '7 Places to be in Hyderabad This New Year eve' },
   ];
   buzz1 = [
     { image: 'assets/products/EiffelTower.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
@@ -432,8 +432,8 @@ export class GridServiceService {
     { image: 'assets/products/more5.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
     { image: 'assets/products/EiffelTower.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
     { image: 'assets/products/plays4.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
-    { image: 'assets/products/robot.jpg', title: '7 Places to be in Hyderabad This New Year eve' }
-  ]
+    { image: 'assets/products/robot.jpg', title: '7 Places to be in Hyderabad This New Year eve' },
+  ];
 
   calculate(price, discount) {
     // eslint-disable-next-line no-param-reassign

@@ -22,7 +22,7 @@ export class YoutubePlaylistPage implements OnInit {
 
   constructor(
     public sanitizer: DomSanitizer,
-    private menuCtrl: MenuController
+    private menuCtrl: MenuController,
   ) {
     this.playlistImages = environment.YOUTUBE_HOME_PLAYLIST;
     this.changeCurrentVideo(this.playlistImages[0]);

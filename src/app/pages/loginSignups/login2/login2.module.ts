@@ -21,8 +21,8 @@ import { Login2Page } from './login2.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Login2PageRoutingModule
+    Login2PageRoutingModule,
   ],
-  declarations: [Login2Page]
+  declarations: [Login2Page],
 })
 export class Login2PageModule {}

@@ -15,8 +15,8 @@ import { SocialSharePage } from './social-share.page';
 const routes: Routes = [
   {
     path: '',
-    component: SocialSharePage
-  }
+    component: SocialSharePage,
+  },
 ];
 
 @NgModule({

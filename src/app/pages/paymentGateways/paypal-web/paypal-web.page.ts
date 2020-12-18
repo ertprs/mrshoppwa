@@ -36,10 +36,10 @@ export class PaypalWebPage {
             purchase_units: [
               {
                 amount: {
-                  value: this$.paymentAmount
-                }
-              }
-            ]
+                  value: this$.paymentAmount,
+                },
+              },
+            ],
           });
         },
 
@@ -54,11 +54,10 @@ export class PaypalWebPage {
             .catch((err: any) => {
               console.log(err);
             });
-        }
+        },
       }).render('#paypal-button-container');
     }, 500);
 
   }
-
 
 }

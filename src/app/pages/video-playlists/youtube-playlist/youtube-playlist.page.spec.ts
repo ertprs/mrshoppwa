@@ -7,7 +7,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
@@ -20,7 +19,7 @@ describe('YoutubePlaylistPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ YoutubePlaylistPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(YoutubePlaylistPage);

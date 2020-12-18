@@ -21,8 +21,8 @@ import { PhaserPage } from './phaser.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PhaserPageRoutingModule
+    PhaserPageRoutingModule,
   ],
-  declarations: [PhaserPage]
+  declarations: [PhaserPage],
 })
 export class PhaserPageModule {}

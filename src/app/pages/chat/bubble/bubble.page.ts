@@ -17,7 +17,7 @@ import { environment } from '@env/environment';
   styleUrls: ['./bubble.page.scss'],
 })
 export class BubblePage implements OnInit {
-  @ViewChild('IonContent', { static: true }) content: IonContent
+  @ViewChild('IonContent', { static: true }) content: IonContent;
   public paramData: any;
   public msgList: any;
   public userInput: string;
@@ -45,7 +45,7 @@ export class BubblePage implements OnInit {
         userAvatar: 'assets/chat/chat/chat3.jpg',
         time: '12:01',
         message: this.userInput,
-        id: msgLength + 1
+        id: msgLength + 1,
       });
       this.userInput = '';
       this.scrollDown();
@@ -64,7 +64,7 @@ export class BubblePage implements OnInit {
         userName: this.User,
         userAvatar: 'assets/chat/chat/chat5.jpg',
         time: '12:01',
-        message: 'Sorry, didn\'t get what you said. Can you repeat that please'
+        message: 'Sorry, didn\'t get what you said. Can you repeat that please',
       });
       this.loader = false;
       this.scrollDown();

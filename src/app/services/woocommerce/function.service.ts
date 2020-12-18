@@ -5,7 +5,7 @@ import { Storage } from '@ionic/storage';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FunctionService {
 
@@ -14,17 +14,15 @@ export class FunctionService {
     private toastController: ToastController,
     private nav: NavController,
     public alertController: AlertController,
-    private storage: Storage
+    private storage: Storage,
   ) { }
 
-
-  
   public cartItems = new BehaviorSubject(0);
 
   updateBehaviourValue() {
     let items = 0;
     this.storage
-      .forEach(data => {
+      .forEach((data) => {
         items += 1;
       })
       .then(() => {
@@ -62,7 +60,7 @@ export class FunctionService {
       message,
       buttons: showButton, // checking Data
       position,
-      duration
+      duration,
     });
     toast.present();
   }
@@ -79,7 +77,7 @@ export class FunctionService {
       'September',
       'October',
       'November',
-      'December'
+      'December',
     ];
 
     const day: string = date.getDate();
@@ -105,17 +103,17 @@ export class FunctionService {
             text: 'Cancel',
             role: 'cancel',
             cssClass: 'secondary',
-            handler: cancel => {
+            handler: (cancel) => {
               resolve('cancel');
-            }
+            },
           },
           {
             text: 'Okay',
-            handler: ok => {
+            handler: (ok) => {
               resolve('ok');
-            }
-          }
-        ]
+            },
+          },
+        ],
       });
 
       await alert.present();

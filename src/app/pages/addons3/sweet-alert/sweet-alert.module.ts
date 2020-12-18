@@ -22,8 +22,8 @@ import { SweetAlertPage } from './sweet-alert.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SweetAlertPageRoutingModule
+    SweetAlertPageRoutingModule,
   ],
-  declarations: [SweetAlertPage]
+  declarations: [SweetAlertPage],
 })
 export class SweetAlertPageModule {}

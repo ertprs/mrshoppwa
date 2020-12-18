@@ -18,7 +18,7 @@ describe('LargecardPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ LargecardPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(LargecardPage);

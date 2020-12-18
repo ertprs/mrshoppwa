@@ -22,8 +22,8 @@ import { WhatsappPage } from './whatsapp.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    WhatsappPageRoutingModule
+    WhatsappPageRoutingModule,
   ],
-  declarations: [WhatsappPage]
+  declarations: [WhatsappPage],
 })
 export class WhatsappPageModule {}

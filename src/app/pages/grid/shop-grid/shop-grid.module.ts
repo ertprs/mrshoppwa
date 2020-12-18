@@ -22,8 +22,8 @@ import { ShopGridPage } from './shop-grid.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ShopGridPageRoutingModule
+    ShopGridPageRoutingModule,
   ],
-  declarations: [ShopGridPage]
+  declarations: [ShopGridPage],
 })
 export class ShopGridPageModule {}

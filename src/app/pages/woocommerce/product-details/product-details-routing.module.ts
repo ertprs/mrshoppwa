@@ -14,8 +14,8 @@ import { ProductDetailsPage } from './product-details.page';
 const routes: Routes = [
   {
     path: '',
-    component: ProductDetailsPage
-  }
+    component: ProductDetailsPage,
+  },
 ];
 
 @NgModule({

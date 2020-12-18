@@ -23,8 +23,8 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     IonicModule,
     AgmCoreModule,
-    RosePageRoutingModule
+    RosePageRoutingModule,
   ],
-  declarations: [RosePage]
+  declarations: [RosePage],
 })
 export class RosePageModule {}

@@ -15,8 +15,8 @@ import { CustomfontsPage } from './customfonts.page';
 const routes: Routes = [
   {
     path: '',
-    component: CustomfontsPage
-  }
+    component: CustomfontsPage,
+  },
 ];
 
 @NgModule({

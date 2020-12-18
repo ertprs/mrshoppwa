@@ -22,8 +22,8 @@ import { InfinitePage } from './infinite.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    InfinitePageRoutingModule
+    InfinitePageRoutingModule,
   ],
-  declarations: [InfinitePage]
+  declarations: [InfinitePage],
 })
 export class InfinitePageModule {}

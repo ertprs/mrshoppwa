@@ -21,8 +21,8 @@ import { GridX3Page } from './grid-x3.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    GridX3PageRoutingModule
+    GridX3PageRoutingModule,
   ],
-  declarations: [GridX3Page]
+  declarations: [GridX3Page],
 })
 export class GridX3PageModule {}

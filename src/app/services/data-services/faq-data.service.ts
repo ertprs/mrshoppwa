@@ -6,13 +6,13 @@ import { BaseDataService } from './base-data.service';
 import { FirestoreService } from '../firestore/firestore.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FAQDataService extends BaseDataService<FAQDto> {
 
   constructor(
     public firestore: FirestoreService,
-    public util: UtilService
+    public util: UtilService,
   ) { super('faq'); }
   public get(): Observable<FAQDto[]> {
     return this.firestore.get<FAQDto>(this.baseCollection);

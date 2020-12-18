@@ -21,8 +21,8 @@ import { StripepaymentPage } from './stripepayment.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    StripepaymentPageRoutingModule
+    StripepaymentPageRoutingModule,
   ],
-  declarations: [StripepaymentPage]
+  declarations: [StripepaymentPage],
 })
 export class StripepaymentPageModule {}

@@ -24,8 +24,8 @@ import { SharableModule } from '@app/components/sharable/sharable.module';
     FormsModule,
     IonicModule,
     SharableModule,
-    DatetimePickersPageRoutingModule
+    DatetimePickersPageRoutingModule,
   ],
-  declarations: [DatetimePickersPage]
+  declarations: [DatetimePickersPage],
 })
 export class DatetimePickersPageModule { }

@@ -10,7 +10,7 @@ describe('LocalNotificationPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ LocalNotificationPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(LocalNotificationPage);

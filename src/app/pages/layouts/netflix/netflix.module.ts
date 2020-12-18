@@ -21,8 +21,8 @@ import { NetflixPage } from './netflix.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    NetflixPageRoutingModule
+    NetflixPageRoutingModule,
   ],
-  declarations: [NetflixPage]
+  declarations: [NetflixPage],
 })
 export class NetflixPageModule {}

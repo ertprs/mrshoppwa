@@ -18,7 +18,7 @@ import { environment } from '@env/environment';
   styleUrls: ['./bubble2.page.scss'],
 })
 export class Bubble2Page implements OnInit {
-  @ViewChild('IonContent', { static: true }) content: IonContent
+  @ViewChild('IonContent', { static: true }) content: IonContent;
   public paramData: any;
   public msgList: any;
   public userName: any;
@@ -51,7 +51,7 @@ export class Bubble2Page implements OnInit {
         userAvatar: 'assets/chat/chat/chat3.jpg',
         time: '12:01',
         message: this.userInput,
-        id: msgLength + 1
+        id: msgLength + 1,
       });
       this.userInput = '';
       this.scrollDown();
@@ -69,7 +69,7 @@ export class Bubble2Page implements OnInit {
         userName: this.User,
         userAvatar: 'assets/chat/chat/chat5.jpg',
         time: '12:01',
-        message: 'Sorry, didn\'t get what you said. Can you repeat that please'
+        message: 'Sorry, didn\'t get what you said. Can you repeat that please',
       });
       this.loader = false;
       this.scrollDown();
@@ -92,7 +92,7 @@ export class Bubble2Page implements OnInit {
     const parent = document.getElementById('chat-parent');
     const scrollOptions = {
       left: 0,
-      top: content.offsetHeight
+      top: content.offsetHeight,
     };
     parent.scrollTo(scrollOptions);
   }

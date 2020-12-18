@@ -34,11 +34,10 @@ export class FAQModel extends BaseDatabaseModel {
       question: this.question,
       answer: this.answer,
       uid: this.uid,
-      tag: this.tag
+      tag: this.tag,
     };
   }
 }
-
 
 export interface FAQDto extends BaseDto {
   question: string;

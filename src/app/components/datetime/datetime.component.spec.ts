@@ -19,7 +19,7 @@ describe('DatetimeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ DatetimeComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(DatetimeComponent);

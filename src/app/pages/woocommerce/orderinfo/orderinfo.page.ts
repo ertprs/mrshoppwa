@@ -19,7 +19,7 @@ export class OrderinfoPage implements OnInit {
 
   constructor(
     private navParams: NavParams,
-    private modalController: ModalController
+    private modalController: ModalController,
   ) {
     this.order = this.navParams.get('value');
   }

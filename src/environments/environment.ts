@@ -7,8 +7,6 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 
-
-
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
@@ -22,7 +20,7 @@ export const environment = {
     databaseURL: '<your-database-URL>',
     projectId: '<your-project-id>',
     storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>'
+    messagingSenderId: '<your-messaging-sender-id>',
   },
 
   GOOGLE_WEBCLIENTID: '124018728460-sv8cqhnnmnf0jeqbnd0apqbnu6egkhug.apps.googleusercontent.com',
@@ -33,8 +31,8 @@ export const environment = {
       children: [
         { title: 'Data Operations', url: '/home', icon: 'nuclear' },
         { title: 'Storage', url: '/image-upload', icon: 'analytics' },
-        { title: 'Login / Signup', url: '/logout', icon: 'log-in' }
-      ]
+        { title: 'Login / Signup', url: '/logout', icon: 'log-in' },
+      ],
     },
     {
       title: 'Layouts', url: null, icon: 'apps',
@@ -42,8 +40,8 @@ export const environment = {
         { title: 'Instagram', url: '/insta-tabs', icon: 'logo-instagram', color: 'pink' },
         { title: 'Uber Map Flow', url: '/uber-map-flow', icon: 'map', color: 'black' },
         { title: 'Whatsapp', url: '/whatsapp', icon: 'logo-whatsapp' },
-        { title: 'Profile', url: '/profile1', icon: 'person' }
-      ]
+        { title: 'Profile', url: '/profile1', icon: 'person' },
+      ],
     },
     {
       title: 'Login & Signups', url: null, icon: 'log-in',
@@ -51,8 +49,8 @@ export const environment = {
         { title: 'Layout 1', url: '/register-1', icon: 'partly-sunny' },
         { title: 'Layout 2', url: '/login-1', icon: 'flame' },
         { title: 'Layout 3', url: '/login-2', icon: 'star' },
-        { title: 'Layout 4', url: '/login-3', icon: 'moon' }
-      ]
+        { title: 'Layout 4', url: '/login-3', icon: 'moon' },
+      ],
     },
     {
       title: 'Sidemenu Layouts', url: null, icon: 'reader', module: 'sidemenu',
@@ -62,8 +60,8 @@ export const environment = {
         { title: 'Full screen', url: '/home', icon: 'car-sport' },
         { title: 'Small Grid 2', url: '/home', icon: 'apps' },
         { title: 'Profile', url: '/home', icon: 'star' },
-        { title: 'Circular ', url: '/home', icon: 'aperture' }
-      ]
+        { title: 'Circular ', url: '/home', icon: 'aperture' },
+      ],
     },
     {
       title: 'Chat Lists', url: null, icon: 'chatbox',
@@ -71,8 +69,8 @@ export const environment = {
         { title: 'Elegance', url: '/elegance', icon: 'bulb' },
         { title: 'Pastry', url: '/pastry', icon: 'pizza' },
         { title: 'Artboard', url: '/artboard', icon: 'brush' },
-        { title: 'Rose', url: '/rose-list', icon: 'rose' }
-      ]
+        { title: 'Rose', url: '/rose-list', icon: 'rose' },
+      ],
     },
     {
       title: 'Chat Screens', url: null, icon: 'chatbubbles',
@@ -85,8 +83,8 @@ export const environment = {
         { title: 'Breeze', url: '/breeze', icon: 'sunny' },
         { title: 'Minimal', url: '/minimal', icon: 'remove' },
         { title: 'Starbucks', url: '/starbucks', icon: 'star' },
-        { title: 'Classic', url: '/classic', icon: 'aperture' }
-      ]
+        { title: 'Classic', url: '/classic', icon: 'aperture' },
+      ],
     },
     {
       title: 'Video Playlist', url: null, icon: 'film',
@@ -94,7 +92,7 @@ export const environment = {
         { title: 'Youtube Home', url: '/youtube-home-playlist', icon: 'apps' },
         { title: 'Youtube Playlist', url: '/grid-youtube-playlist', icon: 'logo-youtube', color: 'gray' },
         { title: 'Large Cards', url: '/video-large-card', icon: 'logo-youtube' },
-      ]
+      ],
     },
     {
       title: 'Grid Layouts', url: null, icon: 'list',
@@ -104,8 +102,8 @@ export const environment = {
         { title: 'Full Grid', url: '/full-grid', icon: 'easel' },
         { title: 'Masonry Grid', url: '/masonry-grid', icon: 'images' },
         { title: 'Card Grid X3', url: '/grid-x3', icon: 'grid' },
-        { title: 'Product Grid X2', url: '/grid-x2', icon: 'grid' }
-      ]
+        { title: 'Product Grid X2', url: '/grid-x2', icon: 'grid' },
+      ],
     },
     {
       title: 'List and Sliders', url: null, icon: 'albums',
@@ -117,8 +115,8 @@ export const environment = {
         { title: 'Event Cards', url: '/event-card', icon: 'bonfire' },
         { title: 'Movie Ticket', url: '/movie-ticket', icon: 'film' },
         { title: 'Sliders', url: '/sliders', icon: 'phone-landscape' },
-        { title: 'Filtering List', url: '/filtering-list', icon: 'funnel' }
-      ]
+        { title: 'Filtering List', url: '/filtering-list', icon: 'funnel' },
+      ],
     },
 
   ],
@@ -129,14 +127,14 @@ export const environment = {
       children: [
         { title: 'Blogs', url: '/blogs', icon: 'list' },
         { title: 'Single Blog', url: '/blogpage', icon: 'document', disabled: true },
-      ]
+      ],
     },
     {
       title: 'Layouts 2', url: null, icon: 'apps',
       children: [
         { title: 'Tinder', url: '/tinder-cards', icon: 'heart', color: 'red' },
-        { title: 'Netflix', url: '/netflix', icon: 'film' }
-      ]
+        { title: 'Netflix', url: '/netflix', icon: 'film' },
+      ],
     },
     {
       title: 'Addons', url: null, icon: 'cog',
@@ -149,8 +147,8 @@ export const environment = {
         { title: 'Content Loader', url: '/content-loader', icon: 'refresh-circle' },
         { title: 'Content Loader 2', url: '/content-loader2', icon: 'logo-ionic' },
         { title: 'Date Time Pickers', url: '/datetimepickers', icon: 'calendar' },
-        { title: 'Settings', url: '/settings', icon: 'cog' }
-      ]
+        { title: 'Settings', url: '/settings', icon: 'cog' },
+      ],
     },
 
   ],
@@ -167,8 +165,8 @@ export const environment = {
         { title: 'Sweet Alerts', url: '/sweet-alert', icon: 'alert' },
         { title: 'In-app browser', url: '/in-app-browser', icon: 'logo-chrome' },
         { title: 'Local Notifications', url: '/local-notification', icon: 'logo-google' },
-        { title: 'Social login', url: '/logout', icon: 'logo-google' }
-      ]
+        { title: 'Social login', url: '/logout', icon: 'logo-google' },
+      ],
     },
     { title: 'Phaser Game', url: '/phaser', icon: 'game-controller' },
     {
@@ -177,8 +175,8 @@ export const environment = {
         { title: 'Products', url: '/woocommerce-products', icon: 'file-tray-full' },
         { title: 'Product detail', url: '/product-details', icon: 'gift' },
         { title: 'My Orders', url: '/orders', icon: 'pricetags' },
-        { title: 'Cart', url: '/cart', icon: 'cart' }
-      ]
+        { title: 'Cart', url: '/cart', icon: 'cart' },
+      ],
     },
     {
       title: 'Payment Gateways', url: null, icon: 'card',
@@ -187,54 +185,54 @@ export const environment = {
         { title: 'Paypal', url: '/paypalpayment', icon: 'gift', device: true },
         { title: 'Apple Pay', url: '/applepay', icon: 'logo-apple', apple: true },
         { title: 'Stripe PWA', url: '/stripe-web', icon: 'file-tray-full' },
-        { title: 'Paypal PWA', url: '/paypal-web', icon: 'gift' }
-      ]
-    }
+        { title: 'Paypal PWA', url: '/paypal-web', icon: 'gift' },
+      ],
+    },
   ],
   SIDEMENU_LAYOUTS: [
     {
       title: 'Home',
       icon: 'home',
-      active: true
+      active: true,
     },
     {
       title: 'My Wallet',
-      icon: 'wallet'
+      icon: 'wallet',
     },
     {
       title: 'History',
-      icon: 'time'
+      icon: 'time',
     },
     {
       title: 'Notif',
-      icon: 'notifications'
+      icon: 'notifications',
     },
     {
       title: 'Invite',
-      icon: 'gift'
+      icon: 'gift',
     },
     {
       title: 'Settings',
-      icon: 'settings'
+      icon: 'settings',
     },
     {
       title: 'Logout',
-      icon: 'log-out'
+      icon: 'log-out',
     },
   ],
   APP_SLIDES: [
     { title: 'IONIC 5 FULL APP', imageUrl: 'assets/imgs/ionic-white.png', slideDesc: 'Explore the ultimate Ionic 5 resource for all your app development', slideBg: '#1e90ff' },
     { title: 'FIREBASE', imageUrl: 'assets/imgs/firebase.png', slideDesc: 'Use Firebase Authentication, social login, storage and data queries for your application', slideBg: '#f28131' },
     { title: 'WOO-COMMERCE', imageUrl: 'assets/imgs/woocommerce.png', slideDesc: 'Use Woocommerce directly in your app. Use all shop features of an e-commerce platform.', slideBg: '#9f5afd' },
-    { title: 'LAYOUTS', imageUrl: 'assets/imgs/layouts.png', slideDesc: 'Explore from a large number of layouts and create your perfect app', slideBg: '#2ecc71' }
+    { title: 'LAYOUTS', imageUrl: 'assets/imgs/layouts.png', slideDesc: 'Explore from a large number of layouts and create your perfect app', slideBg: '#2ecc71' },
   ],
   USER_ADDRESS: [
     { name: 'John Deo', flat: 'D Block', locality: 'Jaipur', nickName: 'office' },
-    { name: 'Aditya Gour', flat: 'D Block Malviya Nagar', locality: 'Jaipur', nickName: 'Home' }
+    { name: 'Aditya Gour', flat: 'D Block Malviya Nagar', locality: 'Jaipur', nickName: 'Home' },
   ],
   USER_CARD_BILLING_DETAILS: [
     { cardNumber: '3124', expiryDate: '12/22', image: 'assets/profile/visa.png' },
-    { cardNumber: '4564', expiryDate: '03/25', image: 'assets/profile/mastercard.png' }
+    { cardNumber: '4564', expiryDate: '03/25', image: 'assets/profile/mastercard.png' },
   ],
   GRID_IMAGES: [
     { title: 'V I N Y A S A', image: 'assets/products/vinyasa.jpg' },
@@ -257,7 +255,7 @@ export const environment = {
     { id: 7, title: 'Marvel Studios\' Avengers: Endgame - Official Trailer', image: 'assets/video/marvel.jpg', length: '6:49', author: 'Marvel', views: '951K', date: '6 months ago', avatar: 'assets/video/av-marvel.jpg', youtube: true, source: 'https://www.youtube.com/embed/LPhqL4DqzBg' },
     { id: 8, title: 'The Hidden Meaning in the Shawshank Redemption', image: 'assets/video/shawshank.jpg', length: '12:00', author: 'Movee', views: '951K', date: '1 months ago', avatar: 'assets/video/av-trailer.jpg', youtube: true, source: 'https://www.youtube.com/embed/-2hWKvq35RM' },
     { id: 9, title: 'JOHN WICK 3 Trailer English Subtitled ', image: 'assets/video/wick.jpg', length: '3:49', author: 'TrailersWD', views: '951K', date: '1 months ago', avatar: 'assets/video/av-wick.jpg', youtube: true, source: 'https://www.youtube.com/embed/rPCzao7H6n8' },
-    { id: 10, title: 'Why Was This Plane Invulnerable: The SR-71 Blackbird Story', image: 'assets/video/blackbird.jpg', length: '5:49', author: 'ArmyHX', views: '951K', date: '12 months ago', avatar: 'assets/video/av-black.jpg', youtube: true, source: 'https://www.youtube.com/embed/th-RoJBP0Vs' }
+    { id: 10, title: 'Why Was This Plane Invulnerable: The SR-71 Blackbird Story', image: 'assets/video/blackbird.jpg', length: '5:49', author: 'ArmyHX', views: '951K', date: '12 months ago', avatar: 'assets/video/av-black.jpg', youtube: true, source: 'https://www.youtube.com/embed/th-RoJBP0Vs' },
   ],
   YOUTUBE_HOME_PLAYLIST: [
     { title: 'Elon Musk in Interstellar Parody', image: 'assets/video/elon.jpg', length: '4:49', author: 'Kazifoo', views: '951K', date: '2 months ago', avatar: 'assets/video/av-musk.jpg', likes: 1345, dislikes: 567, subscribers: '13k', source: 'https://www.youtube.com/embed/zewyvQEqsS4?autoplay=1&cc_load_policy=1' },
@@ -269,7 +267,7 @@ export const environment = {
     { title: 'Marvel Studios\' Avengers: Endgame - Official Trailer', image: 'assets/video/marvel.jpg', length: '6:49', author: 'Marvel', views: '951K', date: '6 months ago', avatar: 'assets/video/av-marvel.jpg', likes: 1345, dislikes: 567, subscribers: '13k', source: 'https://www.youtube.com/embed/LPhqL4DqzBg' },
     { title: 'The Hidden Meaning in the Shawshank Redemption', image: 'assets/video/shawshank.jpg', length: '12:00', author: 'Movee', views: '951K', date: '1 months ago', avatar: 'assets/video/av-trailer.jpg', likes: 1345, dislikes: 567, subscribers: '13k', source: 'https://www.youtube.com/embed/-2hWKvq35RM' },
     { title: 'JOHN WICK 3 Trailer English Subtitled ', image: 'assets/video/wick.jpg', length: '3:49', author: 'TrailersWD', views: '951K', date: '1 months ago', avatar: 'assets/video/av-wick.jpg', likes: 1345, dislikes: 567, subscribers: '13k', source: 'https://www.youtube.com/embed/rPCzao7H6n8' },
-    { title: 'Why Was This Plane Invulnerable: The SR-71 Blackbird Story', image: 'assets/video/blackbird.jpg', length: '5:49', author: 'ArmyHX', views: '951K', date: '12 months ago', avatar: 'assets/video/av-black.jpg', likes: 1345, dislikes: 567, subscribers: '13k', source: 'https://www.youtube.com/embed/th-RoJBP0Vs' }
+    { title: 'Why Was This Plane Invulnerable: The SR-71 Blackbird Story', image: 'assets/video/blackbird.jpg', length: '5:49', author: 'ArmyHX', views: '951K', date: '12 months ago', avatar: 'assets/video/av-black.jpg', likes: 1345, dislikes: 567, subscribers: '13k', source: 'https://www.youtube.com/embed/th-RoJBP0Vs' },
   ],
   INSTAGRAM_DATA: [
     {
@@ -278,7 +276,7 @@ export const environment = {
       img: 'https://www.dropbox.com/s/fmv3y88ccpuajgo/musk.jpg?raw=1',
       avatar: 'https://www.dropbox.com/s/149w8lj8w2mkdig/trump.jpg?raw=1',
       desc: 'Lorem ipsum dolor what is this multi-line text',
-      likes: '5 likes'
+      likes: '5 likes',
     },
     {
       title: 'Akena',
@@ -286,7 +284,7 @@ export const environment = {
       img: 'https://www.dropbox.com/s/nmwasfye1ur01la/mountain.jpg?raw=1',
       avatar: 'https://www.dropbox.com/s/3hro9t6dqpq12gm/biker.jpg?raw=1',
       desc: 'Lorem ipsum dolor what is this multi-line text',
-      likes: '1115 likes'
+      likes: '1115 likes',
     },
     {
       title: 'Adam Chris',
@@ -294,7 +292,7 @@ export const environment = {
       img: 'https://www.dropbox.com/s/u2zkqe6wu2pt9ke/boy.jpg?raw=1',
       avatar: 'https://www.dropbox.com/s/n6eg08194q7nxvl/codergirl.jpg?raw=1',
       desc: 'Lorem ipsum dolor what is this multi-line text',
-      likes: '10 likes '
+      likes: '10 likes ',
     },
     {
       title: 'Jim Halpert',
@@ -302,7 +300,7 @@ export const environment = {
       img: 'https://www.dropbox.com/s/6b6cirog51q9sfm/coder.jpg?raw=1',
       avatar: 'https://www.dropbox.com/s/ct8s21p1mznn0l2/aptaya.jpg?raw=1',
       desc: 'Lorem ipsum dolor what is this multi-line text',
-      likes: '100 likes '
+      likes: '100 likes ',
     },
     {
       title: 'Micheal Scott',
@@ -310,7 +308,7 @@ export const environment = {
       img: 'https://www.dropbox.com/s/3hro9t6dqpq12gm/biker.jpg?raw=1',
       avatar: 'https://www.dropbox.com/s/149w8lj8w2mkdig/trump.jpg?raw=1',
       desc: 'Lorem ipsum dolor what is this multi-line text',
-      likes: '100 likes '
+      likes: '100 likes ',
     },
 
   ],
@@ -321,17 +319,17 @@ export const environment = {
     'assets/imgs/grid/5.png',
     'assets/imgs/grid/6.png',
     'assets/imgs/grid/7.png',
-    'assets/imgs/grid/8.png'
+    'assets/imgs/grid/8.png',
   ],
   NETFLIX_MOVIE_DATA: {
     banner: {
       image: 'assets/netflix/exorcist.jpg',
-      title: 'The Exorcist'
+      title: 'The Exorcist',
     },
     upcoming: {
       image: 'assets/netflix/got.jpg',
       title: 'Game of Thrones',
-      date: 'July 29'
+      date: 'July 29',
     },
     traysBefore: [
       {
@@ -350,8 +348,8 @@ export const environment = {
           { title: 'Captain America', image: 'assets/netflix/5.png' },
           { title: 'Let\'s be cops', image: 'assets/netflix/6.png' },
           { title: 'Annabelle', image: 'assets/netflix/7.png' },
-          { title: 'Transformers', image: 'assets/netflix/8.png' }
-        ]
+          { title: 'Transformers', image: 'assets/netflix/8.png' },
+        ],
       },
       {
         title: 'Recommended for you',
@@ -370,8 +368,8 @@ export const environment = {
           { title: 'Gone Girl', image: 'assets/netflix/2.png' },
           { title: 'Tombstones', image: 'assets/netflix/4.png' },
           { title: 'Captain America', image: 'assets/netflix/5.png' },
-        ]
-      }
+        ],
+      },
     ],
     traysAfter: [
       {
@@ -383,7 +381,7 @@ export const environment = {
           { title: 'Edge of Tomorrow', image: 'assets/netflix/11.png' },
           { title: 'Fault in our stars', image: 'assets/netflix/13.png' },
           { title: 'Maleficent', image: 'assets/netflix/14.png' },
-        ]
+        ],
       },
       {
         title: 'Continue watching for Abhi',
@@ -392,20 +390,20 @@ export const environment = {
           { title: 'Frozen', image: 'assets/netflix/12.png' },
           { title: 'Transformers', image: 'assets/netflix/8.png' },
           { title: 'Guardians of the Galaxy', image: 'assets/netflix/3.png' },
-          { title: 'Gone Girl', image: 'assets/netflix/2.png' }
-        ]
+          { title: 'Gone Girl', image: 'assets/netflix/2.png' },
+        ],
       },
-    ]
+    ],
   },
   NETFLIX_SERIES_DATA: {
     banner: {
       image: 'assets/netflix/wonder.jpg',
-      title: 'Wonder Woman'
+      title: 'Wonder Woman',
     },
     upcoming: {
       image: 'assets/netflix/into-the-wild.jpg',
       title: 'Into the wild',
-      date: 'March 29'
+      date: 'March 29',
     },
     traysBefore: [
       {
@@ -425,7 +423,7 @@ export const environment = {
           { title: 'Frozen', image: 'assets/netflix/12.png' },
           { title: 'Fault in our stars', image: 'assets/netflix/13.png' },
           { title: 'Maleficent', image: 'assets/netflix/14.png' },
-        ]
+        ],
       },
       {
         title: 'Recommended for you',
@@ -444,8 +442,8 @@ export const environment = {
           { title: 'Edge of Tomorrow', image: 'assets/netflix/11.png' },
           { title: 'Fault in our stars', image: 'assets/netflix/13.png' },
           { title: 'Maleficent', image: 'assets/netflix/14.png' },
-        ]
-      }
+        ],
+      },
     ],
     traysAfter: [
       {
@@ -457,7 +455,7 @@ export const environment = {
           { title: 'Edge of Tomorrow', image: 'assets/netflix/11.png' },
           { title: 'Fault in our stars', image: 'assets/netflix/13.png' },
           { title: 'Maleficent', image: 'assets/netflix/14.png' },
-        ]
+        ],
       },
       {
         title: 'Continue watching for Abhi',
@@ -466,10 +464,10 @@ export const environment = {
           { title: 'Frozen', image: 'assets/netflix/12.png' },
           { title: 'Transformers', image: 'assets/netflix/8.png' },
           { title: 'Guardians of the Galaxy', image: 'assets/netflix/3.png' },
-          { title: 'Gone Girl', image: 'assets/netflix/2.png' }
-        ]
+          { title: 'Gone Girl', image: 'assets/netflix/2.png' },
+        ],
       },
-    ]
+    ],
   },
   WHATSAPP_CHAT_DATA: [
     {
@@ -479,14 +477,14 @@ export const environment = {
       count: '2',
       time: '12:17',
       call: '(3) January 09/27/2019',
-      video: 'videocam'
+      video: 'videocam',
     }, {
       name: 'Oliver',
       image: ' assets/chat/chat/chat2.jpg',
       description: 'Rahim: thanks!',
       time: '12:17',
       call: '(3) January 09/26/2019',
-      video: 'videocam'
+      video: 'videocam',
     }, {
       name: 'George',
       image: ' assets/chat/chat/chat3.jpg',
@@ -494,21 +492,21 @@ export const environment = {
       count: '2',
       time: 'Yesterday',
       call: '(1) January 09/26/2018',
-      video: 'videocam'
+      video: 'videocam',
     }, {
       name: 'Harry',
       image: ' assets/chat/chat/chat3.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       time: 'Sunday',
       call: '(5) February 08/20/2018',
-      video: 'videocam'
+      video: 'videocam',
     }, {
       name: 'Jack',
       image: ' assets/chat/chat/chat5.jpg',
       description: 'Yes! that\'s right call him right now.',
       past: '09/27/2015',
       call: '(4) February 28/20/2018',
-      phone: 'call'
+      phone: 'call',
     }, {
       name: 'Jacob',
       image: ' assets/chat/chat/chat6.jpg',
@@ -516,14 +514,14 @@ export const environment = {
       count: '1',
       past: '09/27/2015',
       call: '(4) February 28/20/2015',
-      phone: 'call'
+      phone: 'call',
     }, {
       name: 'Noah',
       image: ' assets/chat/chat/chat7.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/27/2015',
       call: '(3) February 28/20/2016',
-      phone: 'call'
+      phone: 'call',
     }, {
       name: 'Charlie',
       image: ' assets/chat/chat/chat8.jpg',
@@ -531,14 +529,14 @@ export const environment = {
       count: '6',
       past: '09/27/2015',
       call: '(3) December 28/20/2017',
-      phone: 'call'
+      phone: 'call',
     }, {
       name: 'Logan',
       image: ' assets/chat/chat/chat1.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/27/2015',
       call: '09/27/2015',
-      phone: 'call'
+      phone: 'call',
     }, {
       name: 'Harrison',
       image: ' assets/chat/chat/chat2.jpg',
@@ -546,7 +544,7 @@ export const environment = {
 
       past: '09/27/2015',
       call: '09/27/2015',
-      video: 'videocam'
+      video: 'videocam',
     }, {
       name: 'Sebastian',
       image: ' assets/chat/chat/chat3.jpg',
@@ -554,102 +552,102 @@ export const environment = {
 
       past: '09/17/2016',
       call: '(3) December 28/20/2017',
-      video: 'videocam'
+      video: 'videocam',
     }, {
       name: 'Zachary',
       image: ' assets/chat/chat/chat3.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/07/2017',
       call: '09/27/2015',
-      video: 'videocam'
+      video: 'videocam',
     }, {
       name: 'Elijah',
       image: ' assets/chat/chat/chat5.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/09/2018',
       call: '09/27/2015',
-      phone: 'call'
-    }
+      phone: 'call',
+    },
   ],
   INFINITY_SCROLL_DATA: [
     {
       title: 'Mark Twain',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'John Hopkins',
-      author: 'Fat Cat'
+      author: 'Fat Cat',
     },
     {
       title: 'Dude Mister',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Alice Cooper',
-      author: 'Cute Cat'
+      author: 'Cute Cat',
     },
     {
       title: 'Sashi Tharoor',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Mohandas',
-      author: 'Fat Cat'
+      author: 'Fat Cat',
     },
     {
       title: 'Premchand',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Ramdhari',
-      author: 'Cute Cat'
+      author: 'Cute Cat',
     },
     {
       title: 'Hermoine Granger',
-      author: 'Fat Cat'
+      author: 'Fat Cat',
     },
     {
       title: 'Harry Potter',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Mindy Magon',
-      author: 'Cute Cat'
+      author: 'Cute Cat',
     },
     {
       title: 'Jack London',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Mumbai',
-      author: 'Fat Cat'
+      author: 'Fat Cat',
     },
     {
       title: 'Himalaya',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Divakar',
-      author: 'Cute Cat'
-    }
+      author: 'Cute Cat',
+    },
   ],
   REFRESH_DATA: [
     {
       title: 'Burt Bear',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Isabella Iguana',
-      author: 'Fat Cat'
+      author: 'Fat Cat',
     },
     {
       title: 'Donald Duck',
-      author: 'Enappd'
+      author: 'Enappd',
     },
     {
       title: 'Lionel Lion',
-      author: 'Cute Cat'
-    }
+      author: 'Cute Cat',
+    },
   ],
   INAPP_BORWSER_BLANKURL: [
     {
@@ -780,8 +778,8 @@ export const environment = {
       shareData: [
         { title: 'Share text', text: 'Ionic 5 Full App', clickEvent: 'share', shareType: 'shareViaWhatsApp' },
         { title: 'Share Image', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaWhatsApp' },
-        { title: 'Share text with Image(android)', text: 'Ionic 5 Full App', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaWhatsApp' }
-      ]
+        { title: 'Share text with Image(android)', text: 'Ionic 5 Full App', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaWhatsApp' },
+      ],
     },
     {
       heading: 'Facebook',
@@ -789,7 +787,7 @@ export const environment = {
       shareData: [
         { title: 'Share text with URL', text: 'Ionic 5 Full App', url: 'https://store.enappd.com/product/ionic-4-full-app/', shareType: 'shareViaFacebook', clickEvent: 'share' },
         { title: 'Share external image', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaFacebook' },
-      ]
+      ],
     },
     {
       heading: 'Twitter',
@@ -797,22 +795,22 @@ export const environment = {
       shareData: [
         { title: 'Share text with URL', text: 'Ionic 5 Full App', url: 'https://store.enappd.com/product/ionic-4-full-app/', shareType: 'shareViaTwitter', clickEvent: 'share' },
         { title: 'Share Image', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaTwitter' },
-        { title: 'Share text with URL & Image', text: 'Ionic 5 Full App', url: 'https://store.enappd.com/product/ionic-4-full-app/', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaTwitter' }
-      ]
+        { title: 'Share text with URL & Image', text: 'Ionic 5 Full App', url: 'https://store.enappd.com/product/ionic-4-full-app/', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaTwitter' },
+      ],
     },
     {
       heading: 'Instagram',
       headerImage: 'assets/addons3/Instagram-circle.png',
-      shareData: [{ title: 'Share text with Image', text: 'Ionic 5 Full App', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaInstagram' }]
+      shareData: [{ title: 'Share text with Image', text: 'Ionic 5 Full App', image: 'https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg', clickEvent: 'share', shareType: 'shareViaInstagram' }],
     },
     {
       heading: 'Email',
       headerImage: 'assets/addons3/mail.png',
       shareData: [
         { title: 'Check if email sharing is available', share: null, image: null, clickEvent: 'canShareViaEmail' },
-        { title: 'Share with email', share: { body: 'This is body content for email', subject: 'Email subject', to: ['recipient@example.org'] }, image: ['https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg'], clickEvent: 'shareViaEmail' }
-      ]
-    }
+        { title: 'Share with email', share: { body: 'This is body content for email', subject: 'Email subject', to: ['recipient@example.org'] }, image: ['https://store.enappd.com/wp-content/uploads/2019/03/700x700_2-1-280x280.jpg'], clickEvent: 'shareViaEmail' },
+      ],
+    },
   ],
   SWEET_ALERT_DATA: [
     { title: 'A basic message', buttonTitle: 'Click Here', clickEvent: 'basicMessage' },
@@ -841,36 +839,36 @@ export const environment = {
   APPLE_PAY_ITEM: [
     {
       label: '3 x Basket Items',
-      amount: 49.99
+      amount: 49.99,
     },
     {
       label: 'Next Day Delivery',
-      amount: 3.99
+      amount: 3.99,
     },
     {
       label: 'My Fashion Company',
-      amount: 53.98
-    }
+      amount: 53.98,
+    },
   ],
   APPLE_PAY_SHIPPING_METHOD: [
     {
       identifier: 'NextDay',
       label: 'NextDay',
       detail: 'Arrives tomorrow by 5pm.',
-      amount: 3.99
+      amount: 3.99,
     },
     {
       identifier: 'Standard',
       label: 'Standard',
       detail: 'Arrive by Friday.',
-      amount: 4.99
+      amount: 4.99,
     },
     {
       identifier: 'SaturdayDelivery',
       label: 'Saturday',
       detail: 'Arrive by 5pm this Saturday.',
-      amount: 6.99
-    }
+      amount: 6.99,
+    },
   ],
   ARTBOARD_CHAT_LIST: [
     {
@@ -879,7 +877,7 @@ export const environment = {
       description: 'Terneuzen',
       status: 'online',
       count: '2',
-      time: '2 min ago'
+      time: '2 min ago',
 
     }, {
       name: 'Virginia Hansen',
@@ -888,7 +886,7 @@ export const environment = {
       status: 'offline',
       badge: '4',
       sendTime: '18:34',
-      group: true
+      group: true,
 
     }, {
       name: 'Billy Boyd',
@@ -897,7 +895,7 @@ export const environment = {
       status: 'offline',
       count: '2',
       sendTime: '18:30',
-      broadcast: true
+      broadcast: true,
 
     }, {
       name: 'Tiffany Hayes',
@@ -905,26 +903,26 @@ export const environment = {
       description: 'Veenendaal',
       status: 'online',
       badge: '6',
-      sendTime: '17:55'
+      sendTime: '17:55',
     }, {
       name: 'Jeese Jensen',
       image: ' assets/chat/chat/man1.png',
       description: ' Purmerend',
       status: 'offline',
-      sendTime: '17:55'
+      sendTime: '17:55',
     }, {
       name: 'Jacob',
       image: ' assets/chat/chat/boy1.png',
       description: 'Greensboro',
       status: 'offline',
       count: '1',
-      sendTime: '17:50'
+      sendTime: '17:50',
     }, {
       name: 'Noah',
       image: ' assets/chat/chat/boy.png',
       description: 'Greensboro',
       status: 'offline',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Charlie',
       image: 'assets/chat/chat/woman.png',
@@ -932,44 +930,44 @@ export const environment = {
       status: 'online',
       count: '6',
       badge: '8',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Logan',
       image: 'assets/chat/chat/man.png',
       description: 'Greensboro',
       status: 'offline',
       badge: '8',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Harrison',
       image: 'assets/chat/chat/boy2.png',
       description: 'Greensboro',
       status: 'offline',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Sebastian',
       image: 'assets/chat/chat/boy1.png',
       description: 'Greensboro',
       status: 'online',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Zachary',
       image: 'assets/chat/chat/man.png',
       description: 'Greensboro',
       status: 'offline',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Elijah',
       image: 'assets/chat/chat/boy.png',
       description: 'Greensboro',
       status: 'offline',
       badge: '8',
-      sendTime: '17:40'
-    }
+      sendTime: '17:40',
+    },
   ],
   ARTBOARD_USER_DETAILS: {
     name: 'Patricia Howard',
-    tagline: 'St. Paul'
+    tagline: 'St. Paul',
   },
   BLOCKS_CHAT_LIST: [
     {
@@ -1006,7 +1004,7 @@ export const environment = {
       time: '12:07',
       message: 'Oh there are several other designs. Check all their designs on their website enappd.com',
       id: 5, read: true, delivered: true, sent: true, sender: 1,
-    }
+    },
   ],
   BREEZE_CHAT_DATA: [
     {
@@ -1034,13 +1032,13 @@ export const environment = {
       userAvatar: 'assets/user.jpeg',
       time: '11:40 AM',
       message: 'Sure !',
-    }
+    },
   ],
   BREEZE_USER_DETAILS: {
     firstName: 'Bill',
     lastName: 'Kenny',
     image: 'assets/chat/chat/boy.png',
-    status: 'Online'
+    status: 'Online',
   },
   BREEZE_GALLERY_DATA: [
     'assets/chat/chat/gallery6.jpeg',
@@ -1058,7 +1056,7 @@ export const environment = {
     'assets/chat/chat/gallery2.jpeg',
     'assets/chat/chat/gallery3.jpeg',
     'assets/chat/chat/gallery6.jpeg',
-    'assets/chat/images/sg2.jpg'
+    'assets/chat/images/sg2.jpg',
   ],
   BREEZE_SHARE_LIST: [
     { image: 'assets/chat/avatars/1.png', name: 'Alexa' },
@@ -1066,7 +1064,7 @@ export const environment = {
     { image: 'assets/chat/avatars/3.png', name: 'Cosmo' },
     { image: 'assets/chat/avatars/4.png', name: 'Carl' },
     { image: 'assets/chat/avatars/5.png', name: 'Maggie' },
-    { image: 'assets/chat/avatars/6.png', name: 'Thomas' }
+    { image: 'assets/chat/avatars/6.png', name: 'Thomas' },
   ],
   BUBBLE_CHAT_DATA: [
     {
@@ -1075,7 +1073,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:00',
       message: 'Hello, have you seen this great chat UI',
-      id: 0
+      id: 0,
     },
     {
       userId: 'Me',
@@ -1091,7 +1089,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:05',
       message: '... and this is absolutely free, anyone can use',
-      id: 3
+      id: 3,
     },
     {
       userId: 'Me',
@@ -1099,7 +1097,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat5.jpg',
       time: '12:06',
       message: 'wow ! that\'s great. Love to see more of such chat themes',
-      id: 4
+      id: 4,
     },
     {
       userId: 'HealthBot',
@@ -1107,8 +1105,8 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:07',
       message: 'Oh there are several other designs. Check all their designs on their website enappd.com',
-      id: 5
-    }
+      id: 5,
+    },
   ],
   BUSINESS_CHAT_DATA: [
     {
@@ -1117,7 +1115,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpg',
       time: '12:01 pm',
       message: 'Hey, that\'s an awesome chat UI',
-      upertext: 'Hello'
+      upertext: 'Hello',
     },
     {
       userId: 'driver',
@@ -1125,7 +1123,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpeg',
       time: '12:01 pm',
       message: 'Right, it totally blew my mind. They have other great apps and designs too!',
-      upertext: 'Hii'
+      upertext: 'Hii',
     },
     {
       userId: 'Me',
@@ -1133,7 +1131,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpg',
       time: '12:01 pm',
       message: 'And it is free ?',
-      upertext: 'How r u '
+      upertext: 'How r u ',
     },
     {
       userId: 'driver',
@@ -1141,7 +1139,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpeg',
       time: '12:01 pm',
       message: 'Yes, totally free. Beat that !',
-      upertext: 'good'
+      upertext: 'good',
     },
     {
       userId: 'Me',
@@ -1149,7 +1147,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpg',
       time: '12:01 pm',
       message: 'Wow, that\'s so cool. Hats off to the developers. This is gooood stuff',
-      upertext: 'How r u '
+      upertext: 'How r u ',
     },
     {
       userId: 'driver',
@@ -1157,7 +1155,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpeg',
       time: '12:01 pm',
       message: 'Check out their other designs.',
-      upertext: 'good'
+      upertext: 'good',
     },
     {
       userId: 'Me',
@@ -1165,7 +1163,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpg',
       time: '12:01 pm',
       message: 'Have you seen their other apps ? They have a collection of ready-made apps for developers. This makes my life so easy. I love it! ',
-      upertext: 'How r u '
+      upertext: 'How r u ',
     },
     {
       userId: 'driver',
@@ -1173,7 +1171,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpeg',
       time: '12:01 pm',
       message: 'Well, good things come in small package after all',
-      upertext: 'good'
+      upertext: 'good',
     },
   ],
   BUSINESS_SENDER_CHAT_DATA: [
@@ -1187,7 +1185,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpeg',
       time: 1488349800000,
       message: 'Hey, that\'s an awesome chat UI',
-      status: 'success'
+      status: 'success',
 
     },
     {
@@ -1200,7 +1198,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpg',
       time: 1491034800000,
       message: 'Right, it totally blew my mind. They have other great apps and designs too !',
-      status: 'success'
+      status: 'success',
     },
     {
       messageId: '3',
@@ -1212,7 +1210,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpeg',
       time: 1491034920000,
       message: 'And it is free ?',
-      status: 'success'
+      status: 'success',
     },
     {
       messageId: '4',
@@ -1224,7 +1222,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpg',
       time: 1491036720000,
       message: 'Yes, totally free. Beat that ! ',
-      status: 'success'
+      status: 'success',
     },
     {
       messageId: '5',
@@ -1236,7 +1234,7 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpg',
       time: 1491108720000,
       message: 'Wow, that\'s so cool. Hats off to the developers. This is gooood stuff',
-      status: 'success'
+      status: 'success',
     },
     {
       messageId: '6',
@@ -1248,8 +1246,8 @@ export const environment = {
       userAvatar: 'assets/chat/user.jpeg',
       time: 1491231120000,
       message: 'Check out their other designs.',
-      status: 'success'
-    }
+      status: 'success',
+    },
   ],
   CLASSIC_CHAT_DATA: [
     {
@@ -1258,7 +1256,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:00',
       message: 'Hello, have you seen this great chat UI',
-      id: 0
+      id: 0,
     },
     {
       userId: 'Me',
@@ -1274,7 +1272,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:05',
       message: '... and this is absolutely free, anyone can use',
-      id: 3
+      id: 3,
     },
     {
       userId: 'Me',
@@ -1282,41 +1280,41 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat5.jpg',
       time: '12:06',
       message: 'wow ! that\'s great. Love to see more of such chat themes',
-      id: 4
+      id: 4,
     },
     {
       userId: 'HealthBot',
       userName: 'HealthBot',
       userAvatar: 'assets/chat/chat/chat3.jpg',
       message: 'Oh there are several other designs. Check all their designs on their website enappd.com',
-      id: 5
-    }
+      id: 5,
+    },
   ],
   CLASSIC_FOOTER_JSON: [
     {
       icon: 'images',
-      label: 'Image'
+      label: 'Image',
     },
     {
       icon: 'call',
-      label: 'Phone'
+      label: 'Phone',
     },
     {
       icon: 'mail-unread',
-      label: 'Red'
+      label: 'Red',
     },
     {
       label: 'Document',
-      icon: 'radio-button-on'
+      icon: 'radio-button-on',
     },
     {
       icon: 'location-sharp',
-      label: 'Position'
+      label: 'Position',
     },
     {
       icon: 'videocam',
-      label: 'Video'
-    }
+      label: 'Video',
+    },
   ],
   CLASSIC_CHAT_LIST_DATA: [
     {
@@ -1326,7 +1324,7 @@ export const environment = {
       count: '2',
       time: '12:17',
       call: '(3) January 09/27/2019',
-      video: 'videocam'
+      video: 'videocam',
     },
     {
       name: 'Oliver',
@@ -1334,7 +1332,7 @@ export const environment = {
       description: 'Rahim: thanks!',
       time: '12:17',
       call: '(3) January 09/26/2019',
-      video: 'videocam'
+      video: 'videocam',
     },
     {
       name: 'George',
@@ -1343,7 +1341,7 @@ export const environment = {
       count: '2',
       time: 'Yesterday',
       call: '(1) January 09/26/2018',
-      video: 'videocam'
+      video: 'videocam',
     },
     {
       name: 'Harry',
@@ -1351,7 +1349,7 @@ export const environment = {
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       time: 'Sunday',
       call: '(5) February 08/20/2018',
-      video: 'videocam'
+      video: 'videocam',
     },
     {
       name: 'Jack',
@@ -1359,7 +1357,7 @@ export const environment = {
       description: 'Yes! that\'s right call him right now.',
       past: '09/27/2015',
       call: '(4) February 28/20/2018',
-      phone: 'call'
+      phone: 'call',
     },
     {
       name: 'Jacob',
@@ -1368,7 +1366,7 @@ export const environment = {
       count: '1',
       past: '09/27/2015',
       call: '(4) February 28/20/2015',
-      phone: 'call'
+      phone: 'call',
     },
     {
       name: 'Noah',
@@ -1376,7 +1374,7 @@ export const environment = {
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/27/2015',
       call: '(3) February 28/20/2016',
-      phone: 'call'
+      phone: 'call',
     },
     {
       name: 'Charlie',
@@ -1385,7 +1383,7 @@ export const environment = {
       count: '6',
       past: '09/27/2015',
       call: '(3) December 28/20/2017',
-      phone: 'call'
+      phone: 'call',
     },
     {
       name: 'Logan',
@@ -1393,7 +1391,7 @@ export const environment = {
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/27/2015',
       call: '09/27/2015',
-      phone: 'call'
+      phone: 'call',
     },
     {
       name: 'Harrison',
@@ -1402,7 +1400,7 @@ export const environment = {
 
       past: '09/27/2015',
       call: '09/27/2015',
-      video: 'videocam'
+      video: 'videocam',
     },
     {
       name: 'Sebastian',
@@ -1411,7 +1409,7 @@ export const environment = {
 
       past: '09/17/2016',
       call: '(3) December 28/20/2017',
-      video: 'videocam'
+      video: 'videocam',
     },
     {
       name: 'Zachary',
@@ -1419,7 +1417,7 @@ export const environment = {
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/07/2017',
       call: '09/27/2015',
-      video: 'videocam'
+      video: 'videocam',
     },
     {
       name: 'Elijah',
@@ -1427,8 +1425,8 @@ export const environment = {
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       past: '09/09/2018',
       call: '09/27/2015',
-      phone: 'call'
-    }
+      phone: 'call',
+    },
   ],
   ELEGANCE_CHAT_LIST: [
     {
@@ -1437,7 +1435,7 @@ export const environment = {
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'online',
       count: '2',
-      time: '2 min ago'
+      time: '2 min ago',
 
     }, {
       name: 'Oliver',
@@ -1446,7 +1444,7 @@ export const environment = {
       status: 'offline',
       badge: '4',
       sendTime: '18:34',
-      group: true
+      group: true,
 
     }, {
       name: 'George',
@@ -1455,7 +1453,7 @@ export const environment = {
       status: 'offline',
       count: '2',
       sendTime: '18:30',
-      broadcast: true
+      broadcast: true,
 
     }, {
       name: 'Harry',
@@ -1463,26 +1461,26 @@ export const environment = {
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'online',
       badge: '6',
-      sendTime: '17:55'
+      sendTime: '17:55',
     }, {
       name: 'Jack',
       image: ' assets/chat/chat/user.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'offline',
-      sendTime: '17:55'
+      sendTime: '17:55',
     }, {
       name: 'Jacob',
       image: ' assets/chat/chat/user3.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'offline',
       count: '1',
-      sendTime: '17:50'
+      sendTime: '17:50',
     }, {
       name: 'Noah',
       image: ' assets/chat/chat/user2.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'offline',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Charlie',
       image: ' assets/chat/chat/user4.jpeg',
@@ -1490,40 +1488,40 @@ export const environment = {
       status: 'online',
       count: '6',
       badge: '8',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Logan',
       image: ' assets/chat/chat/user.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'offline',
       badge: '8',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Harrison',
       image: ' assets/chat/chat/user2.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'offline',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Sebastian',
       image: ' assets/chat/chat/user1.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'online',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Zachary',
       image: ' assets/chat/chat/user4.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'offline',
-      sendTime: '17:40'
+      sendTime: '17:40',
     }, {
       name: 'Elijah',
       image: ' assets/chat/chat/user3.jpeg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       status: 'offline',
       badge: '8',
-      sendTime: '17:40'
-    }
+      sendTime: '17:40',
+    },
   ],
   FLUID_CHAT_DATA: [
     { text: 'Hey, that\'s an awesome chat UI', sender: 0, image: 'assets/chat/images/sg2.jpg' },
@@ -1533,7 +1531,7 @@ export const environment = {
     { text: 'Wow, that\'s so cool', sender: 0, image: 'assets/chat/images/sg2.jpg' },
     { text: 'Hats off to the developers', sender: 1, image: 'assets/chat/images/sg1.jpg', read: false, delivered: true, sent: true },
     { text: 'Oh yes, this is gooood stuff', sender: 0, image: 'assets/chat/images/sg2.jpg' },
-    { text: 'Check out their other designs ', sender: 1, image: 'assets/chat/images/sg1.jpg', read: false, delivered: false, sent: true }
+    { text: 'Check out their other designs ', sender: 1, image: 'assets/chat/images/sg1.jpg', read: false, delivered: false, sent: true },
 
   ],
   MINIMAL_CHAT_DATA: [
@@ -1544,7 +1542,7 @@ export const environment = {
       time: '12:00',
       message: 'Hello, have you seen this great chat UI',
       id: 0,
-      status: true
+      status: true,
     },
     {
       userId: 'Me',
@@ -1553,7 +1551,7 @@ export const environment = {
       time: '12:03',
       message: 'Yeah, I see this. This looks great. ',
       id: 1,
-      status: true
+      status: true,
     },
     {
       userId: 'HealthBot',
@@ -1562,7 +1560,7 @@ export const environment = {
       time: '12:05',
       message: '... and this is absolutely free, anyone can use',
       id: 3,
-      status: false
+      status: false,
     },
     {
       userId: 'Me',
@@ -1571,7 +1569,7 @@ export const environment = {
       time: '12:06',
       message: 'wow ! that\'s great. Love to see more of such chat themes',
       id: 4,
-      status: true
+      status: true,
     },
     {
       userId: 'HealthBot',
@@ -1580,8 +1578,8 @@ export const environment = {
       time: '12:07',
       message: 'Oh there are several other designs. Check all their designs on their website enappd.com',
       id: 5,
-      status: false
-    }
+      status: false,
+    },
   ],
   PASTRY_CHAT_LIST: [
     {
@@ -1589,74 +1587,74 @@ export const environment = {
       image: 'assets/chat/chat/chat1.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       count: '2',
-      time: '12:17'
+      time: '12:17',
     }, {
       name: 'Oliver',
       image: ' assets/chat/chat/chat2.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
-      time: '12:17'
+      time: '12:17',
     }, {
       name: 'George',
       image: ' assets/chat/chat/chat3.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       count: '2',
-      time: 'Yesterday'
+      time: 'Yesterday',
     }, {
       name: 'Harry',
       image: ' assets/chat/chat/chat3.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
-      time: 'Sunday'
+      time: 'Sunday',
     }, {
       name: 'Jack',
       image: ' assets/chat/chat/chat5.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
 
-      time: '11:15'
+      time: '11:15',
     }, {
       name: 'Jacob',
       image: ' assets/chat/chat/chat6.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       count: '1',
-      time: 'Yesterday'
+      time: 'Yesterday',
     }, {
       name: 'Noah',
       image: ' assets/chat/chat/chat7.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
-      time: 'Monday'
+      time: 'Monday',
     }, {
       name: 'Charlie',
       image: ' assets/chat/chat/chat8.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
       count: '6',
-      time: '07:00'
+      time: '07:00',
     }, {
       name: 'Logan',
       image: ' assets/chat/chat/chat1.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
-      time: 'Yesterday'
+      time: 'Yesterday',
     }, {
       name: 'Harrison',
       image: ' assets/chat/chat/chat2.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
 
-      time: 'Yesterday'
+      time: 'Yesterday',
     }, {
       name: 'Sebastian',
       image: ' assets/chat/chat/chat3.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
 
-      time: 'Yesterday'
+      time: 'Yesterday',
     }, {
       name: 'Zachary',
       image: ' assets/chat/chat/chat3.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
-      time: 'Today'
+      time: 'Today',
     }, {
       name: 'Elijah',
       image: ' assets/chat/chat/chat5.jpg',
       description: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim laboriosam sunt nulla minima ratione, pariatur quaerat aut ex a ullam? Officia, explicabo optio. Dolores, ab exercitationem? Neque illo soluta sapiente!',
-      time: '18:25'
-    }
+      time: '18:25',
+    },
   ],
   ROSE_CHAT_DATA: [
     {
@@ -1666,7 +1664,7 @@ export const environment = {
       time: '12:00',
       message: 'Hello, have you seen this great chat UI',
       id: 0,
-      status: 'checkmark'
+      status: 'checkmark',
     },
     {
       userId: 'Me',
@@ -1676,7 +1674,7 @@ export const environment = {
       message: 'Yeah, I see this. This looks great. ',
       id: 1,
       status: 'checkmark',
-      name: 'Diana Nicole'
+      name: 'Diana Nicole',
 
     },
     {
@@ -1686,7 +1684,7 @@ export const environment = {
       time: '12:05',
       message: '... and this is absolutely free, anyone can use',
       id: 3,
-      status: 'checkmark-done-outline'
+      status: 'checkmark-done-outline',
     },
     {
       userId: 'Me',
@@ -1696,7 +1694,7 @@ export const environment = {
       message: 'wow ! that"s great. Love to see more of such chat themes',
       id: 4,
       status: 'checkmark',
-      name: 'Diana Nicole'
+      name: 'Diana Nicole',
 
     },
     {
@@ -1706,29 +1704,29 @@ export const environment = {
       time: '12:07',
       message: 'Oh there are several other designs. Check all their designs on their website enappd.com',
       id: 5,
-      status: 'checkmark-done-outline'
-    }
+      status: 'checkmark-done-outline',
+    },
   ],
   ROSE_FOOTER_JSON: [
     {
       icon: 'images',
-      label: 'Image'
+      label: 'Image',
     }, {
       icon: 'call',
-      label: 'Phone'
+      label: 'Phone',
     }, {
       icon: 'mail-unread',
-      label: 'Red'
+      label: 'Red',
     }, {
       label: 'Document',
-      icon: 'radio-button-on'
+      icon: 'radio-button-on',
     }, {
       icon: 'location-sharp',
-      label: 'Position'
+      label: 'Position',
     }, {
       icon: 'videocam',
-      label: 'Video'
-    }
+      label: 'Video',
+    },
   ],
   ROSE_CHAT_LIST: [
     {
@@ -1738,7 +1736,7 @@ export const environment = {
       count: '2',
       time: '11:32 PM',
       distance: '6km',
-      type: 'PRO', crown: 'assets/chat/chat/crown.png'
+      type: 'PRO', crown: 'assets/chat/chat/crown.png',
 
     }, {
       name: 'Jovenica Alba',
@@ -1829,7 +1827,7 @@ export const environment = {
 
       time: 'Yesterday',
       distance: '6km',
-      type: 'PRO', crown: 'assets/chat/chat/crown.png'
+      type: 'PRO', crown: 'assets/chat/chat/crown.png',
     }, {
       name: 'Zachary',
       image: ' assets/chat/chat/chat3.jpg',
@@ -1845,7 +1843,7 @@ export const environment = {
       time: '18:25',
       distance: '6km',
       type: 'PRO', crown: 'assets/chat/chat/crown.png',
-    }
+    },
   ],
   STARTBUCKS_CHAT_DATA: [
     {
@@ -1854,7 +1852,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:00',
       message: 'Hello, have you seen this great chat UI',
-      id: 0
+      id: 0,
     },
     {
       userId: 'Me',
@@ -1870,7 +1868,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:05',
       message: '... and this is absolutely free, anyone can use',
-      id: 3
+      id: 3,
     },
     {
       userId: 'Me',
@@ -1878,7 +1876,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat5.jpg',
       time: '12:06',
       message: 'wow ! that\'s great. Love to see more of such chat themes',
-      id: 4
+      id: 4,
     },
     {
       userId: 'HealthBot',
@@ -1886,8 +1884,8 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:07',
       message: 'Oh there are several other designs. Check all their designs on their website enappd.com',
-      id: 5
-    }
+      id: 5,
+    },
   ],
   BUBBLE2_MESSAGELIST: [
     {
@@ -1896,7 +1894,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:00',
       message: 'Hello, have you seen this great chat UI',
-      id: 0
+      id: 0,
     },
     {
       userId: 'Me',
@@ -1912,7 +1910,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:05',
       message: '... and this is absolutely free, anyone can use',
-      id: 3
+      id: 3,
     },
     {
       userId: 'Me',
@@ -1920,7 +1918,7 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat5.jpg',
       time: '12:06',
       message: 'wow ! that\'s great. Love to see more of such chat themes',
-      id: 4
+      id: 4,
     },
     {
       userId: 'HealthBot',
@@ -1928,8 +1926,8 @@ export const environment = {
       userAvatar: 'assets/chat/chat/chat3.jpg',
       time: '12:07',
       message: 'Oh there are several other designs. Check all their designs on their website enappd.com',
-      id: 5
-    }
+      id: 5,
+    },
   ],
 
 };

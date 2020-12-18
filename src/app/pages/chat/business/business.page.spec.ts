@@ -18,7 +18,7 @@ describe('BusinessPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ BusinessPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BusinessPage);

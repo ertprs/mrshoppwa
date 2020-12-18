@@ -14,8 +14,8 @@ import { StripepaymentPage } from './stripepayment.page';
 const routes: Routes = [
   {
     path: '',
-    component: StripepaymentPage
-  }
+    component: StripepaymentPage,
+  },
 ];
 
 @NgModule({

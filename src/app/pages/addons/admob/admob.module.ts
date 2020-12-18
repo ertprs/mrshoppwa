@@ -13,8 +13,8 @@ import { AdmobPage } from './admob.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    AdmobPageRoutingModule
+    AdmobPageRoutingModule,
   ],
-  declarations: [AdmobPage]
+  declarations: [AdmobPage],
 })
 export class AdmobPageModule {}

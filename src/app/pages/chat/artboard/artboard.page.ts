@@ -18,7 +18,7 @@ import { environment } from '@env/environment';
 export class ArtboardPage implements OnInit {
   public chatSegmentType;
   public chatData: Array<any>;
-  public userDetails: any
+  public userDetails: any;
 
   constructor() {
     this.chatSegmentType = 'person';

@@ -19,7 +19,7 @@ describe('TranslatePage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ TranslatePage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TranslatePage);

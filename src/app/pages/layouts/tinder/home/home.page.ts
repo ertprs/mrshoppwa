@@ -41,7 +41,7 @@ export class HomePage {
   public modalRefreshData: any;
   public showButton: boolean;
   public modalGold: any;
-  public hasUserData: any
+  public hasUserData: any;
   public conversation: Array<any>;
   public phone_model = 'iPhone';
   public input = '';
@@ -86,7 +86,7 @@ export class HomePage {
       },
       throwOutDistance: (d) => {
         return 800;
-      }
+      },
     };
     setTimeout(() => {
       this.hasUserData = true;
@@ -127,7 +127,6 @@ export class HomePage {
       this.dataService.openModal(TindericonsComponent, this.modalstarData, 'modalBackground');
     }
   }
-
 
   updateImage(i) {
     console.log('imageIndex', i);
@@ -221,10 +220,9 @@ export class HomePage {
   }
   openandHideDetail(userData) {
 
-
   }
   async change() {
-    await this.slides.getActiveIndex().then(data => this.index = data);
+    await this.slides.getActiveIndex().then((data) => this.index = data);
     console.log(this.index);
     if (this.index === 0) {
       this.showButton = true;

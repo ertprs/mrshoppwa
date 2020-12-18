@@ -102,28 +102,26 @@ export class UberMapFlowPage implements OnInit {
           cssClass: 'secondary',
           handler: (blah) => {
             this.router.navigate(['customerRequest']);
-          }
+          },
         }, {
           text: 'Okay',
           handler: () => {
             console.log('Confirm Okay');
             this.taxiServ.userCard = true;
             this.userCard = true;
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
 
     await alert.present();
   }
-
 
   getDirection() {
     this.origin = { lat: 26.857114, lng: 75.8127086 };
     this.destination = { lat: 0.5 + 26.857114, lng: 0.5 + 75.8127086 };
     console.log('origin', this.origin, this.destination);
   }
-
 
   public getcurrentLocations() {
     this.geolocation.getCurrentPosition().then((resp) => {

@@ -14,8 +14,8 @@ import { MasonryGridPage } from './masonry-grid.page';
 const routes: Routes = [
   {
     path: '',
-    component: MasonryGridPage
-  }
+    component: MasonryGridPage,
+  },
 ];
 
 @NgModule({

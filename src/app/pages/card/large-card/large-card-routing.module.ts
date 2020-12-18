@@ -15,8 +15,8 @@ import { LargeCardPage } from './large-card.page';
 const routes: Routes = [
   {
     path: '',
-    component: LargeCardPage
-  }
+    component: LargeCardPage,
+  },
 ];
 
 @NgModule({

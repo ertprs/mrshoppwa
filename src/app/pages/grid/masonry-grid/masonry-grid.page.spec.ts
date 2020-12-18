@@ -18,7 +18,7 @@ describe('MasonryGridPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ MasonryGridPage ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(MasonryGridPage);

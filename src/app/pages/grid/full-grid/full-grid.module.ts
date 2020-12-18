@@ -22,8 +22,8 @@ import { FullGridPage } from './full-grid.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    FullGridPageRoutingModule
+    FullGridPageRoutingModule,
   ],
-  declarations: [FullGridPage]
+  declarations: [FullGridPage],
 })
 export class FullGridPageModule {}

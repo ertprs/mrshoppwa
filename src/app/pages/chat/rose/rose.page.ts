@@ -17,7 +17,7 @@ import { IonContent } from '@ionic/angular';
 })
 export class RosePage implements OnInit {
 
-  @ViewChild('IonContent', { static: true }) content: IonContent
+  @ViewChild('IonContent', { static: true }) content: IonContent;
 
   public ItemData: Array<any>;
   public msgList: Array<any>;
@@ -38,7 +38,7 @@ export class RosePage implements OnInit {
     this.ItemData = [
       {
         text: 'Thursday 31 January 2019',
-      }
+      },
     ];
     this.User = 'Me';
     this.toUser = 'HealthBot';
@@ -53,7 +53,7 @@ export class RosePage implements OnInit {
         time: '12:01',
         image: 'assets/chat/chat/chat3.jpg',
         id: this.msgList.length + 1,
-        status: 'checkmark'
+        status: 'checkmark',
       });
       this.userInput = '';
       this.show = false;
@@ -68,7 +68,7 @@ export class RosePage implements OnInit {
         time: '12:01',
         video: 'assets/chat/chat/video.mp4',
         id: this.msgList.length + 1,
-        status: 'checkmark'
+        status: 'checkmark',
       });
       this.userInput = '';
       this.show = false;
@@ -83,7 +83,7 @@ export class RosePage implements OnInit {
         time: '12:01',
         map: { lat: 52.678418, lng: 7.809007 },
         id: this.msgList.length + 1,
-        status: 'checkmark'
+        status: 'checkmark',
 
       });
       this.userInput = '';
@@ -110,7 +110,7 @@ export class RosePage implements OnInit {
         time: '12:01',
         message: this.userInput,
         id: this.msgList.length + 1,
-        status: 'checkmark'
+        status: 'checkmark',
 
       });
       this.userInput = '';
@@ -131,7 +131,7 @@ export class RosePage implements OnInit {
         time: '12:01',
         message: 'Sorry, didn"t get what you said. Can you repeat that please',
         status: 'checkmark',
-        name: 'Diana Nicole'
+        name: 'Diana Nicole',
 
       });
       this.loader = false;

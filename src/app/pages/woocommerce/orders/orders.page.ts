@@ -30,12 +30,12 @@ export class OrdersPage implements OnInit {
     public woocommerceService: WooCommerceService,
     public fun: FunctionService,
     public dataService: DataServicesService,
-    public route: Router
+    public route: Router,
   ) {
-    this.storage.forEach(item => {
+    this.storage.forEach((item) => {
       this.cartItems += 1;
     });
-    this.woocommerceService.getPastOrders(dataService.currentUser.id).then(data => {
+    this.woocommerceService.getPastOrders(dataService.currentUser.id).then((data) => {
       this.orders = data;
     });
   }
@@ -47,7 +47,7 @@ export class OrdersPage implements OnInit {
   async open(order: any) {
     const modal = await this.modalController.create({
       component: OrderinfoPage,
-      componentProps: { value: order }
+      componentProps: { value: order },
     });
     return modal.present();
   }

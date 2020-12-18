@@ -33,14 +33,13 @@ import { RangeComponent } from '../range/range.component';
 import { RippleComponent } from '../ripple/ripple.component';
 import { CheckDeliveryComponent } from '../check-delivery/check-delivery.component';
 
-
 @NgModule({
   declarations: [ActionsheetComponent, AlertComponent, CheckDeliveryComponent, DatetimeComponent, RangeComponent, RippleComponent, GoogleLoginComponent, FacebookLoginComponent, TwitterLoginComponent, InstagramComponent, ProductComponent, InnerhomeComponent, ReviewComponent, MyAddressComponent, MyProfileComponent, PaymentCardsComponent, Slider1Component, Slider2Component, Slider3Component, Slider4Component, Slider5Component],
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule
+    IonicModule,
   ],
-  exports: [ActionsheetComponent, AlertComponent, CheckDeliveryComponent, DatetimeComponent, RangeComponent, RippleComponent, GoogleLoginComponent, FacebookLoginComponent, TwitterLoginComponent, InstagramComponent, ProductComponent, InnerhomeComponent, ReviewComponent, MyAddressComponent, MyProfileComponent, PaymentCardsComponent, Slider1Component, Slider2Component, Slider3Component, Slider4Component, Slider5Component]
+  exports: [ActionsheetComponent, AlertComponent, CheckDeliveryComponent, DatetimeComponent, RangeComponent, RippleComponent, GoogleLoginComponent, FacebookLoginComponent, TwitterLoginComponent, InstagramComponent, ProductComponent, InnerhomeComponent, ReviewComponent, MyAddressComponent, MyProfileComponent, PaymentCardsComponent, Slider1Component, Slider2Component, Slider3Component, Slider4Component, Slider5Component],
 })
 export class SharableModule { }

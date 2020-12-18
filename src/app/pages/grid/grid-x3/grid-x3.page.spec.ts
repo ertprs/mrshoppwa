@@ -18,7 +18,7 @@ describe('GridX3Page', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ GridX3Page ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(GridX3Page);

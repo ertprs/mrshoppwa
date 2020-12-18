@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Subject, Subscription, } from 'rxjs';
+import { Subject, Subscription } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EventsService {
-  
-
 
 }

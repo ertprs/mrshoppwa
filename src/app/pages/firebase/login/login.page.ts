@@ -27,7 +27,7 @@ export class LoginPage implements OnInit {
     private splashScreen: SplashScreen,
     public util: UtilService,
     private menuCtrl: MenuController,
-    private authServ: AuthenticationService
+    private authServ: AuthenticationService,
   ) {
     this.email = '';
     this.password = '';
@@ -47,16 +47,16 @@ export class LoginPage implements OnInit {
   signin() {
     if (this.util.validateEmail(this.email) && this.password !== '') {
       this.util.openLoader();
-      this.authServ.login(this.email, this.password).then(userData => {
+      this.authServ.login(this.email, this.password).then((userData) => {
         this.util.navigate('home', false);
         this.email = '';
         this.password = '';
-      }).catch(err => {
+      }).catch((err) => {
         if (err) {
           this.util.presentToast(`${err}`, true, 'bottom', 2100);
         }
 
-      }).then(el => this.util.closeLoading());
+      }).then((el) => this.util.closeLoading());
     } else {
       this.util.presentToast('Please enter email and password', true, 'bottom', 2100);
     }
@@ -71,7 +71,7 @@ export class LoginPage implements OnInit {
           name: 'email',
           type: 'email',
           placeholder: 'Enter your email',
-        }
+        },
       ],
       buttons: [
         {
@@ -80,7 +80,7 @@ export class LoginPage implements OnInit {
           cssClass: 'secondary',
           handler: (userResult) => {
             console.log('Cancel');
-          }
+          },
         }, {
           text: 'Ok',
           handler: (userResult) => {
@@ -88,31 +88,31 @@ export class LoginPage implements OnInit {
             const value = this.util.validateEmail(userResult.email);
             this.authServ.forgotPassoword(userResult.email);
             return value;
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     await alert.present();
   }
 
   facebookLogin($event) {
     if ($event === 'browser') {
-      this.authServ.fbLogin().then(success => {
+      this.authServ.fbLogin().then((success) => {
         console.log('success in fb login browser', success);
         this.util.presentToast('success in fb login browser', true, 'bottom', 2100);
         this.authServ.createSocialLoginUser(success.user);
         this.util.navigate('home', false);
-      }).catch(err => {
+      }).catch((err) => {
         console.log(err.message, 'error in fb login browser');
         this.util.presentToast(`${err.message}`, true, 'bottom', 2100);
       });
     } else {
-      this.authServ.loginWithFacebook($event).then(success => {
+      this.authServ.loginWithFacebook($event).then((success) => {
         console.log('success in fb login', success);
         this.util.presentToast('success in fb login', true, 'bottom', 2100);
         this.authServ.createSocialLoginUser(success.user);
         this.util.navigate('home', false);
-      }).catch(err => {
+      }).catch((err) => {
         console.log(err.message, 'error in fb login');
         this.util.presentToast(`${err.message}`, true, 'bottom', 2100);
       });
@@ -121,21 +121,21 @@ export class LoginPage implements OnInit {
 
   twitterLogin($event: any) {
     if ($event.isBrowser) {
-      this.authServ.twitterLogin().then(success => {
+      this.authServ.twitterLogin().then((success) => {
         console.log('success in twitter login', success);
         this.util.presentToast('success in twitter login', true, 'bottom', 2100);
         this.authServ.createSocialLoginUser(success.user);
         this.util.navigate('home', false);
-      }).catch(err => {
+      }).catch((err) => {
         console.log(err.message, 'error in twitter login');
         this.util.presentToast(`${err.message}`, true, 'bottom', 2100);
       });
     } else {
-      this.authServ.loginWithTwitter($event.token, $event.secret).then(success => {
+      this.authServ.loginWithTwitter($event.token, $event.secret).then((success) => {
         console.log('success in twitter login', success);
         this.authServ.createSocialLoginUser(success.user);
         this.util.navigate('home', false);
-      }).catch(err => {
+      }).catch((err) => {
         console.log(err.message, 'error in twitter login');
         this.util.presentToast(`${err.message}`, true, 'bottom', 2100);
       });
@@ -144,20 +144,20 @@ export class LoginPage implements OnInit {
 
   googleLogin($event: any) {
     if ($event.isBrowser) {
-      this.authServ.googleLogin().then(success => {
+      this.authServ.googleLogin().then((success) => {
         console.log('success in google login', success);
         this.authServ.createSocialLoginUser(success.user);
         this.util.navigate('home', false);
-      }).catch(err => {
+      }).catch((err) => {
         console.log(err.message, 'error in google login');
         this.util.presentToast(`${err.message}`, true, 'bottom', 2100);
       });
     } else {
-      this.authServ.loginWithGoogle($event.idToken, $event.accessToken).then(success => {
+      this.authServ.loginWithGoogle($event.idToken, $event.accessToken).then((success) => {
         console.log('success in google login', success);
         this.authServ.createSocialLoginUser(success.user);
         this.util.navigate('home', false);
-      }).catch(err => {
+      }).catch((err) => {
         console.log(err.message, 'error in google login');
         this.util.presentToast(`${err.message}`, true, 'bottom', 2100);
       });

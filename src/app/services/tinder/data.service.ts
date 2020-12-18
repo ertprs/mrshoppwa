@@ -96,7 +96,7 @@ export interface Orders {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
 
@@ -113,8 +113,8 @@ export class DataService {
     { text: 'Wow, that\'s so cool', sender: 0, image: 'assets/chat/images/sg2.jpg' },
     { text: 'Hats off to the developers', sender: 1, image: 'assets/chat/images/sg1.jpg', read: false, delivered: true, sent: true },
     { text: 'Oh yes, this is gooood stuff', sender: 0, image: 'assets/chat/images/sg2.jpg' },
-    { text: 'Check out their other designs ', sender: 1, image: 'assets/chat/images/sg1.jpg', read: false, delivered: false, sent: true }
-  ]
+    { text: 'Check out their other designs ', sender: 1, image: 'assets/chat/images/sg1.jpg', read: false, delivered: false, sent: true },
+  ];
   details = [
     {
       userDetails: 'A BITS and IIT Delhi allumni established web and mobile development product and service providing company located at jaipur and bangalore.',
@@ -127,48 +127,48 @@ export class DataService {
         {
           // icon: 'camera',
           cameraText: 'ADD MEDIA',
-          camera: 'camera'
+          camera: 'camera',
         },
         {
           icon: 'create',
           text: 'EDIT INFO',
-        }
+        },
       ],
       slides: [
         {
           icon: 'flame',
           head: 'get tinder gold',
           subhead: 'See who Likes You and more!',
-          color: 'warning'
+          color: 'warning',
         }, {
           icon: 'flash',
           head: 'get matches faster',
           subhead: 'Boost your profile once a month!',
-          color: 'tertiary'
+          color: 'tertiary',
         }, {
           icon: 'star',
           head: 'stand out with super likes',
           subhead: 'your\'re 3x more likely to get a match!',
-          color: 'success'
+          color: 'success',
         }, {
           icon: 'pin',
           head: 'swipe around the world',
           subhead: 'Passport to anywhere with tinder plus!',
-          color: 'primary'
+          color: 'primary',
         }, {
           icon: 'key',
           head: 'control your profile',
           subhead: 'limit what others see with tinder plus',
-          color: 'warning'
+          color: 'warning',
         }, {
           icon: 'heart',
           head: 'increase your chances',
           subhead: 'Get unlimited Likes with tinder Plus!',
-          color: 'secondary'
-        }
-      ]
-    }
-  ]
+          color: 'secondary',
+        },
+      ],
+    },
+  ];
 
   tabs: Array<HomeTab> = [
     { title: 'person-circle' },
@@ -176,13 +176,12 @@ export class DataService {
     { title: 'chatbubbles' },
   ];
 
-
   footer_icons: any = [
     { title: 'refresh', color: 'medium', mode: 'md' },
     { title: 'close', color: 'danger', mode: 'md' },
     { title: 'star', color: 'primary', mode: 'md' },
     { title: 'heart', color: 'secondary', mode: 'md' },
-    { title: 'flash', color: 'warning', mode: 'ios' }
+    { title: 'flash', color: 'warning', mode: 'ios' },
   ];
   card = [
     {
@@ -197,8 +196,8 @@ export class DataService {
       slides: [
         { slideImage: 'assets/tinder/chat1.jpg' },
         { slideImage: 'assets/tinder/chat7.jpg' },
-        { slideImage: 'assets/tinder/chat4.jpg' }
-      ]
+        { slideImage: 'assets/tinder/chat4.jpg' },
+      ],
     },
     {
       name: 'Jennifer Lawrence',
@@ -212,8 +211,8 @@ export class DataService {
       slides: [
         { slideImage: 'assets/tinder/chat2.jpg' },
         { slideImage: 'assets/tinder/chat7.jpg' },
-        { slideImage: 'assets/tinder/chat4.jpg' }
-      ]
+        { slideImage: 'assets/tinder/chat4.jpg' },
+      ],
     },
     {
       name: 'Jennifer Aniston',
@@ -227,8 +226,8 @@ export class DataService {
       slides: [
         { slideImage: 'assets/tinder/chat3.jpg' },
         { slideImage: 'assets/tinder/chat7.jpg' },
-        { slideImage: 'assets/tinder/chat4.jpg' }
-      ]
+        { slideImage: 'assets/tinder/chat4.jpg' },
+      ],
     },
     {
       name: 'Nicole ',
@@ -242,8 +241,8 @@ export class DataService {
       slides: [
         { slideImage: 'assets/tinder/chat4.jpg' },
         { slideImage: 'assets/tinder/chat7.jpg' },
-        { slideImage: 'assets/tinder/chat4.jpg' }
-      ]
+        { slideImage: 'assets/tinder/chat4.jpg' },
+      ],
     },
     {
       name: 'Kendrick',
@@ -257,8 +256,8 @@ export class DataService {
       slides: [
         { slideImage: 'assets/tinder/chat5.jpg' },
         { slideImage: 'assets/tinder/chat7.jpg' },
-        { slideImage: 'assets/tinder/chat4.jpg' }
-      ]
+        { slideImage: 'assets/tinder/chat4.jpg' },
+      ],
     },
     {
       name: 'Anna Faris',
@@ -272,21 +271,21 @@ export class DataService {
       slides: [
         { slideImage: 'assets/tinder/chat7.jpg' },
         { slideImage: 'assets/tinder/chat7.jpg' },
-        { slideImage: 'assets/tinder/chat4.jpg' }
-      ]
-    }
+        { slideImage: 'assets/tinder/chat4.jpg' },
+      ],
+    },
   ];
   notifications_tab: Array<HomeTab> = [
     { title: 'All' },
     { title: 'Deals' },
     { title: 'Your Orders' },
-    { title: 'Other' }
+    { title: 'Other' },
   ];
 
   rewards_tab: Array<HomeTab> = [
     { title: 'Dashboard' },
     { title: 'Redeem' },
-    { title: 'Information' }
+    { title: 'Information' },
   ];
 
   gold = [
@@ -303,20 +302,20 @@ export class DataService {
         {
           month: '12',
           text: 'months',
-          amount: '$166.6/mo'
+          amount: '$166.6/mo',
         }, {
           month: '6',
           text: 'months',
           amount: '$225.6/mo',
-          head: 'most popular'
+          head: 'most popular',
         }, {
           month: '1',
           text: 'months',
-          amount: '$330.6/mo'
-        }
+          amount: '$330.6/mo',
+        },
       ],
-    }
-  ]
+    },
+  ];
 
   refresh = [
     {
@@ -332,19 +331,19 @@ export class DataService {
         {
           month: '12',
           text: 'months',
-          amount: '$166.6/mo'
+          amount: '$166.6/mo',
         }, {
           month: '6',
           text: 'months',
-          amount: '$225.6/mo'
+          amount: '$225.6/mo',
         }, {
           month: '1',
           text: 'months',
-          amount: '$330.6/mo'
-        }
+          amount: '$330.6/mo',
+        },
       ],
-    }
-  ]
+    },
+  ];
 
   star = [
     {
@@ -361,20 +360,20 @@ export class DataService {
         {
           month: '12',
           text: 'months',
-          amount: '$166.6/mo'
+          amount: '$166.6/mo',
         }, {
           month: '6',
           text: 'months',
           amount: '$225.6/mo',
-          head: 'most popular'
+          head: 'most popular',
         }, {
           month: '1',
           text: 'months',
-          amount: '$330.6/mo'
-        }
+          amount: '$330.6/mo',
+        },
       ],
-    }
-  ]
+    },
+  ];
 
   flash = [
     {
@@ -391,18 +390,18 @@ export class DataService {
         {
           month: '10',
           text: 'Boosts',
-          amount: '$165.6/ea'
+          amount: '$165.6/ea',
         }, {
           month: '6',
           text: 'Boosts',
           amount: '$225.6/ea',
-          head: 'save 25%'
+          head: 'save 25%',
 
         }, {
           month: '1',
           text: 'Boosts',
-          amount: '$330.6/ea'
-        }
+          amount: '$330.6/ea',
+        },
       ],
       column2: [
         {
@@ -415,32 +414,32 @@ export class DataService {
             {
               month: '12',
               text: 'months',
-              amount: '$166.6/mo'
+              amount: '$166.6/mo',
             }, {
               month: '6',
               text: 'months',
               amount: '$225.6/mo',
-              head: 'MOST POPULAR'
+              head: 'MOST POPULAR',
 
             }, {
               month: '1',
               text: 'months',
-              amount: '$330.6/mo'
-            }
+              amount: '$330.6/mo',
+            },
           ],
-        }
-      ]
-    }
-  ]
+        },
+      ],
+    },
+  ];
   menuDropdown = [
     {
-      name: 'Default'
+      name: 'Default',
     }, {
-      name: 'Nearby'
+      name: 'Nearby',
     }, {
-      name: 'Unopened'
-    }
-  ]
+      name: 'Unopened',
+    },
+  ];
 
   tinderPlus = [
     {
@@ -449,14 +448,14 @@ export class DataService {
       subHead: 'Swipes as much as you like.',
       head1: 'unlimited likes',
       subHead1: 'Give me the ability to like as manu people as i want',
-      toggle: true
+      toggle: true,
     }, {
       image: 'assets/tinder/flash1.png',
       head: 'skip the line',
       subHead: 'Be the top profile in your area for 30 minutes to get more matches.',
       head1: 'tinder boost',
       subHead1: 'Give me one free boost every month',
-      toggle: true
+      toggle: true,
     }, {
       image: 'assets/tinder/flash2.png',
       head: 'control who you see',
@@ -465,7 +464,7 @@ export class DataService {
       subHead1: 'See the most relevent people to you(default setting)',
       heade2: 'recently active',
       subHead2: 'See the most recently active people first',
-      toggle: false
+      toggle: false,
     }, {
       image: 'assets/tinder/flash3.png',
       head: 'control who see you',
@@ -474,14 +473,14 @@ export class DataService {
       subHead1: 'Only be shown to certain types of people for individual recommendations.',
       heade2: 'only people i\'ve liked',
       subHead2: 'only people i\'ve right swiped will see me.',
-      toggle: false
+      toggle: false,
     }, {
       image: 'assets/tinder/protection.png',
       head: 'control your profile',
       subHead: 'make parts of your profile information invisible to other people.',
       head1: 'dont show my age',
       heade2: 'Make my distance invisible',
-      toggle: true
+      toggle: true,
     }, {
       image: 'assets/tinder/route.png',
       head: 'passport to any location',
@@ -494,14 +493,14 @@ export class DataService {
       subHead: 'Accidently swiped on someone? rewind and swipe again.',
       head1: 'Rewind last swipe',
       subHead1: 'Give me the ability torewind my last swipe',
-      toggle: true
+      toggle: true,
     }, {
       image: 'assets/tinder/hide.png',
       head: 'hide ads',
       subHead: 'Enjoy a completely ad free experience.',
       head1: 'hide advertisement',
-      toggle: true
-    }
+      toggle: true,
+    },
   ];
   images = [{ image: 'assets/tinder/chat1.jpg' }, { image: 'assets/tinder/chat2.jpg' }, { image: 'assets/tinder/chat3.jpg' }, { image: 'assets/tinder/chat4.jpg' }, { icon: 'add' }, { icon: 'add' }, { icon: 'add' }, { icon: 'add' }, { icon: 'add' }];
 
@@ -509,44 +508,44 @@ export class DataService {
     {
       headItem: 'Smart photos',
       toggleHeader: true,
-      headItemSubhead: 'Smart photos continuosly tests all your profile photos to find the best one.'
+      headItemSubhead: 'Smart photos continuosly tests all your profile photos to find the best one.',
     },
     {
       head: 'About User',
       toggle: false,
-      input: 'Mechanical Engineer'
+      input: 'Mechanical Engineer',
     },
     {
       head: 'Job title',
       toggle: false,
-      input: 'Mechanical Engineer'
+      input: 'Mechanical Engineer',
     },
     {
       head: 'company',
       toggle: false,
-      input: 'GAIL India PVt Ltd.'
+      input: 'GAIL India PVt Ltd.',
     },
     {
       head: 'School',
       toggle: false,
-      input: 'Shree acharya Vidya niketan'
+      input: 'Shree acharya Vidya niketan',
     },
     {
       head: 'snapchat',
       toggle: false,
-      subhead: 'Connect bitmoji'
+      subhead: 'Connect bitmoji',
     },
     {
       head: 'Show my instagram photos',
       toggle: false,
       subhead: 'Connect Instagram',
       subhead1: 'control how you share your Spotify Anthem on feed in Settings.',
-      subhead2: 'control how you share your top Spotify Artists on feed in Settings.'
+      subhead2: 'control how you share your top Spotify Artists on feed in Settings.',
     },
     {
       head: 'I Am',
       toggle: false,
-      input: 'Man'
+      input: 'Man',
     },
     {
       head: 'control your Profile',
@@ -561,31 +560,31 @@ export class DataService {
       head: 'Share My Feed',
       toggle: 'true',
       para: 'Sharing your social content will greatly increase your chances of receiving messages',
-      para2: 'Shared content'
+      para2: 'Shared content',
     }, {
       head: 'Photos',
-      toggle: 'true'
+      toggle: 'true',
     }, {
       head: 'Spotify Anthem',
-      toggle: 'true'
+      toggle: 'true',
     }, {
       head: 'top Spotify Artist',
-      toggle: 'true'
+      toggle: 'true',
     }, {
       head: 'Bio',
-      toggle: 'true'
+      toggle: 'true',
     }, {
       head: 'School',
-      toggle: 'true'
+      toggle: 'true',
     }, {
       head: 'work',
-      toggle: 'true'
-    }
+      toggle: 'true',
+    },
   ];
   videoAutoplay = [
     {
       para: 'Playing videos use more datathan displaying photos,so choose when videos autoplay here.',
-      para2: 'autoplay videos'
+      para2: 'autoplay videos',
     },
     {
       head: 'On Wifi and Mobile data.',
@@ -595,7 +594,7 @@ export class DataService {
     },
     {
       head: 'Never autoplay Videos',
-    }
+    },
   ];
   emailVerification = [
     {
@@ -604,74 +603,74 @@ export class DataService {
     {
       email: 'Enappd@Enappd.com.',
       toggle: false,
-      emailDesc: 'Email not verified.Tap below to request a verification email.'
+      emailDesc: 'Email not verified.Tap below to request a verification email.',
     },
     {
       head: 'New Matches',
-      toggle: true
+      toggle: true,
 
     },
     {
       head: 'New Messages',
-      toggle: true
+      toggle: true,
 
     },
     {
       head: 'Promotions',
       toggle: true,
-      des: 'I want to receive newa,updates and offers from Dating.'
-    }
-  ]
+      des: 'I want to receive newa,updates and offers from Dating.',
+    },
+  ];
   pushNotifications = [
     {
       head: 'New Matches',
       para: 'You just got a new match',
-      toggle: true
+      toggle: true,
     }, {
       head: 'Messages',
       para: 'Someone sent you a new message',
-      toggle: true
+      toggle: true,
     }, {
       head: 'Messages Likes',
       para: 'someone liked your message',
-      toggle: true
+      toggle: true,
     }, {
       head: 'super Likes',
       para: 'You have been super liked! swipe to found out by whom.',
-      toggle: true
+      toggle: true,
     }, {
       head: 'Top Picks',
       para: 'Your daily top Picks are ready!',
-      toggle: true
-    }
-  ]
+      toggle: true,
+    },
+  ];
   deleteAccount = [
     {
       color: '#FFCA28',
       image: 'assets/tinder/setting.png',
       head: 'something  ',
-      head1: 'is broken'
+      head1: 'is broken',
     }, {
       color: '#AED581',
       image: 'assets/tinder/brush.png',
-      head: 'i want a  ', head1: 'fresh start'
+      head: 'i want a  ', head1: 'fresh start',
     }, {
       color: '#4FC3F7',
       image: 'assets/tinder/dislike.png',
-      head: 'i don\'t like  ', head1: 'dating'
+      head: 'i don\'t like  ', head1: 'dating',
     }, {
       color: '#EC407A',
       image: 'assets/tinder/heart.png',
-      head: 'i met  ', head1: 'someone'
+      head: 'i met  ', head1: 'someone',
     }, {
       color: '#9E9E9E',
       image: 'assets/tinder/cup.png',
-      head: 'i need a  ', head1: 'break from'
+      head: 'i need a  ', head1: 'break from',
     }, {
       color: '#E91E63',
       image: 'assets/tinder/edit.png',
-      head: 'other '
-    }
+      head: 'other ',
+    },
   ];
   report = [
     {
@@ -682,26 +681,25 @@ export class DataService {
         {
           icon: 'camera',
           detail: 'Inappropriate Photos',
-          color: '#5E35B1'
+          color: '#5E35B1',
         }, {
           icon: 'american-football',
           detail: 'Feels like Spam',
-          color: 'orange'
+          color: 'orange',
         }, {
           icon: 'paw',
           detail: 'Other',
-          color: '#43A047'
-        }
-      ]
-    }
+          color: '#43A047',
+        },
+      ],
+    },
   ];
-
 
   async openModal(comp, props, cssClass?) {
     const modal = await this.modalCtrl.create({
       component: comp,
       componentProps: { value: props },
-      cssClass
+      cssClass,
     });
     return modal.present();
   }

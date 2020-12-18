@@ -22,7 +22,7 @@ export class FacebookLoginComponent implements OnInit {
 
   constructor(
     private fb: Facebook,
-    private platform: Platform
+    private platform: Platform,
   ) { }
 
   ngOnInit() {}

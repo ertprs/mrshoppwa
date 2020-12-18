@@ -15,8 +15,8 @@ import { ContentLoader2Page } from './content-loader2.page';
 const routes: Routes = [
   {
     path: '',
-    component: ContentLoader2Page
-  }
+    component: ContentLoader2Page,
+  },
 ];
 
 @NgModule({

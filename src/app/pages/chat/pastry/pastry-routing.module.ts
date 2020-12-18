@@ -14,8 +14,8 @@ import { PastryPage } from './pastry.page';
 const routes: Routes = [
   {
     path: '',
-    component: PastryPage
-  }
+    component: PastryPage,
+  },
 ];
 
 @NgModule({

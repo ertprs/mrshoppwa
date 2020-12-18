@@ -21,7 +21,7 @@ export class BlogsPage implements OnInit {
 
   constructor(
     private wpService: WordpressService,
-    public util: UtilService
+    public util: UtilService,
   ) { }
 
   ngOnInit() {
@@ -32,7 +32,7 @@ export class BlogsPage implements OnInit {
 
   getBlogData() {
     // Call our service function which returns an Observable
-    this.wpService.getBlogs().subscribe(result => {
+    this.wpService.getBlogs().subscribe((result) => {
       this.blogPosts = result;
       this.getImages();
     });
@@ -40,15 +40,13 @@ export class BlogsPage implements OnInit {
 
   getImages() {
     this.wpService.getMedia().subscribe((data: Array<any>) => {
-      this.blogPosts.forEach(element => {
+      this.blogPosts.forEach((element) => {
         console.log('element', element);
-        const media = data.filter(item => {
+        const media = data.filter((item) => {
           return item.id === element.featured_media;
         });
 
-
         element.imageData = media[0];
-
 
       });
       console.log('aashjasjhkjs', this.blogPosts);

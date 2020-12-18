@@ -14,8 +14,8 @@ import { Login2Page } from './login2.page';
 const routes: Routes = [
   {
     path: '',
-    component: Login2Page
-  }
+    component: Login2Page,
+  },
 ];
 
 @NgModule({

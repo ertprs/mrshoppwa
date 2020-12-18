@@ -20,7 +20,6 @@ export class WhatsappPage implements OnInit {
   public chatData: Array<any>;
   public title: boolean;
 
-
   constructor() {
     this.title = true;
     this.segmentTab = 'Chats';
@@ -35,7 +34,6 @@ export class WhatsappPage implements OnInit {
     this.segmentTab = event.detail.value;
     console.log(this.segmentTab);
   }
-
 
   toggleSearchTitl() {
     this.title = !this.title;

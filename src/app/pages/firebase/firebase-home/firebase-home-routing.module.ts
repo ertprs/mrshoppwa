@@ -14,8 +14,8 @@ import { FirebaseHomePage } from './firebase-home.page';
 const routes: Routes = [
   {
     path: '',
-    component: FirebaseHomePage
-  }
+    component: FirebaseHomePage,
+  },
 ];
 
 @NgModule({

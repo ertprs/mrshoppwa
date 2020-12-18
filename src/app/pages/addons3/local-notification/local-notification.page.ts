@@ -18,10 +18,10 @@ import { ILocalNotificationActionType, LocalNotifications } from '@ionic-native/
 })
 export class LocalNotificationPage implements OnInit {
   public clickSub: any;
-  
+
   constructor(
     private localNotifications: LocalNotifications,
-    public alertController: AlertController
+    public alertController: AlertController,
   ) { }
 
   ngOnInit() {
@@ -30,7 +30,7 @@ export class LocalNotificationPage implements OnInit {
     const alert = await this.alertController.create({
       header: 'Alert',
       message: data,
-      buttons: ['OK']
+      buttons: ['OK'],
     });
 
     await alert.present();
@@ -40,7 +40,7 @@ export class LocalNotificationPage implements OnInit {
     this.clickSub.unsubscribe();
   }
   simpleNotif() {
-    this.clickSub = this.localNotifications.on('click').subscribe(data => {
+    this.clickSub = this.localNotifications.on('click').subscribe((data) => {
       console.log(data);
       // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
       this.presentAlert('Your notifiations contains a secret = ' + data.data.secret);
@@ -49,7 +49,7 @@ export class LocalNotificationPage implements OnInit {
     this.localNotifications.schedule({
       id: 1,
       text: 'Single Local Notification',
-      data: { secret: 'secret' }
+      data: { secret: 'secret' },
     });
 
   }
@@ -58,7 +58,7 @@ export class LocalNotificationPage implements OnInit {
       id: 1,
       text: 'Single Local Notification',
       data: { secret: 'secret' },
-      foreground: true
+      foreground: true,
     });
   }
   multipleNotif() {
@@ -66,13 +66,13 @@ export class LocalNotificationPage implements OnInit {
       {
         id: 1,
         text: 'Multi ILocalNotification 1',
-        data: { secret: 'data' }
+        data: { secret: 'data' },
       }, {
         id: 2,
         title: 'Local LocalNotification Example',
         text: 'Multi ILocalNotification 2',
-        icon: 'assets/ionic_white.png'
-      }
+        icon: 'assets/ionic_white.png',
+      },
     ]);
   }
 
@@ -81,7 +81,7 @@ export class LocalNotificationPage implements OnInit {
       text: 'Delayed ILocalNotification',
       trigger: { at: new Date(new Date().getTime() + 5000) },
       led: 'FF0000',
-      sound: null
+      sound: null,
     });
   }
 
@@ -89,7 +89,7 @@ export class LocalNotificationPage implements OnInit {
     this.localNotifications.schedule({
       title: 'Sync in progress',
       text: 'Copied 2 of 10 files',
-      progressBar: { value: 20 }
+      progressBar: { value: 20 },
     });
   }
 
@@ -98,12 +98,12 @@ export class LocalNotificationPage implements OnInit {
       title: 'The Big Meeting',
       text: '4:15 - 5:15 PM\nBig Conference Room',
       smallIcon: 'res://calendar',
-      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfXKe6Yfjr6rCtR6cMPJB8CqMAYWECDtDqH-eMnerHHuXv9egrw'
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfXKe6Yfjr6rCtR6cMPJB8CqMAYWECDtDqH-eMnerHHuXv9egrw',
     });
   }
 
   actionNotif() {
-    this.clickSub = this.localNotifications.on('click').subscribe(data => {
+    this.clickSub = this.localNotifications.on('click').subscribe((data) => {
       console.log(data);
       // this.presentAlert('Your notifiations contains a secret = ' + data.data.secret);
       this.unsub();
@@ -114,8 +114,8 @@ export class LocalNotificationPage implements OnInit {
       attachments: ['http://placekitten.com/g/300/200'],
       actions: [
         { id: 'yes', title: 'Yes' },
-        { id: 'no', title: 'No' }
-      ]
+        { id: 'no', title: 'No' },
+      ],
     });
   }
 
@@ -127,9 +127,9 @@ export class LocalNotificationPage implements OnInit {
         {
           id: 'reply',
           type: ILocalNotificationActionType.INPUT,
-          title: 'Reply'
-        }
-      ]
+          title: 'Reply',
+        },
+      ],
     });
   }
 
@@ -139,7 +139,7 @@ export class LocalNotificationPage implements OnInit {
       { id: 1, summary: 'me@gmail.com', group: 'email', groupSummary: true },
       { id: 2, title: 'Please take all my money', group: 'email' },
       { id: 3, title: 'A question regarding this plugin', group: 'email' },
-      { id: 4, title: 'Wellcome back home', group: 'email' }
+      { id: 4, title: 'Wellcome back home', group: 'email' },
     ]);
   }
 

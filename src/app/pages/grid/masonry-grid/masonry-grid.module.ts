@@ -21,8 +21,8 @@ import { MasonryGridPage } from './masonry-grid.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    MasonryGridPageRoutingModule
+    MasonryGridPageRoutingModule,
   ],
-  declarations: [MasonryGridPage]
+  declarations: [MasonryGridPage],
 })
 export class MasonryGridPageModule {}

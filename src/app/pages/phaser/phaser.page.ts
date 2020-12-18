@@ -20,7 +20,7 @@ let bulletTime = 0;
 let cursors;
 const mobileCursors = {
   left: false,
-  right: false
+  right: false,
 };
 let fireButton;
 let mobileFireButton = false;
@@ -42,10 +42,10 @@ const livingEnemies = [];
 })
 export class PhaserPage implements OnInit {
 
-  constructor(private menuCtrl: MenuController) { 
+  constructor(private menuCtrl: MenuController) {
     game = new Phaser.Game(
       window.innerWidth, window.innerHeight, Phaser.AUTO, 'space-invaders',
-      { preload: this.preload, create: this.create, update: this.update, render: this.render }
+      { preload: this.preload, create: this.create, update: this.update, render: this.render },
     );
 
     that = Object.create(this.constructor.prototype);
@@ -53,7 +53,6 @@ export class PhaserPage implements OnInit {
 
   ngOnInit() {
   }
-
 
   ionViewDidEnter() {
     this.menuCtrl.enable(false, 'start');
@@ -264,7 +263,6 @@ export class PhaserPage implements OnInit {
       livingEnemies.push(alien);
     });
 
-
     if (enemyBullet && livingEnemies.length > 0) {
 
       const random = game.rnd.integerInRange(0, livingEnemies.length - 1);
@@ -338,6 +336,5 @@ export class PhaserPage implements OnInit {
   rightEnd(event) {
     mobileCursors.right = false;
   }
-
 
 }

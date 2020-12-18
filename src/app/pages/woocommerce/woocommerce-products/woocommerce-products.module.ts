@@ -21,8 +21,8 @@ import { WoocommerceProductsPage } from './woocommerce-products.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    WoocommerceProductsPageRoutingModule
+    WoocommerceProductsPageRoutingModule,
   ],
-  declarations: [WoocommerceProductsPage]
+  declarations: [WoocommerceProductsPage],
 })
 export class WoocommerceProductsPageModule {}

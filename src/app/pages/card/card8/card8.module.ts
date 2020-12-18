@@ -22,8 +22,8 @@ import { Card8Page } from './card8.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Card8PageRoutingModule
+    Card8PageRoutingModule,
   ],
-  declarations: [Card8Page]
+  declarations: [Card8Page],
 })
 export class Card8PageModule {}

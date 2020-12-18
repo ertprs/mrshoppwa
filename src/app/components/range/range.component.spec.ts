@@ -19,7 +19,7 @@ describe('RangeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ RangeComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(RangeComponent);

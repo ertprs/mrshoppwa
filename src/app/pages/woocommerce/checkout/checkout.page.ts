@@ -32,7 +32,6 @@ export class CheckoutPage implements OnInit {
   public paymentSelected: boolean;
   public placingOrder: boolean;
 
-
   constructor(
     public nav: NavController,
     public alertController: AlertController,
@@ -40,20 +39,20 @@ export class CheckoutPage implements OnInit {
     public dataService: DataServicesService,
     public storage: Storage,
     public route: Router,
-    public location: Location
+    public location: Location,
   ) {
     this.addNewPayment = true;
     this.spinner = false;
     this.paymentSelected = false;
     this.placingOrder = false;
-    this.woocommerceService.getPaymentGateways().then(data => {
+    this.woocommerceService.getPaymentGateways().then((data) => {
       console.log(data);
       this.paymentGateways = data;
     });
   }
 
   ngOnInit() {
-    this.dataService.cart.forEach(item => {
+    this.dataService.cart.forEach((item) => {
       const obj = {};
       obj['product_id'] = item['product_id'];
       obj['quantity'] = item['quantity'];
@@ -92,7 +91,7 @@ export class CheckoutPage implements OnInit {
     orderObj['shipping'] = this.address;
     orderObj['line_items'] = this.lineItems;
     console.log('orderObj', orderObj);
-    this.woocommerceService.createOrder(orderObj).then(data => {
+    this.woocommerceService.createOrder(orderObj).then((data) => {
       this.placingOrder = false;
       console.log(data);
       this.storage.clear();
@@ -100,7 +99,7 @@ export class CheckoutPage implements OnInit {
         title: 'Awesome',
         text: 'Your order is placed successfully',
         icon: 'success',
-        heightAuto: false
+        heightAuto: false,
       });
       this.route.navigate(['woocommerce-products']);
     });
@@ -114,9 +113,9 @@ export class CheckoutPage implements OnInit {
         {
           text: 'Yes',
           cssClass: 'mycolor',
-          handler: yes => {
+          handler: (yes) => {
             this.location.back();
-          }
+          },
         },
         {
           text: 'No',
@@ -124,13 +123,12 @@ export class CheckoutPage implements OnInit {
           cssClass: 'mycolor',
           handler: () => {
             console.log('cancel');
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
 
     await alert.present();
   }
-
 
 }
