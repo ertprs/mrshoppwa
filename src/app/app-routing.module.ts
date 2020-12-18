@@ -6,26 +6,6 @@ import { DataResolverService } from './services/common/data-resolver.service';
 const routes: Routes = [
   { path: '', redirectTo: '/tutorial', pathMatch: 'full' },
   {
-    path: 'abstracts',
-    loadChildren: () => import('./pages/abstracts/abstracts.module').then((m) => m.AbstractsModule),
-    resolve: { isCache: DataResolverService },
-  },
-  {
-    path: 'events',
-    loadChildren: () => import('./pages/events/events.module').then((m) => m.EventsModule),
-    resolve: { isCache: DataResolverService },
-  },
-  {
-    path: 'committees',
-    loadChildren: () => import('./pages/committees/committees.module').then((m) => m.CommitteesModule),
-    resolve: { isCache: DataResolverService },
-  },
-  {
-    path: 'sponsors',
-    loadChildren: () => import('./pages/sponsors/sponsors.module').then((m) => m.SponsorsModule),
-    resolve: { isCache: DataResolverService },
-  },
-  {
     path: 'tutorial',
     loadChildren: () => import('./pages/tutorial/tutorial.module').then((m) => m.TutorialPageModule),
     canLoad: [CheckTutorial],

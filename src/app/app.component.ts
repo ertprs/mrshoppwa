@@ -16,10 +16,6 @@ export class AppComponent {
 
   appPages: PageInterface[] = [
     { title: 'Schedule', name: 'TabsPage', path: 'tabs/schedule', index: 0, icon: 'calendar' },
-    { title: 'Abstracts', name: 'AbstractsPage', path: 'abstracts', icon: 'documents' },
-    { title: 'Events', name: 'EventsPage', path: 'events', icon: 'alarm' },
-    { title: 'Committees', name: 'CommitteesPage', path: 'committees', icon: 'people' },
-    { title: 'Sponsors', name: 'SponsorsPage', path: 'sponsors', icon: 'logo-usd' },
     { title: 'Speakers', name: 'TabsPage', path: 'tabs/speakers', index: 1, icon: 'person-circle' },
     { title: 'Map', name: 'TabsPage', path: 'tabs/map', index: 2, icon: 'map' },
     { title: 'About', name: 'TabsPage', path: 'tabs/about', index: 3, icon: 'information-circle' },
