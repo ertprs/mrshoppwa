@@ -6,13 +6,116 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { UserDataService } from './services/common/user-data.service';
 import { InAppBrowserService } from './services/common/in-app-browser.service';
 import { EventsService } from './services/common/events.service';
+import { OnInit } from '@angular/core';
+import { MovieTicketPage } from '@app/pages/card/movie-ticket/movie-ticket.page';
+import { ModalController } from '@ionic/angular';
+import { environment } from '@env/environment';
+import { UtilService } from '@app/services/util/util.service';
+import { AuthenticationService } from '@app/services/firestore/firebase-authentication.service';
+
+
+interface PageInterface {
+  title: string;
+  name: string;
+  path: string;
+  icon: string;
+  logsOut?: boolean;
+  index?: number;
+  tabName?: string;
+  tabComponent?: any;
+}
+
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
+  styleUrls: ['app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  public selectedIndex = 0;
+  public sidemenu = 1;
+  public showChildren = '';
+  public sidemenuLayout1: Array<any>;
+  public beginnerMenu: Array<any>;
+  public startupMenu: Array<any>;
+  public proMenu: Array<any>;
+
+  constructor(
+    private platform: Platform,
+    private splashScreen: SplashScreen,
+    private statusBar: StatusBar,
+    private route: Router,
+    private authService: AuthenticationService,
+    private util: UtilService,
+    public modalCtrl: ModalController,
+    private navCtrl: NavController,
+    private userDataService: UserDataService,
+    private menu: MenuController,
+    private inAppBrowserService: InAppBrowserService,
+    private router: Router,
+    private eventsService: EventsService,
+  ) {
+    this.initializeApp();
+    this.beginnerMenu = environment.BEGINNER_SIDEMENU;
+    this.startupMenu = environment.STARTUP_SIDEMENU;
+    this.proMenu = environment.PRO_SIDEMENU;
+    this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
+  }
+
+  initializeApp() {
+    this.platform.ready().then(() => {
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
+    });
+
+    // decide which menu items should be hidden by current login status stored in local storage
+    this.userDataService.isUserAuthenticated().subscribe((isUserAuthenticated) => {
+      this.enableMenu(isUserAuthenticated);
+    });
+
+    this.listenToLoginEvents();
+  }
+
+  showSidemenu(index: number) {
+    this.sidemenu = index + 1;
+  }
+
+  expandMenu(title) {
+    console.log('title', title);
+    if (this.showChildren === title) {
+      this.showChildren = '';
+    } else {
+      this.showChildren = title;
+    }
+    console.log(this.showChildren);
+  }
+
+  ngOnInit() {
+  }
+  async redirectPage(pageUrl, disabled) {
+    if (disabled) {
+      return;
+    }
+    if (pageUrl === '/movie-ticket') {
+      const modal = await this.modalCtrl.create({
+        component: MovieTicketPage
+      });
+      return modal.present();
+    } else if (pageUrl === '/logout') {
+      this.logout();
+    } else if (pageUrl === '/product-details') {
+      this.route.navigate([pageUrl, { id: 19 }]);
+    } else {
+      this.route.navigate([pageUrl]);
+    }
+  }
+
+  logout() {
+    console.log('logout');
+    this.authService.logout().then(() => {
+      this.util.navigate('login', false);
+    });
+  }
 
   appPages: PageInterface[] = [
     { title: 'Schedule', name: 'TabsPage', path: 'tabs/schedule', index: 0, icon: 'calendar' },
@@ -31,33 +134,6 @@ export class AppComponent {
     { title: 'Signup', name: 'SignUpPage', path: 'sign-up', icon: 'person-add' },
   ];
 
-  constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
-    private navCtrl: NavController,
-    private userDataService: UserDataService,
-    private menu: MenuController,
-    private inAppBrowserService: InAppBrowserService,
-    private router: Router,
-    private eventsService: EventsService,
-  ) {
-    this.initializeApp();
-  }
-
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-
-    // decide which menu items should be hidden by current login status stored in local storage
-    this.userDataService.isUserAuthenticated().subscribe((isUserAuthenticated) => {
-      this.enableMenu(isUserAuthenticated);
-    });
-
-    this.listenToLoginEvents();
-  }
 
   openPage(page: PageInterface) {
     if (page.logsOut === true) {
@@ -98,13 +174,66 @@ export class AppComponent {
   }
 }
 
-interface PageInterface {
-  title: string;
-  name: string;
-  path: string;
-  icon: string;
-  logsOut?: boolean;
-  index?: number;
-  tabName?: string;
-  tabComponent?: any;
-}
+
+/*
+
+<ion-menu menuId="loggedOutMenu" side="start" type="overlay" contentId="content">
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+                    <ion-menu-toggle auto-hide="false">
+                        <ion-item button *ngFor="let p of appPages" routerDirection="root" [routerLink]="p.path">
+                            <ion-icon slot="start" [name]="p.icon" routerLinkActive="active-link"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+
+                        <ion-list-header>
+                            <ion-label>Account</ion-label>
+                        </ion-list-header>
+                        <ion-item button *ngFor="let p of loggedOutPages" routerDirection="root" [routerLink]="p.path">
+                            <ion-icon slot="start" [name]="p.icon" routerLinkActive="active-link"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+                    </ion-menu-toggle>
+                </ion-list>
+
+                <div class="ion-padding">
+                    <p>Copyright 2020<br>
+                        <a (click)="openPrivacyPolicy('http://monthlyrepeat.com/')">Privacy Policy</a>
+                    </p>
+                    <small>Build:5.0.0</small>
+                </div>
+            </ion-content>
+        </ion-menu>
+
+        <ion-menu menuId="loggedInMenu" side="start" type="overlay" contentId="content">
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+                    <ion-menu-toggle auto-hide="false">
+                        <ion-item button *ngFor="let p of appPages" routerDirection="root" [routerLink]="p.path">
+                            <ion-icon slot="start" [name]="p.icon" routerLinkActive="active-link"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+
+                        <ion-list-header>
+                            <ion-label>Account</ion-label>
+                        </ion-list-header>
+
+                        <ion-item button *ngFor="let p of loggedInPages" (click)="openPage(p)">
+                            <ion-icon slot="start" [name]="p.icon" [color]="isActive(p)"></ion-icon>
+                            {{p.title}}
+                        </ion-item>
+                    </ion-menu-toggle>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+*/

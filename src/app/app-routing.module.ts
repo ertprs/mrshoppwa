@@ -4,12 +4,7 @@ import { CheckTutorial } from './services/common/check-tutorial.service';
 import { DataResolverService } from './services/common/data-resolver.service';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/tutorial', pathMatch: 'full' },
-  {
-    path: 'tutorial',
-    loadChildren: () => import('./pages/tutorial/tutorial.module').then((m) => m.TutorialPageModule),
-    canLoad: [CheckTutorial],
-  },
+  { path: '', redirectTo: '/walkthrough', pathMatch: 'full' },
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then((m) => m.LoginPageModule),
@@ -17,6 +12,11 @@ const routes: Routes = [
   {
     path: 'sign-up',
     loadChildren: () => import('./pages/sign-up/sign-up.module').then((m) => m.SignUpPageModule),
+  },
+  {
+    path: 'walkthrough',
+    loadChildren: () => import('@app/pages/walkthrough/walkthrough.module').then(m => m.WalkthroughPageModule),
+    // canLoad: [CheckTutorial],
   },
   {
     path: 'account',

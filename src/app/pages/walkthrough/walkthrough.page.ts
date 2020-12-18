@@ -43,7 +43,7 @@ export class WalkthroughPage implements OnInit {
 
   skip() {
     console.log('skip slides');
-    this.route.navigate(['login']);
+    this.route.navigate(['/tabs', 'schedule']);
   }
 
   ionViewDidEnter() {
