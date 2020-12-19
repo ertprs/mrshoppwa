@@ -221,10 +221,10 @@ export const environment = {
     },
   ],
   APP_SLIDES: [
-    { title: 'Packs', imageUrl: 'assets/imgs/ionic-white.png', slideDesc: 'Get your recurring products delivered right to your doorstep !', slideBg: '#1e90ff' },
-    { title: 'Services', imageUrl: 'assets/imgs/firebase.png', slideDesc: 'Avail Curated Services at home !', slideBg: '#f28131' },
-    { title: 'Investments', imageUrl: 'assets/imgs/woocommerce.png', slideDesc: 'Invest once, early again and again and again until forever !', slideBg: '#9f5afd' },
-    { title: 'Personal Dashboard', imageUrl: 'assets/imgs/layouts.png', slideDesc: 'Track your recurring expenses right here !', slideBg: '#2ecc71' },
+    { title: 'Packs', imageUrl: 'assets/imgs/ionic-white.png', slideDesc: 'Get your products delivered right at your doorstep!', slideBg: '#1e90ff' },
+    { title: 'Services', imageUrl: 'assets/imgs/firebase.png', slideDesc: 'Premium Curated Services right at home!', slideBg: '#f28131' },
+    { title: 'Investments', imageUrl: 'assets/imgs/woocommerce.png', slideDesc: 'Invest once, earn again and again and again until forever!', slideBg: '#9f5afd' },
+    { title: 'Personal Dashboard', imageUrl: 'assets/imgs/layouts.png', slideDesc: 'Track your monthly expenses right here!', slideBg: '#2ecc71' },
   ],
   USER_ADDRESS: [
     { name: 'John Deo', flat: 'A Block', locality: 'Uthopia', nickName: 'office' },
