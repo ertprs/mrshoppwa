@@ -12,7 +12,9 @@
                 </div>
             </ion-header>
             <ion-content>
-
+                <ion-list-header>
+                    <ion-label>Options</ion-label>
+                </ion-list-header>
                 <ion-list>
                     <ion-menu-toggle auto-hide="false">
                         <ion-item button *ngFor="let p of appPages" routerDirection="root" [routerLink]="p.path">
@@ -23,10 +25,22 @@
                         <ion-list-header>
                             <ion-label>Account</ion-label>
                         </ion-list-header>
-                        <ion-item button *ngFor="let p of logicalPages" routerDirection="root" [routerLink]="p.path">
-                            <ion-icon slot="start" [name]="p.icon" routerLinkActive="active-link"></ion-icon>
-                            {{p.title}}
+
+                        <ion-item button *ngIf="isLoggedIn" routerDirection="root" routerLink="tabs/profile">
+                            <ion-icon slot="start" name="person" routerLinkActive="active-link"></ion-icon>
+                            Profile
                         </ion-item>
+
+                        <ion-item button *ngIf="isLoggedIn" (click)="logout()">
+                            <ion-icon slot="start" name="log-out"></ion-icon>
+                            Logout
+                        </ion-item>
+
+                        <ion-item button *ngIf="!isLoggedIn" routerDirection="root" routerLink="login">
+                            <ion-icon slot="start" name="person" routerLinkActive="active-link"></ion-icon>
+                            Login
+                        </ion-item>
+
                     </ion-menu-toggle>
                 </ion-list>
 

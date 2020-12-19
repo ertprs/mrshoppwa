@@ -129,10 +129,10 @@ export class AppComponent implements OnInit {
 
     logicalPages: PageInterface[] = [
         { title: 'Profile', name: 'ProfilePage', path: 'tabs/profile', icon: 'person' },
-        { title: 'Logout', name: 'TabsPage', path: 'logout', icon: 'log-out', logsOut: true },
+        // { title: 'Logout', name: 'TabsPage', path: 'logout', icon: 'log-out', logsOut: true },
 
         { title: 'Login', name: 'LoginPage', path: 'login', icon: 'log-in' },
-        { title: 'Signup', name: 'SignUpPage', path: 'sign-up', icon: 'person-add' },
+        // { title: 'Signup', name: 'SignUpPage', path: 'sign-up', icon: 'person-add' },
     ];
 
     openPage(page: PageInterface) {
