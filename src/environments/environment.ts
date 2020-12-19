@@ -221,14 +221,14 @@ export const environment = {
     },
   ],
   APP_SLIDES: [
-    { title: 'IONIC 5 FULL APP', imageUrl: 'assets/imgs/ionic-white.png', slideDesc: 'Explore the ultimate Ionic 5 resource for all your app development', slideBg: '#1e90ff' },
-    { title: 'FIREBASE', imageUrl: 'assets/imgs/firebase.png', slideDesc: 'Use Firebase Authentication, social login, storage and data queries for your application', slideBg: '#f28131' },
-    { title: 'WOO-COMMERCE', imageUrl: 'assets/imgs/woocommerce.png', slideDesc: 'Use Woocommerce directly in your app. Use all shop features of an e-commerce platform.', slideBg: '#9f5afd' },
-    { title: 'LAYOUTS', imageUrl: 'assets/imgs/layouts.png', slideDesc: 'Explore from a large number of layouts and create your perfect app', slideBg: '#2ecc71' },
+    { title: 'Packs', imageUrl: 'assets/imgs/ionic-white.png', slideDesc: 'Get your recurring products delivered right to your doorstep !', slideBg: '#1e90ff' },
+    { title: 'Services', imageUrl: 'assets/imgs/firebase.png', slideDesc: 'Avail Curated Services at home !', slideBg: '#f28131' },
+    { title: 'Investments', imageUrl: 'assets/imgs/woocommerce.png', slideDesc: 'Invest once, early again and again and again until forever !', slideBg: '#9f5afd' },
+    { title: 'Personal Dashboard', imageUrl: 'assets/imgs/layouts.png', slideDesc: 'Track your recurring expenses right here !', slideBg: '#2ecc71' },
   ],
   USER_ADDRESS: [
-    { name: 'John Deo', flat: 'D Block', locality: 'Jaipur', nickName: 'office' },
-    { name: 'Aditya Gour', flat: 'D Block Malviya Nagar', locality: 'Jaipur', nickName: 'Home' },
+    { name: 'John Deo', flat: 'A Block', locality: 'Uthopia', nickName: 'office' },
+    { name: 'Jane Doe', flat: 'B Block', locality: 'Uthopia', nickName: 'Home' },
   ],
   USER_CARD_BILLING_DETAILS: [
     { cardNumber: '3124', expiryDate: '12/22', image: 'assets/profile/visa.png' },
