@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>Abstract</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button (click)="toggleFavorites(abstract?.$key)">
+                <ion-icon name="star-outline" slot="icon-only" *ngIf="!isInFavorites(abstract?.$key)"></ion-icon>
+                <ion-icon name="star" slot="icon-only" *ngIf="isInFavorites(abstract?.$key)"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="abstract">
+        <div class="ion-text-center" *ngIf="abstract.image">
+            <img [src]="abstract.image" [alt]="abstract.title">
+        </div>
+        <div class="ion-padding-horizontal">
+            <h3>{{abstract.title}}</h3>
+            <p> <ion-icon name="calendar"></ion-icon> {{abstract.startDate | date: 'fullDate'}} •
+                <ion-icon name="time-outline"></ion-icon> {{abstract.duration}} mins •
+                <ion-icon name="pricetags"></ion-icon> {{abstract.type | titlecase}}
+            </p>
+        </div>
+
+        <ion-list *ngIf="presenters.length">
+            <ion-list-header><ion-label>Presenters</ion-label></ion-list-header>
+
+            <ion-item *ngFor="let presenter of presenters">
+                <div class="ion-margin-top ion-margin-bottom">
+                    <ion-label>{{presenter.firstName}} {{presenter.lastName}}</ion-label>
+                    <ion-note>{{presenter.affiliation}}</ion-note>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list>
+            <ion-list-header><ion-label>Abstract</ion-label></ion-list-header>
+            <ion-item class="ion-text-wrap">
+                {{abstract.body}}
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="authors.length">
+            <ion-list-header><ion-label>Authors</ion-label></ion-list-header>
+
+            <ion-item *ngFor="let author of authors" (click)="goToAuthorDetails(author)">
+                <div class="ion-margin-top ion-margin-bottom">
+                    <ion-label>{{author.firstName}} {{author.lastName}}</ion-label>
+                    <ion-note>{{author.affiliation}} {{author.email}}</ion-note>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="authors.length">
+            <ion-list-header><ion-label>Corresponding</ion-label></ion-list-header>
+
+            <ion-item *ngFor="let participant of corresponding">
+                <div class="ion-margin-top ion-margin-bottom">
+                    <ion-label>{{participant.firstName}} {{participant.lastName}}</ion-label>
+                    <ion-note>{{participant.affiliation}} {{participant.email}}</ion-note>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngIf="abstract.pdf">
+            <ion-list-header><ion-label>Materials</ion-label></ion-list-header>
+
+            <ion-item button detail="false" (click)="downloadPdf()">
+                <ion-icon name="newspaper" slot="end"></ion-icon>
+                Download PDF
+            </ion-item>
+        </ion-list>
+
+    </div>
+</ion-content>

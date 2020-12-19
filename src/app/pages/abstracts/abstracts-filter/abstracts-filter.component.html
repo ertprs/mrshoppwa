@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-button (click)="dismiss()">Cancel</ion-button>
+        </ion-buttons>
+
+        <ion-title>Filter abstracts</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button (click)="applyFilters()" strong>Done</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-list-header><ion-label>Abstract Types</ion-label></ion-list-header>
+        <ion-item button detail="false" *ngFor="let type of types">
+            <ion-label class="ion-text-capitalize">{{type.name}}</ion-label>
+            <ion-toggle [(ngModel)]="type.isChecked"></ion-toggle>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-list-header><ion-label>Dates</ion-label></ion-list-header>
+        <ion-item button detail="false" *ngFor="let date of dates">
+            <ion-label>{{date.name |date: 'fullDate'}}</ion-label>
+            <ion-toggle [(ngModel)]="date.isChecked"></ion-toggle>
+        </ion-item>
+    </ion-list>
+</ion-content>

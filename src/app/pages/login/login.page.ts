@@ -38,7 +38,7 @@ export class LoginPage {
     if (form.valid) {
       this.userData.signInWithEmail(this.login).then(
         () => {
-          this.navCtrl.navigateRoot('/tabs/schedule');
+          this.navCtrl.navigateRoot('/tabs/home');
           this.eventsService.userLogIn(true);
         },
         (error) => this.loginError = error.message,

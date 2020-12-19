@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>{{author?.firstName}} {{author?.lastName}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-text-center ion-padding" *ngIf="author">
+        <img [src]="author.avatar" [alt]="author.fullname"><br>
+    </div>
+
+    <div class="ion-padding" *ngIf="author">
+        <h1>{{author.firstName}} {{author.lastName}}</h1>
+        <p>{{author.affiliation}}</p>
+    </div>
+
+    <div class="ion-padding-top" *ngIf="!!author?.bio">
+        <ion-list>
+            <ion-list-header><ion-label>Biography</ion-label></ion-list-header>
+            <ion-item class="ion-text-wrap">{{author.bio}}</ion-item>
+        </ion-list>
+    </div>
+
+    <ion-list class="ion-no-padding">
+        <ion-list-header><ion-label>Contact</ion-label></ion-list-header>
+
+        <ion-item button detail="false" (click)="call(author?.phoneNumber)">
+            <ion-icon name="call" slot="end"></ion-icon>
+            Phone
+        </ion-item>
+        <ion-item button detail="false" (click)="sendEmail(author?.email)">
+            <ion-icon name="mail" slot="end"></ion-icon>
+            Email
+        </ion-item>
+        <ion-item button detail="false" (click)="openLinkedin(author?.linkedIn)">
+            <ion-icon name="logo-linkedin" slot="end"></ion-icon>
+            Linked in
+        </ion-item>
+        <ion-item button detail="false" (click)="openUrl(author?.webpage)">
+            <ion-icon name="globe-outline" slot="end"></ion-icon>
+            Webpage
+        </ion-item>
+    </ion-list>
+</ion-content>

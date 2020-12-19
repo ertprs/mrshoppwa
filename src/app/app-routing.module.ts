@@ -23,7 +23,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/account/account.module').then((m) => m.AccountPageModule),
   },
 
-
   {
     path: '',
     redirectTo: 'home',
@@ -174,10 +173,7 @@ const routes: Routes = [
     path: 'slider',
     loadChildren: () => import('@app/pages/slider/slider.module').then(m => m.SliderPageModule)
   },
-  {
-    path: 'profile1',
-    loadChildren: () => import('@app/pages/profile/profile.module').then(m => m.ProfilePageModule)
-  },
+
   {
     path: 'cart',
     loadChildren: () => import('@app/pages/woocommerce/cart/cart.module').then(m => m.CartPageModule)

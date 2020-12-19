@@ -118,15 +118,17 @@ export class AppComponent implements OnInit {
   }
 
   appPages: PageInterface[] = [
-    { title: 'Schedule', name: 'TabsPage', path: 'tabs/schedule', index: 0, icon: 'calendar' },
+    { title: 'Home', name: 'AbstractsPage', path: 'tabs/home', icon: 'documents' },
+    { title: 'Packs', name: 'TabsPage', path: 'tabs/packs', index: 0, icon: 'calendar' },
+    { title: 'Services', name: 'TabsPage', path: 'tabs/services', index: 1, icon: 'person-circle' },
     { title: 'Investments', name: 'TabsPage', path: 'tabs/investments', index: 0, icon: 'calendar' },
-    { title: 'Speakers', name: 'TabsPage', path: 'tabs/speakers', index: 1, icon: 'person-circle' },
-    { title: 'Map', name: 'TabsPage', path: 'tabs/map', index: 2, icon: 'map' },
+    { title: 'Finance', name: 'TabsPage', path: 'tabs/finances', index: 0, icon: 'calendar' },
+    // { title: 'Map', name: 'TabsPage', path: 'tabs/map', index: 2, icon: 'map' },
     { title: 'About', name: 'TabsPage', path: 'tabs/about', index: 3, icon: 'information-circle' },
   ];
 
   loggedInPages: PageInterface[] = [
-    { title: 'Account', name: 'AccountPage', path: 'profile1', icon: 'person' },
+    { title: 'Profile', name: 'ProfilePage', path: 'tabs/profile', icon: 'person' },
     { title: 'Logout', name: 'TabsPage', path: 'logout', icon: 'log-out', logsOut: true },
   ];
 
@@ -140,7 +142,7 @@ export class AppComponent implements OnInit {
     if (page.logsOut === true) {
       // Give the menu time to close before changing to logged out
       this.userDataService.signOut();
-      this.navCtrl.navigateRoot('/tabs/schedule');
+      this.navCtrl.navigateRoot('/tabs/home');
       this.eventsService.userLoggedOut(false);
     } else {
       this.navCtrl.navigateRoot(`${page.path}`);

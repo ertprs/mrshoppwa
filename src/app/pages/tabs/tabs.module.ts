@@ -14,13 +14,8 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'schedule',
+        path: 'services',
         loadChildren: () => import('../schedule/schedule.module').then((m) => m.ScheduleModule),
-        resolve: { isCache: DataResolverService },
-      },
-      {
-        path: 'speakers',
-        loadChildren: () => import('../speakers/speakers.module').then((m) => m.SpeakersModule),
         resolve: { isCache: DataResolverService },
       },
       {
@@ -33,21 +28,31 @@ const routes: Routes = [
         loadChildren: () => import('../about/about.module').then((m) => m.AboutPageModule),
         resolve: { isCache: DataResolverService },
       },
-      // {
-      //   path: 'woocommerce-products',
-      //   loadChildren: () => import('../woocommerce/woocommerce-products/woocommerce-products.module').then((m) => m.WoocommerceProductsPageModule),
-      // },
       {
-        path: 'woocommerce-products',
-        loadChildren: () => import('../layouts/netflix/netflix.module').then(m => m.NetflixPageModule)
+        path: 'packs',
+        loadChildren: () => import('../packs/netflix.module').then(m => m.NetflixPageModule)
       },
       {
         path: 'investments',
         loadChildren: () => import('../investment/investment.module').then(m => m.Investmentodule)
       },
       {
+        path: 'finances',
+        loadChildren: () => import('../abstracts/abstracts.module').then((m) => m.AbstractsModule),
+        resolve: { isCache: DataResolverService },
+      },
+      {
+        path: 'home',
+        loadChildren: () => import('../speakers/speakers.module').then((m) => m.SpeakersModule),
+        resolve: { isCache: DataResolverService },
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
+      },
+      {
         path: '',
-        redirectTo: '/tabs/schedule',
+        redirectTo: '/tabs/services',
         pathMatch: 'full',
       },
     ],
