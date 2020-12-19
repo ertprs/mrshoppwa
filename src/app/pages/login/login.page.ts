@@ -15,7 +15,7 @@ import { appTitle } from 'config/config';
 })
 export class LoginPage {
 
-  login: UserOptions = { email: '', password: '' };
+  login: UserOptions = { email: 'test@gmail.com', password: 'letmein' };
   submitted = false;
   loginError: string;
 
