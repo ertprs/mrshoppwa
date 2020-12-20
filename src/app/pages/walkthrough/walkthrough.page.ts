@@ -8,7 +8,7 @@
 */
 import { Component, OnInit } from '@angular/core';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { Platform, MenuController } from '@ionic/angular';
+import { Platform, MenuController, ViewWillEnter } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { environment } from '@env/environment';
 
@@ -17,7 +17,7 @@ import { environment } from '@env/environment';
   templateUrl: './walkthrough.page.html',
   styleUrls: ['./walkthrough.page.scss'],
 })
-export class WalkthroughPage implements OnInit {
+export class WalkthroughPage implements OnInit, ViewWillEnter {
   public slideOpts: object = {
     effect: 'flip',
   };
@@ -30,11 +30,14 @@ export class WalkthroughPage implements OnInit {
     public menuCtrl: MenuController,
   ) {
 
-    this.menuCtrl.enable(false);
     this.slides = environment.APP_SLIDES;
   }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter() {
+    this.menuCtrl.enable(false);
   }
 
   sliderChanges(event: any) {
