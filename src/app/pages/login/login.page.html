@@ -14,26 +14,6 @@
         <img src="assets/imgs/fire.png" class="img-logo">
     </div>
 
-    <div id="recaptcha-container"></div>
-
-    <!-- <ion-row class="row-section">
-
-        Phone Number Signin
-
-        <div id="recaptcha-container"></div>
-
-        <ion-item>
-            <ion-label stacked>Phone Number</ion-label>
-            <ion-input type="number" [(ngModel)]="phoneNumber"></ion-input>
-        </ion-item>
-
-        <button ion-button id="sign-in-button" (click)="signIn(phoneNumber)">
-            Sign In
-        </button>
-
-    </ion-row> -->
-
-
     <form #loginForm="ngForm" novalidate>
         <ion-list class="ion-padding">
             <ion-item>
@@ -114,4 +94,24 @@
             </ion-col>
           </ion-row>
     </form>
+
+    Phone Number Signin: InProgress
+
+    <div id="recaptcha-container"></div>
+
+    <ion-row class="row-section">
+
+        <div id="recaptcha-container"></div>
+
+        <ion-item>
+            <ion-label stacked>Phone Number</ion-label>
+            <ion-input type="number" [(ngModel)]="phoneNumber"></ion-input>
+        </ion-item>
+
+        <button ion-button id="sign-in-button" (click)="signIn(phoneNumber)">
+            Sign In
+        </button>
+
+    </ion-row>
+
 </ion-content>

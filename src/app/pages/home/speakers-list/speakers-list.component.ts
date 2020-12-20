@@ -6,6 +6,7 @@ import { SpeakersService } from '../speakers.service';
 import { appTitle } from 'config/config';
 import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-speakers-list',
@@ -31,6 +32,7 @@ export class SpeakersListComponent implements OnInit {
     private route: ActivatedRoute,
     private speakersService: SpeakersService,
     private titleService: Title,
+    public menuCtrl: MenuController
   ) { }
 
   ngOnInit() {
@@ -38,6 +40,7 @@ export class SpeakersListComponent implements OnInit {
   }
 
   ionViewWillEnter() {
+    this.menuCtrl.enable(true);
     this.titleService.setTitle(appTitle + ' - Speakers');
   }
 
