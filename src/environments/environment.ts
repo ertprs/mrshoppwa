@@ -13,7 +13,7 @@
 
 export const environment = {
   production: false,
-  GOOGLE_MAPS_API_KEY: 'YOUR_API_KEY',
+  GOOGLE_MAPS_API_KEY: '',
   config: {
     apiKey: '<your-key>',
     authDomain: '<your-project-authdomain>',

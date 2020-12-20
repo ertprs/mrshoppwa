@@ -135,6 +135,11 @@ export class AppComponent implements OnInit {
     ngOnInit() {
     }
 
+    goToLanding() {
+        this.menu.enable(false);
+        this.route.navigate(['/']);
+    }
+
     disableWalkthrough() {
         this.storage.set('hasSeenTutorial', false)
     }

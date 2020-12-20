@@ -66,13 +66,14 @@ import { MovieTicketPage } from '@app/pages/card/movie-ticket/movie-ticket.page'
 import { IonicSwingModule } from '@app/components/ionic-swing/ionic-swing.module';
 import { SwingModule } from 'angular2-swing';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
+import { LandingPage } from './landing/landing.page';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, MovieTicketPage, ViewVideoPage, OrderinfoPage, MapDirectionPage, TindericonsComponent],
+  declarations: [AppComponent, MovieTicketPage, ViewVideoPage, OrderinfoPage, MapDirectionPage, TindericonsComponent, LandingPage],
   entryComponents: [ViewVideoPage, MovieTicketPage, OrderinfoPage, MapDirectionPage, TindericonsComponent],
   imports: [
     BrowserModule,

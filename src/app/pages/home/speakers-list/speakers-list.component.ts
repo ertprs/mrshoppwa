@@ -6,14 +6,14 @@ import { SpeakersService } from '../speakers.service';
 import { appTitle } from 'config/config';
 import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
-import { MenuController } from '@ionic/angular';
+import { MenuController, ViewWillEnter } from '@ionic/angular';
 
 @Component({
   selector: 'app-speakers-list',
   templateUrl: './speakers-list.component.html',
   styleUrls: ['./speakers-list.component.scss'],
 })
-export class SpeakersListComponent implements OnInit {
+export class SpeakersListComponent implements OnInit, ViewWillEnter {
 
   queryText = '';
   speakers: any[] = [];
