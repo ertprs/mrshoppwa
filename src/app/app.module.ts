@@ -39,7 +39,6 @@ import { AppComponent } from '@app/app.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { ViewVideoPage } from '@app/pages/video-playlists/view-video/view-video.page';
 import { OrderinfoPage } from '@app/pages/woocommerce/orderinfo/orderinfo.page';
-import { MapDirectionPage } from '@app/pages/addons3/map-direction/map-direction.page';
 
 import { environment } from '@env/environment';
 
@@ -61,8 +60,6 @@ import { ApplePay } from '@ionic-native/apple-pay/ngx';
 import { PayPal } from '@ionic-native/paypal/ngx';
 import { Stripe } from '@ionic-native/stripe/ngx';
 import { Device } from '@ionic-native/device/ngx';
-import { TindericonsComponent } from '@app/pages/layouts/tinder/tindericons/tindericons.component';
-import { MovieTicketPage } from '@app/pages/card/movie-ticket/movie-ticket.page';
 import { IonicSwingModule } from '@app/components/ionic-swing/ionic-swing.module';
 import { SwingModule } from 'angular2-swing';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
@@ -73,8 +70,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [AppComponent, MovieTicketPage, ViewVideoPage, OrderinfoPage, MapDirectionPage, TindericonsComponent, LandingPage],
-  entryComponents: [ViewVideoPage, MovieTicketPage, OrderinfoPage, MapDirectionPage, TindericonsComponent],
+  declarations: [AppComponent, ViewVideoPage, OrderinfoPage, LandingPage],
+  entryComponents: [ViewVideoPage, OrderinfoPage],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -136,7 +133,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     { provide: FirestoreSettingsToken, useValue: {} },
     { provide: HttpBackend, useClass: NativeHttpFallback, deps: [Platform, NativeHttpBackend, HttpXhrBackend] },
-    { provide: DataService, useFactory: getDataService, deps: [HttpClient, AngularFireDatabase] },
+    { provide: DataService, useFactory: getDataService, deps: [HttpClient, AngularFireDatabase] }
   ],
   bootstrap: [AppComponent],
 })

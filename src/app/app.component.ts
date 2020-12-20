@@ -7,7 +7,6 @@ import { UserDataService } from './services/common/user-data.service';
 import { InAppBrowserService } from './services/common/in-app-browser.service';
 import { EventsService } from './services/common/events.service';
 import { OnInit } from '@angular/core';
-import { MovieTicketPage } from '@app/pages/card/movie-ticket/movie-ticket.page';
 import { ModalController } from '@ionic/angular';
 import { environment } from '@env/environment';
 import { UtilService } from '@app/services/util/util.service';
@@ -51,8 +50,6 @@ export class AppComponent implements OnInit {
         { title: 'Investments', name: 'TabsPage', path: 'tabs/investments', index: 0, icon: 'calendar' },
         { title: 'Finance', name: 'TabsPage', path: 'tabs/finances', index: 0, icon: 'calendar' },
         { title: 'Game', name: 'GamesPage', path: 'phaser', index: 0, icon: 'heart' },
-        // { title: 'Blog', name: 'BlogsPage', path: 'blogs', index: 0, icon: 'calendar' },
-        // { title: 'Map', name: 'TabsPage', path: 'tabs/map', index: 2, icon: 'map' },
         { title: 'About', name: 'TabsPage', path: 'tabs/about', index: 3, icon: 'information-circle' },
     ];
 
@@ -162,12 +159,7 @@ export class AppComponent implements OnInit {
         if (disabled) {
             return;
         }
-        if (pageUrl === '/movie-ticket') {
-            const modal = await this.modalCtrl.create({
-                component: MovieTicketPage
-            });
-            return modal.present();
-        } else if (pageUrl === '/logout') {
+        else if (pageUrl === '/logout') {
             this.logout();
         } else if (pageUrl === '/product-details') {
             this.route.navigate([pageUrl, { id: 19 }]);

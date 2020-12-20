@@ -20,11 +20,6 @@ const routes: Routes = [
         resolve: { isCache: DataResolverService },
       },
       {
-        path: 'map',
-        loadChildren: () => import('../map/map.module').then((m) => m.MapPageModule),
-        resolve: { isCache: DataResolverService },
-      },
-      {
         path: 'about',
         loadChildren: () => import('../about/about.module').then((m) => m.AboutPageModule),
         resolve: { isCache: DataResolverService },
