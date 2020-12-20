@@ -77,5 +77,41 @@
                 <ion-button (click)="onSignup()" color="light" expand="block">Signup</ion-button>
             </ion-col>
         </ion-row>
+
+        <ion-row>
+            <ion-col>
+              <ion-text  color="medium" (click)="forgotPassword()" class="ion-float-end">
+                <h6  class="small-text ion-no-margin ion-text-end">Forgot Password?</h6>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" (click)="signin()" color="undefined" class="btn-transition"><strong
+                  class="white-color">Sign In</strong></ion-button>
+            </ion-col>
+          </ion-row>
+          <div class="line"></div>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" fill="outline" color="undefined" (click)="util.navigate('signup')"
+                class="btn-color"><strong>New? Create an Account</strong></ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <facebook-login (accessToken)="facebookLogin($event)"></facebook-login>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <twitter-login (accessToken)="twitterLogin($event)"></twitter-login>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <google-login (accessToken)="googleLogin($event)"></google-login>
+            </ion-col>
+          </ion-row>
     </form>
 </ion-content>

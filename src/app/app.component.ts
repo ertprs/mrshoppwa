@@ -13,6 +13,9 @@ import { environment } from '@env/environment';
 import { UtilService } from '@app/services/util/util.service';
 import { AuthenticationService } from '@app/services/firestore/firebase-authentication.service';
 import { SwUpdate } from '@angular/service-worker';
+import { Observable, fromEvent, merge, of } from 'rxjs';
+import { mapTo } from 'rxjs/operators';
+import { Storage } from '@ionic/storage';
 
 
 interface PageInterface {
@@ -40,9 +43,6 @@ export class AppComponent implements OnInit {
     public beginnerMenu: Array<any> = [];
     public startupMenu: Array<any> = [];
     public proMenu: Array<any> = [];
-    isLoggedIn = false;
-
-    isPageInit = false;
 
     appPages: PageInterface[] = [
         { title: 'Home', name: 'AbstractsPage', path: 'tabs/home', icon: 'documents' },
@@ -50,6 +50,8 @@ export class AppComponent implements OnInit {
         { title: 'Services', name: 'TabsPage', path: 'tabs/services', index: 1, icon: 'person-circle' },
         { title: 'Investments', name: 'TabsPage', path: 'tabs/investments', index: 0, icon: 'calendar' },
         { title: 'Finance', name: 'TabsPage', path: 'tabs/finances', index: 0, icon: 'calendar' },
+        { title: 'Game', name: 'GamesPage', path: 'phaser', index: 0, icon: 'heart' },
+        // { title: 'Blog', name: 'BlogsPage', path: 'blogs', index: 0, icon: 'calendar' },
         // { title: 'Map', name: 'TabsPage', path: 'tabs/map', index: 2, icon: 'map' },
         { title: 'About', name: 'TabsPage', path: 'tabs/about', index: 3, icon: 'information-circle' },
     ];
@@ -61,6 +63,10 @@ export class AppComponent implements OnInit {
         { title: 'Login', name: 'LoginPage', path: 'login', icon: 'log-in' },
         // { title: 'Signup', name: 'SignUpPage', path: 'sign-up', icon: 'person-add' },
     ];
+
+    online$: Observable<boolean>;
+    isLoggedIn = false;
+    isPageInit = false;
 
     constructor(
         private platform: Platform,
@@ -76,13 +82,20 @@ export class AppComponent implements OnInit {
         private inAppBrowserService: InAppBrowserService,
         private router: Router,
         private eventsService: EventsService,
-        private swUpdate: SwUpdate
+        private swUpdate: SwUpdate,
+        private storage: Storage
     ) {
         this.initializeApp();
-        this.beginnerMenu = environment.BEGINNER_SIDEMENU;
-        this.startupMenu = environment.STARTUP_SIDEMENU;
-        this.proMenu = environment.PRO_SIDEMENU;
-        this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
+        this.menu.enable(false, 'appMenu');
+        // this.beginnerMenu = environment.BEGINNER_SIDEMENU;
+        // this.startupMenu = environment.STARTUP_SIDEMENU;
+        // this.proMenu = environment.PRO_SIDEMENU;
+        // this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
+        this.online$ = merge(
+            of(navigator.onLine),
+            fromEvent(window, 'online').pipe(mapTo(true)),
+            fromEvent(window, 'offline').pipe(mapTo(false))
+        )
     }
 
     initializeApp() {
@@ -120,6 +133,10 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
+    }
+
+    disableWalkthrough() {
+        this.storage.set('hasSeenTutorial', false)
     }
 
     showSidemenu(index: number) {

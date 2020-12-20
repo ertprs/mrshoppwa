@@ -44,7 +44,7 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        loadChildren: () => import('../speakers/speakers.module').then((m) => m.SpeakersModule),
+        loadChildren: () => import('../home/speakers.module').then((m) => m.SpeakersModule),
         resolve: { isCache: DataResolverService },
         // canActivate: [GuardsService]
       },

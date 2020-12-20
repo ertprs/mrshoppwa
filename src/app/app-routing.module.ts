@@ -16,7 +16,7 @@ const routes: Routes = [
   {
     path: 'walkthrough',
     loadChildren: () => import('@app/pages/walkthrough/walkthrough.module').then(m => m.WalkthroughPageModule),
-    // canLoad: [CheckTutorial],
+    canLoad: [CheckTutorial],
   },
   {
     path: 'account',

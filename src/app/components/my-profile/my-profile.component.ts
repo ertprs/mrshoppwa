@@ -21,10 +21,10 @@ export class MyProfileComponent implements OnInit {
   public gender: string;
 
   constructor() {
-    this.names = 'Jack Doe';
-    this.email = 'Jack@enappd.com';
-    this.phoneNumber = '+91 9878745214';
-    this.gender = 'Male';
+    this.names = 'Jane Doe';
+    this.email = 'JaneDoe@monthlyrepeat.com';
+    this.phoneNumber = '+1 1234567890';
+    this.gender = 'Female';
   }
 
   ngOnInit() { }

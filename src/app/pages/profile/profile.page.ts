@@ -34,6 +34,7 @@ export class ProfilePage implements OnInit, ViewWillEnter {
     const isInitialised = this.userDataService.account.isInitialised;
     if (isInitialised) {
       console.log('Set Profile Data here: TODO');
+      console.log(this.userDataService.account);
       let profileUrl = '';
       let name = '';
       let location = '';

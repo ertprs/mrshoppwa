@@ -14,7 +14,7 @@ export class CheckTutorial implements CanLoad {
   canLoad() {
     return this.storage.get('hasSeenTutorial').then((res) => {
       if (res) {
-        this.router.navigate(['/tabs', 'schedule']);
+        this.router.navigate(['/tabs', 'home']);
         return false;
       } else {
         return true;

@@ -5,6 +5,7 @@ import { EmailService } from '@app/services/common/email.service';
 '@app/services/firestore/firebase-authentication.service';
 import { MapsService } from '@app/services/common/maps.service';
 import { appTitle } from 'config/config';
+import { InAppBrowserService } from '@app/services/common/in-app-browser.service';
 
 @Component({
   selector: 'app-about',
@@ -20,6 +21,7 @@ export class AboutPage implements OnInit {
     private emailService: EmailService,
     private mapService: MapsService,
     private titleService: Title,
+    private inBrowser: InAppBrowserService,
   ) { }
 
   ngOnInit() {
@@ -40,5 +42,9 @@ export class AboutPage implements OnInit {
     const location = this.about.venue.mapData;
     const title = this.about.venue.title;
     this.mapService.openMapsApp(`${location.latitude},${location.longitude}`, `${title}`);
+  }
+
+  openLinkedin(linkedIn: string) {
+    this.inBrowser.open(linkedIn);
   }
 }

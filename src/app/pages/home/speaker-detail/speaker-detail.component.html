@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/tabs/schedule"></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>{{speaker?.fullname}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-text-center" *ngIf="speaker">
+        <img class="avatar" [src]="speaker?.avatar" [alt]="speaker?.fullname"><br>
+    </div>
+
+    <div class="ion-padding">
+        <h1>{{speaker?.fullname}}</h1>
+        <p>{{speaker?.affiliation}}</p>
+        <p>{{speaker?.email}}</p>
+    </div>
+
+    <div class="ion-padding-top" *ngIf="!!speaker?.bio">
+        <ion-list>
+            <ion-list-header><ion-label>Biography</ion-label></ion-list-header>
+            <ion-item class="ion-text-wrap">{{speaker?.bio}}</ion-item>
+        </ion-list>
+    </div>
+
+    <ion-list class="ion-no-padding">
+        <ion-list-header><ion-label>Contact</ion-label></ion-list-header>
+
+        <ion-item button detail="false" (click)="call(speaker?.phoneNumber)">
+            <ion-label>Phone</ion-label>
+            <ion-icon name="call" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item button detail="false" (click)="sendEmail(speaker?.email)">
+            <ion-label>Email</ion-label>
+            <ion-icon name="mail" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item button detail="false" (click)="openLinkedin(speaker?.linkedIn)">
+            <ion-label>Linked in</ion-label>
+            <ion-icon name="logo-linkedin" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item button detail="false" (click)="openUrl(speaker?.webpage)">
+            <ion-label>Webpage</ion-label>
+            <ion-icon name="globe-outline" slot="end"></ion-icon>
+        </ion-item>
+    </ion-list>
+</ion-content>
