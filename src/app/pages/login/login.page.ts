@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { AlertController, MenuController, NavController, ViewWillEnter } from '@ionic/angular';
+import { AlertController, MenuController, NavController, Platform, ViewWillEnter } from '@ionic/angular';
 import { UserOptions } from '@app/interfaces/user-options';
 import { UserDataService } from '@app/services/common/user-data.service';
 import { EventsService } from '@app/services/common/events.service';
@@ -10,6 +10,7 @@ import { appTitle } from 'config/config';
 import * as firebase from 'firebase/app';
 import { AuthenticationService } from '@app/services/firestore/firebase-authentication.service';
 import { UtilService } from '@app/services/util/util.service';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 
 @Component({
   selector: 'app-login',
@@ -35,6 +36,8 @@ export class LoginPage implements OnInit, ViewWillEnter {
     private alertController: AlertController,
     private authServ: AuthenticationService,
     public util: UtilService,
+    private platform: Platform,
+    private splashScreen: SplashScreen
 
   ) { }
 
@@ -46,6 +49,11 @@ export class LoginPage implements OnInit, ViewWillEnter {
   ionViewWillEnter() {
     this.titleService.setTitle(appTitle + ' - Login');
     this.menuCtrl.enable(false);
+    this.menuCtrl.enable(false, 'start');
+    this.menuCtrl.enable(false, 'end');
+    this.platform.ready().then(() => {
+      this.splashScreen.hide();
+    });
   }
 
   signIn(phoneNumber: number) {
