@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { NavController } from '@ionic/angular';
+import { MenuController, NavController, ViewWillEnter } from '@ionic/angular';
 import { UserOptions } from '@app/interfaces/user-options';
 import { UserDataService } from '@app/services/common/user-data.service';
 import { EventsService } from '@app/services/common/events.service';
@@ -13,9 +13,9 @@ import { appTitle } from 'config/config';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage {
+export class LoginPage implements ViewWillEnter{
 
-  login: UserOptions = { email: 'test@gmail.com', password: 'letmein' };
+  login: UserOptions = { email: 'user@monthlyrepeat.com', password: 'letmein@monthlyrepeat' };
   submitted = false;
   loginError: string;
 
@@ -25,10 +25,12 @@ export class LoginPage {
     private router: Router,
     private titleService: Title,
     private eventsService: EventsService,
+    private menuCtrl: MenuController,
   ) { }
 
   ionViewWillEnter() {
     this.titleService.setTitle(appTitle + ' - Login');
+    this.menuCtrl.enable(false);
   }
 
   onLogin(form: NgForm) {
@@ -37,7 +39,7 @@ export class LoginPage {
 
     if (form.valid) {
       this.userData.signInWithEmail(this.login).then(
-        () => {
+        (result) => {
           this.navCtrl.navigateRoot('/tabs/home');
           this.eventsService.userLogIn(true);
         },

@@ -7,22 +7,52 @@
 * LICENSE.md file in the root directory of this source tree.
 */
 import { Component, OnInit } from '@angular/core';
+import { UserDataService } from '@app/services/common/user-data.service';
+import { ViewWillEnter } from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
   styleUrls: ['./profile.page.scss'],
 })
-export class ProfilePage implements OnInit {
+export class ProfilePage implements OnInit, ViewWillEnter {
   public selectSegment: string;
   public userDetails: any;
 
-  constructor() {
-    this.userDetails = { profileUrl: 'assets/profile/user.jpeg', name: 'John Doe', phoneNo: '+91-000-0000-0000', location: 'jaipur' };
+  constructor(private userDataService: UserDataService) {
     this.selectSegment = 'profile';
   }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter() {
+    this.buildUserDetails();
+  }
+
+  buildUserDetails() {
+    const isInitialised = this.userDataService.account.isInitialised;
+    if (isInitialised) {
+      console.log('Set Profile Data here: TODO');
+      let profileUrl = '';
+      let name = '';
+      let location = '';
+      const { user } = this.userDataService.account;
+      this.userDetails = {
+        profileUrl: 'assets/profile/user.jpeg',
+        name: 'John Doe',
+        phoneNo: '+00-000-0000-0000',
+        location: 'Uthopia'
+      };
+    }
+    else {
+      this.userDetails = {
+        profileUrl: 'assets/profile/user.jpeg',
+        name: 'John Doe',
+        phoneNo: '+00-000-0000-0000',
+        location: 'Uthopia'
+      };
+    }
   }
 
   editProfile() {

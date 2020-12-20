@@ -1,7 +1,7 @@
 <ion-app>
     <ion-split-pane contentId="main-content">
 
-        <ion-menu contentId="main-content" type="overlay" class="left-menu" side="start">
+        <ion-menu menuId="appMenu" contentId="main-content" type="overlay" class="left-menu" side="start">
             <ion-header class="head">
                 <div class="enappd-header">
                     <div class="logo">
@@ -29,6 +29,7 @@
                         <ion-item button *ngIf="isLoggedIn" routerDirection="root" routerLink="tabs/profile">
                             <ion-icon slot="start" name="person" routerLinkActive="active-link"></ion-icon>
                             Profile
+                            Admin: {{userDataService?.isAdmin}}
                         </ion-item>
 
                         <ion-item button *ngIf="isLoggedIn" (click)="logout()">

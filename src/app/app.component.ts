@@ -49,17 +49,17 @@ export class AppComponent implements OnInit {
         private util: UtilService,
         public modalCtrl: ModalController,
         private navCtrl: NavController,
-        private userDataService: UserDataService,
+        public userDataService: UserDataService,
         private menu: MenuController,
         private inAppBrowserService: InAppBrowserService,
         private router: Router,
         private eventsService: EventsService,
     ) {
         this.initializeApp();
-        // this.beginnerMenu = environment.BEGINNER_SIDEMENU;
-        // this.startupMenu = environment.STARTUP_SIDEMENU;
-        // this.proMenu = environment.PRO_SIDEMENU;
-        // this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
+        this.beginnerMenu = environment.BEGINNER_SIDEMENU;
+        this.startupMenu = environment.STARTUP_SIDEMENU;
+        this.proMenu = environment.PRO_SIDEMENU;
+        this.sidemenuLayout1 = environment.SIDEMENU_LAYOUTS;
     }
 
     initializeApp() {
@@ -69,8 +69,14 @@ export class AppComponent implements OnInit {
         });
 
         // decide which menu items should be hidden by current login status stored in local storage
-        this.userDataService.isUserAuthenticated().subscribe((isUserAuthenticated) => {
-            this.enableMenu(isUserAuthenticated);
+        this.userDataService.getUser().subscribe((user) => {
+            const isUserValid = !!user;
+            console.log(user);
+            if (isUserValid) {
+            }
+            else {
+                // debugger;
+            }
         });
 
         this.listenToLoginEvents();
@@ -172,8 +178,7 @@ export class AppComponent implements OnInit {
 
     async enableMenu(loggedIn: boolean) {
         this.isLoggedIn = loggedIn;
-        // await this.menu.enable(loggedIn, 'loggedInMenu');
-        // await this.menu.enable(!loggedIn, 'loggedOutMenu');
+        await this.menu.enable(loggedIn, 'appMenu');
     }
 }
 
