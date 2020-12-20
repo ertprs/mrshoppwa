@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { TabsPage } from './tabs.page';
 import { DataResolverService } from '@app/services/common/data-resolver.service';
+import { GuardsService } from '@app/guards/guards.service';
 
 const routes: Routes = [
   {
@@ -45,6 +46,7 @@ const routes: Routes = [
         path: 'home',
         loadChildren: () => import('../speakers/speakers.module').then((m) => m.SpeakersModule),
         resolve: { isCache: DataResolverService },
+        // canActivate: [GuardsService]
       },
       {
         path: 'profile',

@@ -14,6 +14,8 @@ export class UserDataService {
     isInitialised: false
   };
 
+  customInstallPrompt: any;
+
   isAdmin: boolean = false;
 
   constructor(
@@ -31,12 +33,11 @@ export class UserDataService {
     const getUserState$ = this.afAuth.authState.pipe(
       map((user) => {
         const isUserValid = !!user;
-        console.log(user);
         if (isUserValid) {
           this.loadUserData(user);
         }
         else {
-          debugger;
+          console.log('User not loaded');
         }
         return user;
       }));
@@ -58,7 +59,6 @@ export class UserDataService {
       .get()
       .then(userProfileSnapshot => {
         const snapShotData = userProfileSnapshot.data();
-        debugger;
         if (!!snapShotData) {
           this.account = { ...this.account, snapShotData: snapShotData }
           this.account = { ...this.account, isInitialised: true }
