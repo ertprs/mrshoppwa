@@ -54,30 +54,6 @@ const routes: Routes = [
   },
 
   {
-    path: 'cart',
-    loadChildren: () => import('@app/pages/woocommerce/cart/cart.module').then(m => m.CartPageModule)
-  },
-  {
-    path: 'checkout',
-    loadChildren: () => import('@app/pages/woocommerce/checkout/checkout.module').then(m => m.CheckoutPageModule)
-  },
-  {
-    path: 'orderinfo',
-    loadChildren: () => import('@app/pages/woocommerce/orderinfo/orderinfo.module').then(m => m.OrderinfoPageModule)
-  },
-  {
-    path: 'product-details',
-    loadChildren: () => import('@app/pages/woocommerce/product-details/product-details.module').then(m => m.ProductDetailsPageModule)
-  },
-  {
-    path: 'woocommerce-products',
-    loadChildren: () => import('@app/pages/woocommerce/woocommerce-products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
-  },
-  {
-    path: 'orders',
-    loadChildren: () => import('@app/pages/woocommerce/orders/orders.module').then(m => m.OrdersPageModule)
-  },
-  {
     path: 'blogpage',
     loadChildren: () => import('@app/pages/wordpress/blogpage/blogpage.module').then(m => m.BlogpagePageModule)
   },

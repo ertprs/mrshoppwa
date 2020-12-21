@@ -14,11 +14,11 @@ const routes: Routes = [
     path: 'tabs',
     component: TabsPage,
     children: [
-      {
-        path: 'services',
-        loadChildren: () => import('../schedule/schedule.module').then((m) => m.ScheduleModule),
-        resolve: { isCache: DataResolverService },
-      },
+      // {
+      //   path: 'services',
+      //   loadChildren: () => import('../schedule/schedule.module').then((m) => m.ScheduleModule),
+      //   resolve: { isCache: DataResolverService },
+      // },
       {
         path: 'about',
         loadChildren: () => import('../about/about.module').then((m) => m.AboutPageModule),
@@ -26,17 +26,42 @@ const routes: Routes = [
       },
       {
         path: 'packs',
-        loadChildren: () => import('../packs/netflix.module').then(m => m.NetflixPageModule)
+        loadChildren: () => import('../../modules/packs/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
+      },
+      {
+        path: 'services',
+        loadChildren: () => import('../../modules/services/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
       },
       {
         path: 'investments',
-        loadChildren: () => import('../investment/investment.module').then(m => m.Investmentodule)
+        loadChildren: () => import('../../modules/investments/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
       },
       {
         path: 'finances',
-        loadChildren: () => import('../abstracts/abstracts.module').then((m) => m.AbstractsModule),
-        resolve: { isCache: DataResolverService },
+        loadChildren: () => import('../../modules/finances/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
       },
+      {
+        path: 'product-details',
+        loadChildren: () => import('./../../modules/packs/product-details/product-details.module').then(m => m.ProductDetailsPageModule)
+      },
+      {
+        path: 'woocommerce-products',
+        loadChildren: () => import('./../../modules/packs/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
+      },
+
+      // {
+      //   path: 'packs2',
+      //   loadChildren: () => import('../packs/netflix.module').then(m => m.NetflixPageModule)
+      // },
+      // {
+      //   path: 'investments',
+      //   loadChildren: () => import('../investment/investment.module').then(m => m.Investmentodule)
+      // },
+      // {
+      //   path: 'finances',
+      //   loadChildren: () => import('../abstracts/abstracts.module').then((m) => m.AbstractsModule),
+      //   resolve: { isCache: DataResolverService },
+      // },
       {
         path: 'home',
         loadChildren: () => import('../home/speakers.module').then((m) => m.SpeakersModule),

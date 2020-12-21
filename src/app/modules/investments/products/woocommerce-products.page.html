@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize">Investments</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="getProducts == undefined || getProducts.length === 0 " class="spinner">
+    <ion-spinner name="lines"></ion-spinner>
+  </div>
+  <ion-row class="ion-margin-top ion-margin-bottom">
+    <ion-col size="4" *ngFor="let item of getProducts">
+      <ion-card class="cardSection ion-margin-top">
+        <img [src]="item.images[0].src" [alt]="item.name">
+        <ion-card-content>
+          <span class="contentText">{{item.name}}</span>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

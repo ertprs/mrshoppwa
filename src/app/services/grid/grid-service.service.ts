@@ -393,14 +393,10 @@ export class GridServiceService {
     },
   ];
   FULL_WIDTH_GRID = [
-    { title: 'V I N Y A S A', image: 'assets/products/vinyasa.jpg' },
-    { title: 'A S H T A N G A', image: 'assets/products/ashtanga.jpg' },
-    { title: 'I Y E N G A R', image: 'assets/products/gallery7.jpg' },
-    { title: 'B I K R A M', image: 'assets/products/bikram.jpg' },
-    { title: 'J I V A M U K T I', image: 'assets/products/jivamukti.jpg' },
-    { title: 'P O W E R', image: 'assets/products/power.jpg' },
-    { title: 'S I V A N A N D A', image: 'assets/products/sivananda.jpg' },
-    { title: 'Y I N', image: 'assets/products/yin.jpg' },
+    { title: 'M U T U A L  F U N D S', image: 'assets/products/vinyasa.jpg' },
+    { title: 'C R O W D  F U N D I N G', image: 'assets/products/ashtanga.jpg' },
+    { title: 'C H I T  F U N D S', image: 'assets/products/vinyasa.jpg' },
+    { title: 'O T H E R S', image: 'assets/products/ashtanga.jpg' },
 
   ];
   medicines = [
