@@ -29,6 +29,10 @@ const routes: Routes = [
         loadChildren: () => import('../../modules/packs/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
       },
       {
+        path: 'pack-details',
+        loadChildren: () => import('../../modules/packs/product-details/product-details.module').then(m => m.ProductDetailsPageModule)
+      },
+      {
         path: 'services',
         loadChildren: () => import('../../modules/services/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
       },
@@ -47,6 +51,14 @@ const routes: Routes = [
       {
         path: 'woocommerce-products',
         loadChildren: () => import('./../../modules/packs/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
+      },
+      {
+        path: 'cart',
+        loadChildren: () => import('./../../modules/cart/cart.module').then(m => m.CartPageModule)
+      },
+      {
+        path: 'checkout',
+        loadChildren: () => import('./../../modules/checkout/checkout.module').then(m => m.CheckoutPageModule)
       },
 
       // {
@@ -90,4 +102,4 @@ const routes: Routes = [
   ],
   declarations: [TabsPage],
 })
-export class TabsPageModule {}
+export class TabsPageModule { }

@@ -1,11 +1,3 @@
-/**
-* Ionic Full App  (https://store.enappd.com/product/ionic-full-app)
-*
-* Copyright © 2020-present Enappd. All rights reserved.
-*
-* This source code is licensed as per the terms found in the
-* LICENSE.md file in the root directory of this source tree.
-*/
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { WooCommerceService } from '@app/services/woocommerce/woo-commerce.service';
 import { HttpClient } from '@angular/common/http';
@@ -38,7 +30,7 @@ export class WoocommerceProductsPage implements OnInit, ViewWillEnter {
 
   goToProductDetail(product) {
     console.log('product', product);
-    this.route.navigate(['tabs/product-details', { id: product.id }]);
-
+    this.route.navigate(['tabs/pack-details', { id: product.id }]);
   }
+
 }

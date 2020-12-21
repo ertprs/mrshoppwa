@@ -6,25 +6,21 @@
 * This source code is licensed as per the terms found in the
 * LICENSE.md file in the root directory of this source tree.
 */
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { WoocommerceProductsPage } from './woocommerce-products.page';
+import { CartPage } from './cart.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: WoocommerceProductsPage,
-    children: [
-      {
-        path: 'pack-details',
-        loadChildren: () => import('../product-details/product-details.module').then((m) => m.ProductDetailsPageModule),
-      }]
-    }
+    component: CartPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class WoocommerceProductsPageRoutingModule {}
+export class CartPageRoutingModule {}

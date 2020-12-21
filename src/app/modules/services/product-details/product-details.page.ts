@@ -117,9 +117,8 @@ export class ProductDetailsPage implements OnInit {
   seg(event) {
     this.segment = event.detail.value;
   }
-
   cartPage() {
-    // this.route.navigate(['tabs/cart']);
+    this.route.navigate(['cart']);
   }
 
 }

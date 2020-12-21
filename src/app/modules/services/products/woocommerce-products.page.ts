@@ -11,7 +11,6 @@ import { WooCommerceService } from '@app/services/woocommerce/woo-commerce.servi
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ViewDidEnter, ViewWillEnter } from '@ionic/angular';
-import { CardService } from '@app/services/card/card.service';
 
 @Component({
   selector: 'app-woocommerce-products',
@@ -19,15 +18,12 @@ import { CardService } from '@app/services/card/card.service';
   styleUrls: ['./woocommerce-products.page.scss'],
 })
 export class WoocommerceProductsPage implements OnInit, ViewWillEnter {
-
   public getProducts: Array<any>;
-  public events: Array<any>;
 
   constructor(
     public woocommerceService: WooCommerceService,
     public http: HttpClient,
     public route: Router,
-    public cardServ: CardService
   ) { }
 
   ngOnInit() { }
@@ -37,7 +33,6 @@ export class WoocommerceProductsPage implements OnInit, ViewWillEnter {
     const products = this.woocommerceService.getProducts();
     this.http.get(products).subscribe((res: any) => {
       this.getProducts = res;
-      this.events = this.cardServ.allothers[0].data;
     });
   }
 
