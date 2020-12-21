@@ -30,6 +30,7 @@ export class CartPage implements OnInit {
   public cartData: Array<any> = [];
   public sum: number;
   public userId: any;
+  cartItems = 0;
 
   constructor(
     public fun: FunctionService,
@@ -59,6 +60,9 @@ export class CartPage implements OnInit {
         console.log('this.baseProducts', this.baseProducts);
         this.dataService.cart = this.baseProducts;
       });
+      this.fun.cartItems.subscribe((val) => {
+        this.cartItems = val;
+      });
   }
 
   calculatePrice() {
@@ -72,11 +76,12 @@ export class CartPage implements OnInit {
   }
 
   checkout() {
-    this.route.navigate(['checkout']);
+    console.log('Fix route of cart');
+    // this.route.navigate(['tabs/checkout']);
   }
 
   browse() {
-    this.route.navigate(['woocommerce-products']);
+    this.route.navigate(['tabs/packs']);
   }
   async remove(j: number) {
       this.fun.removeConform().then((res) => {

@@ -119,7 +119,7 @@ export class ProductDetailsPage implements OnInit {
   }
 
   cartPage() {
-    // this.route.navigate(['tabs/cart']);
+    this.route.navigate(['tabs/cart']);
   }
 
 }
