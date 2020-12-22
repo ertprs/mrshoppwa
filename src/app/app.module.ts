@@ -24,8 +24,6 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AppComponent } from '@app/app.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 
-import { environment } from '@env/environment';
-
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { Camera } from '@ionic-native/camera/ngx';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
@@ -49,6 +47,7 @@ import { SwingModule } from 'angular2-swing';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { LandingPage } from './landing/landing.page';
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
+import { environment } from '@env/environment';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');

@@ -53,7 +53,7 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        loadChildren: () => import('@app/modules/home/speakers.module').then(m => m.SpeakersModule)
+        loadChildren: () => import('@app/modules/finances/products/woocommerce-products.module').then(m => m.WoocommerceProductsPageModule)
       },
       {
         path: 'profile',
