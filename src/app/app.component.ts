@@ -15,6 +15,7 @@ import { SwUpdate } from '@angular/service-worker';
 import { Observable, fromEvent, merge, of } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 import { Storage } from '@ionic/storage';
+import { FirebaseMessagingService } from './services/firestore/firebase-messaging.service';
 
 
 interface PageInterface {
@@ -43,6 +44,15 @@ export class AppComponent implements OnInit {
     public startupMenu: Array<any> = [];
     public proMenu: Array<any> = [];
 
+    message;
+
+    testMessages() {
+        const userId = 'user001';
+        this.messagingService.requestPermission(userId)
+        this.messagingService.receiveMessage()
+        this.message = this.messagingService.currentMessage
+    }
+
     appPages: PageInterface[] = [
         { title: 'Home', name: 'AbstractsPage', path: 'tabs/home', icon: 'documents' },
         { title: 'Packs', name: 'TabsPage', path: 'tabs/packs', index: 0, icon: 'calendar' },
@@ -70,6 +80,7 @@ export class AppComponent implements OnInit {
         private splashScreen: SplashScreen,
         private statusBar: StatusBar,
         private route: Router,
+        private messagingService: FirebaseMessagingService,
         private authService: AuthenticationService,
         private util: UtilService,
         public modalCtrl: ModalController,
@@ -130,6 +141,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.testMessages();
     }
 
     goToLanding() {

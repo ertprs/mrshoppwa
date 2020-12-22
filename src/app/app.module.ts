@@ -1,22 +1,8 @@
 import { AngularFireDatabaseModule, AngularFireDatabase } from '@angular/fire/database';
 
-import { DATA_SERVICE, DataServiceType, firebaseConfig } from 'config/config';
-import { HttpDataService } from './services/database/http-data.service';
-import { FirebaseDataService } from './services/database/firebase-data.service';
 import { DataService } from './services/database/data.service';
 import { TabsPageModule } from './pages/tabs/tabs.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
-
-export function getDataService(http: HttpClient, db: AngularFireDatabase) {
-  switch (DATA_SERVICE) {
-    case DataServiceType.http:
-      return new HttpDataService(http);
-    case DataServiceType.firebase:
-      return new FirebaseDataService(db);
-    default:
-      throw new Error('Unknown service');
-  }
-}
 
 import { NgModule } from '@angular/core';
 import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
@@ -37,8 +23,6 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 
 import { AppComponent } from '@app/app.component';
 import { AppRoutingModule } from '@app/app-routing.module';
-import { ViewVideoPage } from '@app/pages/video-playlists/view-video/view-video.page';
-import { OrderinfoPage } from '@app/pages/woocommerce/orderinfo/orderinfo.page';
 
 import { environment } from '@env/environment';
 
@@ -64,14 +48,15 @@ import { IonicSwingModule } from '@app/components/ionic-swing/ionic-swing.module
 import { SwingModule } from 'angular2-swing';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { LandingPage } from './landing/landing.page';
+import { AngularFireMessagingModule } from '@angular/fire/messaging';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent, ViewVideoPage, OrderinfoPage, LandingPage],
-  entryComponents: [ViewVideoPage, OrderinfoPage],
+  declarations: [AppComponent, LandingPage],
+  entryComponents: [],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -84,7 +69,6 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
-    AngularFireModule.initializeApp(environment.config),
     AgmCoreModule.forRoot({
       apiKey: environment.GOOGLE_MAPS_API_KEY,
       libraries: ['places'],
@@ -93,6 +77,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    AngularFireDatabaseModule,
+    AngularFireMessagingModule,
     IonicSwingModule,
     SwingModule,
     IonicStorageModule.forRoot(),
@@ -104,7 +90,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     TabsPageModule,
     HttpClientModule,
     IonicStorageModule.forRoot(),
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
@@ -132,8 +118,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     WebView,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     { provide: FirestoreSettingsToken, useValue: {} },
-    { provide: HttpBackend, useClass: NativeHttpFallback, deps: [Platform, NativeHttpBackend, HttpXhrBackend] },
-    { provide: DataService, useFactory: getDataService, deps: [HttpClient, AngularFireDatabase] }
+    { provide: HttpBackend, useClass: NativeHttpFallback, deps: [Platform, NativeHttpBackend, HttpXhrBackend] }
   ],
   bootstrap: [AppComponent],
 })

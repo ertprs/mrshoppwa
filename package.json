@@ -1,7 +1,7 @@
 {
-  "name": "appseed-conference-app-ionic-5",
+  "name": "albatroz-tech-mrshop-ui",
   "version": "5.0.0",
-  "author": "Ionic Framework",
+  "author": "Albatroz Tech",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "start:chrome": "ionic serve --browser \"chrome\"",

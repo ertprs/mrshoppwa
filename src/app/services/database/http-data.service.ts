@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DataService } from './data.service';
-import { apiUrl } from 'config/config';
 
 @Injectable({
   providedIn: 'root',
@@ -74,7 +73,7 @@ export class HttpDataService extends DataService {
       return Promise.resolve(true);
     }
 
-    return this.http.get(apiUrl)
+    return this.http.get('apiUrl')
       .toPromise()
       .then((response) => {
         this.cache = response;

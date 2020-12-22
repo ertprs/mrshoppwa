@@ -14,13 +14,16 @@
 export const environment = {
   production: true,
   GOOGLE_MAPS_API_KEY: '',
-  config: {
-    apiKey: '<your-key>',
-    authDomain: '<your-project-authdomain>',
-    databaseURL: '<your-database-URL>',
-    projectId: '<your-project-id>',
-    storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>',
+  appTitle: 'AppTitle',
+  firebaseConfig: {
+    apiKey: 'AIzaSyCsAES9S79l1OvbutPS34WS5yOuNlIxmjI',
+    authDomain: 'monthlyrepeat-23062.firebaseapp.com',
+    databaseURL: 'https://monthlyrepeat-23062.firebaseio.com',
+    projectId: 'monthlyrepeat-23062',
+    storageBucket: 'monthlyrepeat-23062.appspot.com',
+    messagingSenderId: '617488315989',
+    appId: '1:617488315989:web:6f9fda0e9a8abd9083c6dc',
+    measurementId: 'G-SYNQFRW0EV',
   },
 
   GOOGLE_WEBCLIENTID: '124018728460-sv8cqhnnmnf0jeqbnd0apqbnu6egkhug.apps.googleusercontent.com',

@@ -12,78 +12,62 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then((m) => m.LoginPageModule),
+    loadChildren: () => import('@app/modules/login/login.module').then((m) => m.LoginPageModule),
   },
   {
     path: 'sign-up',
-    loadChildren: () => import('./pages/sign-up/sign-up.module').then((m) => m.SignUpPageModule),
+    loadChildren: () => import('@app/modules/sign-up/sign-up.module').then((m) => m.SignUpPageModule),
   },
   {
     path: 'walkthrough',
-    loadChildren: () => import('@app/pages/walkthrough/walkthrough.module').then(m => m.WalkthroughPageModule),
+    loadChildren: () => import('@app/modules/walkthrough/walkthrough.module').then(m => m.WalkthroughPageModule),
     canLoad: [CheckTutorial],
   },
   {
     path: 'account',
-    loadChildren: () => import('./pages/account/account.module').then((m) => m.AccountPageModule),
+    loadChildren: () => import('@app/modules/account/account.module').then((m) => m.AccountPageModule),
   },
  
   {
     path: 'walkthrough',
-    loadChildren: () => import('@app/pages/walkthrough/walkthrough.module').then(m => m.WalkthroughPageModule)
-  },
-  {
-    path: 'video-large-card',
-    loadChildren: () => import('@app/pages/video-playlists/largecard/largecard.module').then(m => m.LargecardPageModule)
-  },
-  {
-    path: 'view-video',
-    loadChildren: () => import('@app/pages/video-playlists/view-video/view-video.module').then(m => m.ViewVideoPageModule)
-  },
-  {
-    path: 'youtube-home-playlist',
-    loadChildren: () => import('@app/pages/video-playlists/youtube-home-playlist/youtube-home-playlist.module').then(m => m.YoutubeHomePlaylistPageModule)
-  },
-  {
-    path: 'grid-youtube-playlist',
-    loadChildren: () => import('@app/pages/video-playlists/youtube-playlist/youtube-playlist.module').then(m => m.YoutubePlaylistPageModule)
+    loadChildren: () => import('@app/modules/walkthrough/walkthrough.module').then(m => m.WalkthroughPageModule)
   },
   {
     path: 'phaser',
-    loadChildren: () => import('@app/pages/phaser/phaser.module').then(m => m.PhaserPageModule)
+    loadChildren: () => import('@app/modules/phaser/phaser.module').then(m => m.PhaserPageModule)
   },
 
   {
     path: 'blogpage',
-    loadChildren: () => import('@app/pages/wordpress/blogpage/blogpage.module').then(m => m.BlogpagePageModule)
+    loadChildren: () => import('@app/modules/wordpress/blogpage/blogpage.module').then(m => m.BlogpagePageModule)
   },
   {
     path: 'blogs/:id',
-    loadChildren: () => import('@app/pages/wordpress/blogpage/blogpage.module').then(m => m.BlogpagePageModule)
+    loadChildren: () => import('@app/modules/wordpress/blogpage/blogpage.module').then(m => m.BlogpagePageModule)
   },
   {
     path: 'blogs',
-    loadChildren: () => import('@app/pages/wordpress/blogs/blogs.module').then(m => m.BlogsPageModule)
+    loadChildren: () => import('@app/modules/wordpress/blogs/blogs.module').then(m => m.BlogsPageModule)
   },
   {
     path: 'applepay',
-    loadChildren: () => import('@app/pages/paymentGateways/applepay/applepay.module').then(m => m.ApplepayPageModule)
+    loadChildren: () => import('@app/modules/paymentGateways/applepay/applepay.module').then(m => m.ApplepayPageModule)
   },
   {
     path: 'paypalpayment',
-    loadChildren: () => import('@app/pages/paymentGateways/paypalpayment/paypalpayment.module').then(m => m.PaypalpaymentPageModule)
+    loadChildren: () => import('@app/modules/paymentGateways/paypalpayment/paypalpayment.module').then(m => m.PaypalpaymentPageModule)
   },
   {
     path: 'paypal-web',
-    loadChildren: () => import('@app/pages/paymentGateways/paypal-web/paypal-web.module').then(m => m.PaypalWebPageModule)
+    loadChildren: () => import('@app/modules/paymentGateways/paypal-web/paypal-web.module').then(m => m.PaypalWebPageModule)
   },
   {
     path: 'stripepayment',
-    loadChildren: () => import('@app/pages/paymentGateways/stripepayment/stripepayment.module').then(m => m.StripepaymentPageModule)
+    loadChildren: () => import('@app/modules/paymentGateways/stripepayment/stripepayment.module').then(m => m.StripepaymentPageModule)
   },
   {
     path: 'stripe-web',
-    loadChildren: () => import('@app/pages/paymentGateways/stripe-web/stripe-web.module').then(m => m.StripeWebPageModule)
+    loadChildren: () => import('@app/modules/paymentGateways/stripe-web/stripe-web.module').then(m => m.StripeWebPageModule)
   }
 ];
 

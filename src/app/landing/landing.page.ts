@@ -2,7 +2,7 @@ import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { MenuController, NavController } from '@ionic/angular';
 import { UserDataService } from '@app/services/common/user-data.service';
-import { appTitle } from 'config/config';
+import { environment } from '@env/environment';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -28,7 +28,7 @@ export class LandingPage implements AfterViewInit, OnInit {
   }
 
   ionViewWillEnter() {
-    this.titleService.setTitle(appTitle + ' - Welcome to monthlyrepeat.com. Landing Zone');
+    this.titleService.setTitle(environment.appTitle + ' - Welcome to monthlyrepeat.com. Landing Zone');
     this.menuCtrl.enable(false);
   }
 
